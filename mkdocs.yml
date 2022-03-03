@@ -1,1 +1,6 @@
-site_name: My Docs
+site_name: DCEX Docs
+nav:
+  - Intro: intro.md
+  - Deep Dive: dev.md
+theme:
+  name: gitbook
