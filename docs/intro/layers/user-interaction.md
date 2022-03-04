@@ -2,7 +2,9 @@
 
 ## What It Does
 
-This is the layer which users will interact with directly to perform any action of funds in regards to DCEX. It contains a set of Smart Contracts that, at their most basic level, provide a way for a user to emit a given event. In more advanced cases, it can be a hybrid contract, where an external user can interact with the liquidity inside DCEX directly, without having to perform a deposit or withdraw, while still emitting an event such that any changes can take effect in the database.
+This is the layer which users will interact with directly to perform any action on assets held in DCEX contracts. It contains a set of Smart Contracts that, at their most basic level, provide a way for a user to emit a given event. 
+
+In more advanced cases, it can be considered a hybrid contract, where an external user can interact with the liquidity inside DCEX directly without having to perform a deposit or withdraw. Ultimately, an event will still be emitted such that any changes can take effect in the Core ERC20 Subgraph.
 
 ```solidity
 function transfer(
