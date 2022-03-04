@@ -10,4 +10,5 @@ The DCEX design consists of 6 seperate layers, all intended to work together in 
     | Data Queries       | info |
     | On Chain Execution | info |
     | Code Stoarge       | info |
+
 --8<-- "docs/commons/abbreviations.md"

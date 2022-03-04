@@ -42,3 +42,5 @@ Any actions a user will perform is through a contract call to the Core or any au
 **AUDITS REQUIRED**
 
 This layer should be production ready; there are not any major differences between these contracts and any other protocol's contracts'.
+
+--8<-- "docs/commons/abbreviations.md"

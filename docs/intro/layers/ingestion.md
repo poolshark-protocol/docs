@@ -25,3 +25,5 @@ Indexing speed here is a potential issue, however Ethereum is limited to 15 TPS 
 One solution here is to have the team run its own node within The Graph Network, which will to a large guarantee real-time availability of Subgraph data.
 
 The other potential pitfall is indexing correctness, for which a process needs to be developed around creating disputes for [Proof of Indexing (POI)](https://thegraph.com/docs/en/indexing/#what-is-a-proof-of-indexing-poi) when data is indexed in an invalid manner.
+
+--8<-- "docs/commons/abbreviations.md"

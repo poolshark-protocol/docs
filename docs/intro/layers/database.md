@@ -7,3 +7,6 @@
 ## User Functionality
 
 ## Production Requirements
+
+
+--8<-- "docs/commons/abbreviations.md"
