@@ -43,11 +43,14 @@ markdown_extensions:
       permalink: True
   - abbr
   - tables
+  - def_list
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.tabbed:
