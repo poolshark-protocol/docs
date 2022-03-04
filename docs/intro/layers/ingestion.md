@@ -1,7 +1,7 @@
 # Data Ingestion
 
-## 1.1 What It Does
+## What It Does
 
-## 1.2 Abstraction
+## Abstraction
 
-## 1.3 Production Requirements
+## Production Requirements

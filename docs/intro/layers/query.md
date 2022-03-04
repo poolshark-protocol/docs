@@ -1,9 +1,9 @@
 # Database Query
 
-## 1.1 What It Does
+## What It Does
 
-## 1.2 Abstraction
+## Abstraction
 
-## 1.3 User Functionality
+## User Functionality
 
-## 1.4 Production Requirements
+## Production Requirements
