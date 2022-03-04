@@ -17,17 +17,17 @@ function transfer(
 
 ## Abstraction
 
-Since funds are being stored in a common contract between users, and funds can be spent by modules, we don't require certian EIPs to be used in the traditonal way (in all scenarios). 
+Since funds are being stored in a common contract between users, and funds can be spent by modules, we don't require certian EIPs to be used in the traditonal way (in all scenarios).
 
 Let's take for example an ERC20 transfer to your friend:
 
 Normally a user with a wallet would call to the ERC20 `transfer(address dest, uint256 amount)` method and use up about `30,000-60,000` gas units.
 
-In the case a DCEX user wants to transfer ERC20 token internally, they would call to the DCEX ERC20 Core contract's `transfer(address token, uint256 amount, address receiver)` method, consuming approximately `24,000-26,000` gas units. Since funds are local, there is no need to execute any code on-chain other than the event is firing off. The [Ingestion Layer](http://localhost:8000/intro/layers/ingestion/) will handle rassigning balances as needed.
+In the case a DCEX user wants to transfer ERC20 token internally, they would call to the DCEX ERC20 Core contract's `transfer(address token, uint256 amount, address receiver)` method, consuming approximately `24,000-26,000` gas units. Since funds are local, there is no need to execute any code on-chain other than the event is firing off. The [Ingestion Layer](ingestion.md) will handle rassigning balances as needed.
 
 Taking this to the protocol level, we can imagine a DCEX user interacting with a Module like GroupSwap, which allows users to pool gas together for on-chain swaps. Instead of a user calling to the ERC20 contract's `approve()` method and the DEX contract's `swap` method, they can call to the relevant Module contract's `groupSwap()` function.
 
-Each request for the GroupSwap module consumes approximately `25,000-27,000` gas units. The amount of gas units consumed by a request to a Module can and will vary based on the amount of data emitted. 
+Each request for the GroupSwap module consumes approximately `25,000-27,000` gas units. The amount of gas units consumed by a request to a Module can and will vary based on the amount of data emitted.
 
 The DCEX user doesn't need to perform an `approve()`, because the `groupSwap()` function calls to the Core contract's `reserveToken()` function. In this design, reservations can be seen as approvals, where a reservation is defined by a user calling to a module which then calls to the Core ERC20 contract to reserve or unreserve the token.
 
