@@ -33,7 +33,6 @@ nav:
       - Layers: intro/layers.md
       - User Interaction: intro/layers/user-interaction.md
       - Data Ingestion: intro/layers/ingestion.md
-      - Database: intro/layers/database.md
       - Data Queries: intro/layers/query.md
       - On Chain Execution: intro/layers/execution.md
       - Code Storage: intro/layers/code-storage.md
