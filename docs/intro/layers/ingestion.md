@@ -16,4 +16,12 @@ In our system design, we typically refer to this process as making a `reservatio
 
 ## Abstraction
 
+Here the Core ERC20 Subgraph is abstracting away the costs of storing all the accounting and user request information on-chain and instead opting for the data to be availalble via The Graph Network.
+
 ## Production Requirements
+
+Indexing speed here is a potential issue, however Ethereum is limited to 15 TPS which bottlenecks the amount of events the DCEX Subgraphs will be processing.
+
+One solution here is to have the team run its own node within The Graph Network, which will to a large guarantee real-time availability of Subgraph data.
+
+The other potential pitfall is indexing correctness, for which a process needs to be developed around creating disputes for Proof of Indexing (POI) when data is indexed in an invalid manner.
