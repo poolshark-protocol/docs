@@ -20,5 +20,6 @@ The base actions required to interact with a DCEX protocol are as follows:
 2. Make an action request, either through a Module or through the Core
 For example, you want to Transfer DAI to your friend, you can call the core’s  `transfer(address transferToken, uint256 transferAmount, address receiver)` function, if the receiver doesn't have an account it will create one for them, thus allowing the receiver to ‘*redeem*’ their token simply by using the DCEX protocol, or withdrawing to an external address
 
+[Diagram of DCEX hierarchy]
 
 --8<-- "docs/commons/abbreviations.md"

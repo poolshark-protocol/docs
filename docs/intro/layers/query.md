@@ -4,7 +4,15 @@
 
 The query layer resolves the trustless interactions between the Execution Layer (Gelato Network) and the Data Layer (The Graph Network) and ensures data has been properly validated prior to initiating any transactions on-chain. This layer is still under heavy construction and is the primary blocker for creating a fully trustless execution loop comprised of on-chain and off-chain components. 
 
-[DIAGRAM HERE: DETAILING DISPUTE MECHANISM]
+???+ example
+    ```mermaid
+    graph LR
+        A[User] -->|API Call| B{{Query Layer}};
+        B -->|Query Subgraph| C[Decentralized Node Query];
+        C -->|valid zkSnark?| D[return response];
+        C -->|invalid zkSnark?| E[Submit Dispute];
+        E -->|Retry| B;
+    ```
 
 ## Abstraction
 

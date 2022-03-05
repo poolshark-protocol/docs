@@ -23,21 +23,22 @@ Since funds are being stored in a common contract between users, and funds can b
 
 Let's take for example an ERC20 transfer to your friend:
 
-=== "Standard"
-    ```mermaid
-    graph LR
-        A[User] -->|Contract call| B{ERC20.transfer};
-        B -->|Update Balance| C(( -sender Balance<br/>+receiver Balance));
-        C --> D[return true];
-    ```
+!!! example
+    === "Standard"
+        ```mermaid
+        graph LR
+            A[User] -->|Contract call| B{ERC20.transfer};
+            B -->|Update Contract Storage| C(( -sender Balance<br/>+receiver Balance));
+            C --> D[return true];
+        ```
 
-=== "DCEX"
-    ```mermaid
-    graph LR
-        A[User] -->|Contract call| B{Core.transfer};
-        B -->|Emits Event| C{{Subgraph Ingestion}};
-        C -->|Updates DB| D[(<br/>-sender Balance<br/>+receiver Balance)];
-    ```
+    === "DCEX"
+        ```mermaid
+        graph LR
+            A[User] -->|Contract call| B{Core.transfer};
+            B -->|Emits Event| C{{Subgraph Ingestion}};
+            C -->|Updates Subgraph Data| D[(<br/>-sender Balance<br/>+receiver Balance)];
+        ```
 
 Normally a user with a wallet would call to the ERC20 `transfer(address dest, uint256 amount)` method and use up about `30,000-60,000` gas units.
 
@@ -49,8 +50,23 @@ Taking this to the protocol level, we can imagine a DCEX user interacting with a
 
 Instead of a user calling to the ERC20 contract's `approve()` method and the DEX contract's `swap` method, they can call to the relevant Module contract's `groupSwap()` function.
 
-[DIAGRAM HERE: COMPARE NORMAL APPROVE VS GROUPSWAP]
-
+???+ example
+    === "Standard"
+        ```mermaid
+        graph TD
+            A[User] -->|Contract call| B{DEX.swap};
+            B -->|Transfer Token In| C[DEX Processes Swap];
+            C -->|Transfer Token Out| D[return true];
+        ```
+    === "DCEX GroupSwap Module"
+        ```mermaid
+        graph TD
+            A[User] -->|Contract call| B{GroupSwap.swap};
+            B -->|Emits Event| C{{Subgraph Ingestion}};
+            B --> G[Reserve Token];
+            C -->|Updates Subgraph Data| D[(<br/>Open Order<br/>Update Group)];
+            E[Group Executes] --> F[Token is reallocated to user];
+        ```
 Each request for the GroupSwap module consumes approximately `25,000-27,000` gas units. The amount of gas units consumed by a request to a Module can and will vary based on the amount of data emitted.
 
 The DCEX user doesn't need to perform an `approve()`, because the `groupSwap()` function calls to the Core contract's `reserveToken()` function. In this design, reservations can be seen as approvals, where a reservation is defined by a user calling to a module which then calls to the Core ERC20 contract to reserve or unreserve the token.
