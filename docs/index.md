@@ -1,7 +1,7 @@
 # DCEX Docs
 
 ???+ warning
-    These documents are a **WORK IN PROGRESS**, all statements are not finial, and are subject to change. These pages should be used as a reference to get a better understanding of what the PoolSharks team is working on, and what can be possible in the near future.
+    These documents are a **WORK IN PROGRESS**, all statements are not final and are subject to change. These pages should be used as a reference to get a better understanding current state in regards to teh development of the PoolSharks Protocol and what will be possible in the near future.
 
 ## Getting Started
 
