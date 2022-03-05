@@ -23,15 +23,27 @@ Since funds are being stored in a common contract between users, and funds can b
 
 Let's take for example an ERC20 transfer to your friend:
 
-[DIAGRAM HERE: COMPARE NORMAL TRANSFER VS DCEX TRANSFER]
+=== "Standard"
+    ```mermaid
+    graph LR
+        A[User] -->|Contract call| B[ERC20.transfer];
+        B -->|Update Balance| C[(<br/>-sender Balance<br/>+receiver Balance)];
+        C --> D[return true];
+    ```
+
+=== "DCEX"
+    ```mermaid
+    graph LR
+        A[User] -->|Contract call| B[Core.transfer];
+        B -->|Emits Event| C[Subgraph Ingestion];
+        C -->|Updates DB| D[(<br/>-sender Balance<br/>+receiver Balance)];
+    ```
 
 Normally a user with a wallet would call to the ERC20 `transfer(address dest, uint256 amount)` method and use up about `30,000-60,000` gas units.
 
-In the case DCEX, if a user wants to transfer ERC20 token internally, they would call to the DCEX ERC20 Core contract's `transfer(address token, uint256 amount, address receiver)` method, consuming approximately `24,000-26,000` gas units. 
+In the case DCEX, if a user wants to transfer ERC20 token internally, they would call to the DCEX ERC20 Core contract's `transfer(address token, uint256 amount, address receiver)` method, consuming approximately `24,000-26,000` gas units.
 
 Since funds are local, there is no need to execute any code on-chain other than the event stating the action. The [Ingestion Layer](ingestion.md) will handle rassigning balances as needed.
-
-[DIAGRAM HERE: SHOW SUBGRAPH CHANGING BALANCES]
 
 Taking this to the protocol level, we can imagine a DCEX user interacting with a Module like GroupSwap, which allows users to pool gas together for on-chain swaps.
 
