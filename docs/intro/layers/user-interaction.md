@@ -26,16 +26,16 @@ Let's take for example an ERC20 transfer to your friend:
 === "Standard"
     ```mermaid
     graph LR
-        A[User] -->|Contract call| B[ERC20.transfer];
-        B -->|Update Balance| C[(<br/>-sender Balance<br/>+receiver Balance)];
+        A[User] -->|Contract call| B{ERC20.transfer};
+        B -->|Update Balance| C(( -sender Balance<br/>+receiver Balance));
         C --> D[return true];
     ```
 
 === "DCEX"
     ```mermaid
     graph LR
-        A[User] -->|Contract call| B[Core.transfer];
-        B -->|Emits Event| C[Subgraph Ingestion];
+        A[User] -->|Contract call| B{Core.transfer};
+        B -->|Emits Event| C{{Subgraph Ingestion}};
         C -->|Updates DB| D[(<br/>-sender Balance<br/>+receiver Balance)];
     ```
 
