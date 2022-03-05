@@ -26,10 +26,12 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
 nav:
   - Home: index.md
   - Intro:
-      - Intro: intro/intro.md
+      - intro/index.md
       - Layers: intro/layers.md
       - User Interaction: intro/layers/user-interaction.md
       - Data Ingestion: intro/layers/ingestion.md
