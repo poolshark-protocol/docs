@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# DCEX Docs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+???+ warning
+    These documents are a **WORK IN PROGRESS**, all statements are not finial, and are subject to change. These pages should be used as a reference to get a better understanding of what the PoolSharks team is working on, and what can be possible in the near future.
 
-## Commands
+## Getting Started
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+See [Intro](intro/index.md)
 
-## Project layout
+## A Deeper Dive
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+See [Developer Docs](developer-docs/index.md)
