@@ -4,9 +4,9 @@
 
 Once events occur on-chain, the Core ERC20 Subgraph receives record of what happened and reflects those changes via event handlers.
 
-For example, in the case of a Deposit event, the following data is emitted:
+For example, in the case of a Deposit event, the following event is emitted:
 
-`Deposit (index_topic_1 address user, index_topic_2 address token, uint256 amount)`
+`Deposit (address user, address token, uint256 amount)`
 
 The Deposit handler will assign the balance `amount` to the account `user` for the contract address `token`.
 
