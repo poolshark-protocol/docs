@@ -3,3 +3,6 @@ mkdocs-macros-plugin
 mkdocs-static-i18n
 mkdocs-redirects
 mkdocs
+mkdocs-material
+pymdown-extensions
+mkdocs-git-revision-date-plugin
