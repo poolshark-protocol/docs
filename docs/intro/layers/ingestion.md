@@ -10,7 +10,11 @@ For example, in the case of a Deposit event, the following event is emitted:
 
 The Deposit handler will assign the balance `amount` to the account `user` for the contract address `token`.
 
-The balance is now spendable by the user, meaning they can request a withdraw, groupswap, etc. Once spendable balance has been associated with a user request, the balance will be made nonspendable in the amount requested by the user. This prevents the classical double-spending problem from occurring. 
+[DIAGRAM HERE: SHOW CLASS DIAGRAM OF DATA BEING UPDATED]
+
+The balance is now spendable by the user, meaning they can request a withdraw, groupswap, etc. Once spendable balance has been associated with a user request, the balance will be made nonspendable in the amount requested by the user. This prevents the classical double-spending problem from occurring.
+
+[DIAGRAM HERE: SHOW RESERVATION BEING MADE AND BALANCE BECOMING UPSPENDABLE]
 
 In our system design, we typically refer to this process as making a `reservation`. Balance is nonspendable until the order is cancelled by the user or the order is fulfilled.
 

@@ -2,12 +2,18 @@
 
 ## What It Does
 
-Execution on-chain is required to reflect any requests users make on-chain. In the case of the GroupSwap feature, multiple users come together to fill a gas tank for a single swap on-chain. 
+Execution on-chain is required to reflect any requests users make on-chain. In the case of the GroupSwap feature, multiple users come together to fill a gas tank for a single swap on-chain.
+
+[DIAGRAM HERE: SHOWING ON-CHAIN EXECUTION]
 
 The actions taken on-chain utilize data from The Graph Network. This data connection is made possible by Polywrap resolvers that run on Gelato Network nodes and query data from The Graph.
 
 Polywrap resolvers have a basic true/false 'checker' function that is run to determine if anything needs to be done on-chain. For example, if a gas tank is full for a given swap pair, a swap will be executed on-chain and the output token will be distributed evenly amongst the participants based
 on the amount of input token they contributed to the pool.
+
+[DIAGRAM HERE: SHOWING EVENT BEING EMITTED AFTER SWAP]
+
+[DIAGRAM HERE: SHOWING DISTRIBUTION OF OUTPUT TOKEN IN THE GRAPH]
 
 The PoolSharks Team has built a DEX aggregator that will handle the liquidity sourcing in the case of the GroupSwap feature. As more features are integrated with the PoolSharks Protocol, more contracts will be required for the purposes of routing common requests on-chain and finding the most cost-effective path.
 
