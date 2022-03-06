@@ -4,7 +4,7 @@ site_name: Documentation
 repo_name: 'GitHub'
 repo_url: 'https://github.com/poolsharks-protocol/DCEX-Docs'
 edit_uri: 'tree/main/docs'
-# copyright: 'Copyright &copy; 2021 Amazon'
+copyright: 'Copyright &copy; 2022 PoolSharks'
 docs_dir: 'site/content'
 site_dir: 'docs'
 extra_css:
