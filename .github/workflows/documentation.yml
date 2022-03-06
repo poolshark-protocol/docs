@@ -2,7 +2,7 @@ name: documentation
 on:
   push:
     branches:
-      - new-structure
+      - main
 
 env:
   PYTHON_VERSION: 3.x
