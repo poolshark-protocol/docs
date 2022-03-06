@@ -1,47 +1,64 @@
-site_name: DCEX Docs
-repo_url: https://github.com/poolsharks-protocol/DCEX-Docs
-repo_name: GitHub
-edit_uri: tree/main/docs
+site_name: Documentation
+# site_description: 'Develop, Release and Operate Container Apps on AWS.'
+# site_url: 'https://aws.github.io/copilot-cli/'
+repo_name: 'GitHub'
+repo_url: 'https://github.com/poolsharks-protocol/DCEX-Docs'
+edit_uri: 'tree/main/docs'
+copyright: 'Copyright &copy; 2022 PoolSharks'
+docs_dir: 'site/content'
+site_dir: 'docs'
+extra_css:
+  - stylesheets/extra.css
+extra:
+  alternate:
+    - name: English
+      link: ./en/
+      lang: en
+    # - name: 日本語
+    #   link: ./ja/
+    #   lang: ja
+
+nav:
+  - Home: index.en.md
+  - Intro:
+    - Overview: intro/index.en.md
+    - Concepts:
+      - Layers: intro/layers/index.en.md
+      - User Interaction: intro/layers/user-interaction.en.md
+      - Data Ingestion: intro/layers/ingestion.en.md
+      - Data Queries: intro/layers/query.en.md
+      - On Chain Execution: intro/layers/execution.en.md
+      - Code Storage: intro/layers/code-storage.en.md
+    - Security: intro/security.en.md
+    - Conclusion: intro/conclusion.en.md
+  - Documentation: docs/index.en.md
+    # - Overview:
+    # - Getting Started:
+    # - Concepts:
+    # - Developing:
+    # - Commands:
+    #   - Getting Started:
+  # - Community:
+      # - Get Involved: community/get-involved.en.md
+      # - Guides and Resources: community/guides.en.md
 theme:
-  logo:
-    images/Logo.svg
-  icon:
-    repo:
-      fontawesome/brands/github
   name: material
+  custom_dir: site/overrides
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep purple
-      accent: deep purple
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
+    primary: white
+  font: false
+  logo: assets/images/Logo.svg
+  favicon: assets/images/Logo.svg
+  icon:
+    repo: fontawesome/brands/github
+  language: en
   features:
     - navigation.tabs
     - navigation.top
     - navigation.instant
     - navigation.tracking
     - navigation.indexes
-nav:
-  - Home: index.md
-  - Intro:
-      - intro/index.md
-      - Layers: intro/layers.md
-      - User Interaction: intro/layers/user-interaction.md
-      - Data Ingestion: intro/layers/ingestion.md
-      - Data Queries: intro/layers/query.md
-      - On Chain Execution: intro/layers/execution.md
-      - Code Storage: intro/layers/code-storage.md
-      - Security: intro/security.md
-      - Conclusion: intro/conclusion.md
-  - Deep Dive:
-      - developer-docs/index.md
+
 markdown_extensions:
   - toc:
       permalink: True
@@ -65,25 +82,16 @@ markdown_extensions:
       generic: true
   - pymdownx.tabbed:
       alternate_style: true
-# extra_javascript:
-#   - javascripts/mathjax.js
-#   - https://polyfill.io/v3/polyfill.min.js?features=es6
-#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-# extra_css:
-#   - stylesheets/extra.scss
+
 plugins:
-  - search
-  - git-revision-date
-#   - search:
-#       min_search_length: 2
-# extra:
-#   consent:
-#     title: Cookie consent
-#     description: >-
-#       We use cookies to recognize your repeated visits and preferences, as well
-#       as to measure the effectiveness of our documentation and whether users
-#       find what they're searching for. With your consent, you're helping us to
-#       make our documentation better.
-#   analytics:
-#     provider: google
-# property:
+    - search
+    # - redirects:
+    #     redirect_maps:
+    - i18n:
+        default_language: en
+        languages:
+          en: english
+          # ja: japanese
+        material_alternate: false
+    # - macros:
+    #     include_dir: site/content/docs/include

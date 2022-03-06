@@ -1,3 +1,7 @@
+# Dependencies to render the Copilot website needed by mkdocs.
+mkdocs-macros-plugin
+mkdocs-static-i18n
+mkdocs-redirects
 mkdocs
 mkdocs-material
 pymdown-extensions
