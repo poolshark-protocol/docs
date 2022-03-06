@@ -1,6 +1,6 @@
 # DCEX-Docs
 
-Welcome to the DCEX Documentaion Repo, it is best read in the website! Check it out here: https://localhost:8000 ;)
+Welcome to the DCEX Documentaion Repo, it is best read in the website! Check it out here: https://poolsharks-protocol.github.io/DCEX-Docs/ ;)
 
 Site depolyment comming soon!
 
