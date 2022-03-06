@@ -17,6 +17,9 @@ extra:
     # - name: 日本語
     #   link: ./ja/
     #   lang: ja
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
 
 nav:
   - Home: index.en.md
