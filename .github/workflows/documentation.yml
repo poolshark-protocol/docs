@@ -23,11 +23,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install .
-          pip install \
-            mkdocs-minify-plugin>=0.3 \
-            mkdocs-redirects>=1.0 \
-            mkdocs-rss-plugin>=0.17
+          pip install -r requirements.txt
       - name: Install Insiders build
         if: github.event.repository.fork == false
         env:
