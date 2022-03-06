@@ -23,7 +23,7 @@ Since funds are being stored in a common contract between users, and funds can b
 
 Let's take for example an ERC20 transfer to your friend:
 
-!!! example
+???+ example
     === "Standard"
         ```mermaid
         graph LR
@@ -31,7 +31,6 @@ Let's take for example an ERC20 transfer to your friend:
             B -->|Update Contract Storage| C(( -sender Balance<br/>+receiver Balance));
             C --> D[return true];
         ```
-
     === "DCEX"
         ```mermaid
         graph LR
