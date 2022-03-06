@@ -48,8 +48,8 @@ theme:
     primary: white
   font: false
   logo: assets/images/Logo.svg
+  favicon: assets/images/Logo.svg
   icon:
-    favicon: assets/images/Logo.svg
     repo: fontawesome/brands/github
   language: en
   features:
