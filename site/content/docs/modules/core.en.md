@@ -36,7 +36,7 @@ Gives users access to withdraw their unreserved tokens inside the DCEX contract 
     ```
 ### transfer()
 Allows users to transfer their tokens to any address inside the DCEX contract, supports non-existant users, allows for someone to generate an account without having to perform a deposit. Is processed as a request so that the amounts can be validated for the same reason of withdraw being a request function.
-??? event-preview "Event Preview
+??? event-preview "Event Preview"
     ```solidity
     event TransferRequest(
         address indexed sender,
