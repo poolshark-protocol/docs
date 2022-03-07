@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+         <loc>.</loc>
+         <lastmod>2022-03-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/"/>
+         
+    </url>
+    <url>
+         <loc>docs/</loc>
+         <lastmod>2022-03-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/docs/"/>
+         
+    </url>
+    <url>
+         <loc>intro/conclusion/</loc>
+         <lastmod>2022-03-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/intro/conclusion/"/>
+         
+    </url>
+    <url>
+         <loc>intro/</loc>
+         <lastmod>2022-03-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/intro/"/>
+         
+    </url>
+    <url>
+         <loc>intro/security/</loc>
+         <lastmod>2022-03-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/intro/security/"/>
+         
+    </url>
+    <url>
+         <loc>intro/layers/code-storage/</loc>
+         <lastmod>2022-03-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/intro/layers/code-storage/"/>
+         
+    </url>
+    <url>
+         <loc>intro/layers/execution/</loc>
+         <lastmod>2022-03-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/intro/layers/execution/"/>
+         
+    </url>
+    <url>
+         <loc>intro/layers/</loc>
+         <lastmod>2022-03-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/intro/layers/"/>
+         
+    </url>
+    <url>
+         <loc>intro/layers/ingestion/</loc>
+         <lastmod>2022-03-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/intro/layers/ingestion/"/>
+         
+    </url>
+    <url>
+         <loc>intro/layers/query/</loc>
+         <lastmod>2022-03-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/intro/layers/query/"/>
+         
+    </url>
+    <url>
+         <loc>intro/layers/user-interaction/</loc>
+         <lastmod>2022-03-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/intro/layers/user-interaction/"/>
+         
+    </url>
+</urlset>

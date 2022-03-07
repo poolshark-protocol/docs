@@ -35,7 +35,15 @@ nav:
       - Code Storage: intro/layers/code-storage.en.md
     - Security: intro/security.en.md
     - Conclusion: intro/conclusion.en.md
-  - Documentation: docs/index.en.md
+  - Documentation:
+    - Documentation: docs/index.en.md
+    - Modules:
+      - Modules: docs/modules/index.en.md
+      - Core: docs/modules/core.en.md
+      - Quick Swap: docs/modules/quickswap.en.md
+      - Group Swap: docs/modules/groupswap.en.md
+      - Order Book: docs/modules/orderbook.en.md
+      - Aave: docs/modules/aave.en.md
     # - Overview:
     # - Getting Started:
     # - Concepts:
