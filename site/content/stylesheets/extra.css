@@ -63,3 +63,18 @@ span.type {
   -webkit-mask-image: var(--md-admonition-icon--event-preview);
           mask-image: var(--md-admonition-icon--event-preview);
 }
+
+
+
+.md-header {
+  background-color: #232844;
+  color: white;
+}
+.md-search__input {
+  background: #4E5E90;
+}
+
+.focus-visible {
+  color: white;
+}
+
