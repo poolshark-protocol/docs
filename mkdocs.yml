@@ -40,7 +40,7 @@ nav:
     - Modules:
       - Modules: docs/modules/index.en.md
       - Core: docs/modules/core.en.md
-      - Quick Swap: docs/modules/quickswap.en.md
+      - PredaDex: docs/modules/predadex.en.md
       - Group Swap: docs/modules/groupswap.en.md
       - Order Book: docs/modules/orderbook.en.md
       - Aave: docs/modules/aave.en.md
