@@ -1,11 +1,16 @@
 # Introduction
 
-## Core Concepts
+## What is OceanBook?
 
-At the most basic level, the main focus of the DCEX protocol is to group common DeFi executions into bulk tasks, while being cost and time efficient. While this is not a new solution to an old problem, it does utilize a different core design than that in current production or being talked about in main-stream crypto news. Let’s talk about a few solutions that we have seen or that have been proposed as an alternative then finally the new solution (DCEX)
+PoolSharks OceanBook aims to deliver a fully on-chain FIFO matching engine for limit orders, which is gas finite and optimized to be fully viable on L1 Ethereum Mainnet.
 
-### Solution A
-By utilizing a sub-chain such as arweave as a storage layer since gas costs are much cheaper in sub-chains compared to ETH mainnet, these solutions work by using decentralized services and chains to store the data, but the scalability can be questioned since they are still relying on cost of gas of the sub-chain to not succeed the price people are willing to pay. The sub-chains try to offset this problem by modeling new and interesting gas models (Needs more research).
+To fully understand what OceanBook proposes, we have to understand the markets, how an Orderbook works, and what the tradeoffs are versus an Automated Market Maker (AMM). 
+
+After we're aware of the differences for both traders and LPs, we can start to comprehend where this new market maker model really shines.
+
+### Current Decentralized Exchanges 
+
+
 
 ### Solution B
 It may sacrifice decentralization to negate the gas of a sub-chain by utilizing events mixed with off-chain bots to relay back on-chain when conditions are met. The most obvious example of this is a centralized exchange like Binance or Coinbase, you interact with their service through an API, all balances are stored in shared wallets where the keys are unknown to the end user, and each individual user’s balance is known through tracking token deposits and spends which are then stored in some database. But all execution that needs to happen, will be executed on the relevant chain.

@@ -25,34 +25,33 @@ extra:
 nav:
   - Home: index.en.md
   - Intro:
-    - Overview: intro/index.en.md
-    - Concepts:
-      - Layers: intro/layers/index.en.md
-      - User Interaction: intro/layers/user-interaction.en.md
-      - Data Ingestion: intro/layers/ingestion.en.md
-      - Data Queries: intro/layers/query.en.md
-      - On Chain Execution: intro/layers/execution.en.md
-      - Code Storage: intro/layers/code-storage.en.md
-    - Security: intro/security.en.md
-    - Conclusion: intro/conclusion.en.md
-  - Documentation:
-    - Documentation: docs/index.en.md
-    - Modules:
-      - Modules: docs/modules/index.en.md
-      - Core: docs/modules/core.en.md
-      - PredaDex: docs/modules/predadex.en.md
-      - Group Swap: docs/modules/groupswap.en.md
-      - Order Book: docs/modules/orderbook.en.md
-      - Aave: docs/modules/aave.en.md
-    # - Overview:
-    # - Getting Started:
-    # - Concepts:
-    # - Developing:
-    # - Commands:
-    #   - Getting Started:
-  # - Community:
-      # - Get Involved: community/get-involved.en.md
-      # - Guides and Resources: community/guides.en.md
+    - Overview: docs/intro/index.en.md
+    - Improvements: docs/intro/improvements.en.md
+  - Fungible Queues: docs/fungible-queues/index.en.md
+    - For Market Makers: docs/fungible-queues/user-interaction.en.md
+    - For Takers: docs/fungible-queues/ingestion.en.md
+  - Design Tradeoffs: docs/design-tradeoffs/index.md
+    - vs. AMMs: docs/design-tradeoffs/amms.en.md
+    - vs. Off-Chain Orderbooks: docs/design-tradeoffs/off-chain-orderbooks.en.md
+    - vs. CEX Orderbooks: docs/design-tradeoffs/cex-orderbooks.en.md
+  - Take Profit: docs/take-profit/index.en.md
+    - Deposit Collateral: docs/modules/index.en.md
+    - Borrow To Sell: docs/modules/core.en.md
+    - Short Sell: docs/modules/predadex.en.md
+  - Short Sell:
+    - What is a short sell?: docs/index.en.md
+    - Short Sell on OceanBook:
+      - Deposit Collateral: docs/modules/index.en.md
+      - Borrow To Sell: docs/modules/core.en.md
+      - Short Sell: docs/modules/predadex.en.md
+      - Avoiding Liquidiations: docs/short-sell/avoid-liquidations.en.md
+  - Queued Market Making:
+    - Fee Collection
+    - JIT Liquidity
+    - MEV Related Risks
+  - References:
+    - Limit Order Books
+    - Automated Market Makers
 theme:
   name: material
   custom_dir: site/overrides
