@@ -1,4 +1,4 @@
-# Introduction
+# Overview
 
 The OceanBook protocol is a peer-to-peer decentralized exchange which introduces efficient **price time priority** into the world of decentralized exchanges.
 
@@ -15,9 +15,3 @@ In comparison to a centralized exchange orderbook, on-chain limit order books ca
 This is due to the limitations around how much data can be loaded within a single smart contract transaction.
 
 Thus, one of the core driving principles in the design of the protocol is to maximize deterministic behavior in order to accomodate trades of different sizes.
-
-# What is OceanBook?
-
-OceanBook is a fully on-chain FIFO matching engine, which aggregates strings of orders using a fungible order queue.
-
-To fully understand what the PoolSharks team proposes here, we have to understand how a Queued Market Maker works and what the tradeoffs are versus other exchange models.

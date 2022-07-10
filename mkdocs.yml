@@ -1,4 +1,4 @@
-site_name: PoolSharks Docs
+site_name: OceanBook Docs
 # site_description: 'Develop, Release and Operate Container Apps on AWS.'
 # site_url: 'https://aws.github.io/copilot-cli/'
 site_url: https://poolsharks-protocol.github.io/DCEX-Docs/
@@ -24,27 +24,28 @@ extra:
 
 nav:
   - Home: index.en.md
-  - Intro:
-    - Overview: docs/intro/index.en.md
-    - Improvements: docs/intro/improvements.en.md
-  - Fungible Queues: docs/fungible-queues/index.en.md
-    - For Market Makers: docs/fungible-queues/user-interaction.en.md
-    - For Takers: docs/fungible-queues/ingestion.en.md
-  - Design Tradeoffs: docs/design-tradeoffs/index.md
-    - vs. AMMs: docs/design-tradeoffs/amms.en.md
-    - vs. Off-Chain Orderbooks: docs/design-tradeoffs/off-chain-orderbooks.en.md
-    - vs. CEX Orderbooks: docs/design-tradeoffs/cex-orderbooks.en.md
-  - Take Profit: docs/take-profit/index.en.md
-    - Deposit Collateral: docs/modules/index.en.md
-    - Borrow To Sell: docs/modules/core.en.md
-    - Short Sell: docs/modules/predadex.en.md
-  - Short Sell:
-    - What is a short sell?: docs/index.en.md
-    - Short Sell on OceanBook:
-      - Deposit Collateral: docs/modules/index.en.md
-      - Borrow To Sell: docs/modules/core.en.md
-      - Short Sell: docs/modules/predadex.en.md
-      - Avoiding Liquidiations: docs/short-sell/avoid-liquidations.en.md
+  - Intro: 
+      - Overview: docs/intro/index.en.md
+      - Improvements: docs/intro/improvements.en.md
+  - Fungible Queues: 
+      - Intro: docs/fungible-queues/index.en.md
+      - For Market Makers: docs/fungible-queues/for-market-makers.en.md
+  #   - For Takers: docs/fungible-queues/ingestion.en.md
+  # - Design Tradeoffs: docs/design-tradeoffs/index.md
+  #   - vs. AMMs: docs/design-tradeoffs/amms.en.md
+  #   - vs. Off-Chain Orderbooks: docs/design-tradeoffs/off-chain-orderbooks.en.md
+  #   - vs. CEX Orderbooks: docs/design-tradeoffs/cex-orderbooks.en.md
+  # - Take Profit: docs/take-profit/index.en.md
+  #   - Deposit Collateral: docs/modules/index.en.md
+  #   - Borrow To Sell: docs/modules/core.en.md
+  #   - Short Sell: docs/modules/predadex.en.md
+  # - Short Sell:
+  #   - What is a short sell?: docs/index.en.md
+  #   - Short Sell on OceanBook:
+  #     - Deposit Collateral: docs/modules/index.en.md
+  #     - Borrow To Sell: docs/modules/core.en.md
+  #     - Short Sell: docs/modules/predadex.en.md
+  #     - Avoiding Liquidiations: docs/short-sell/avoid-liquidations.en.md
   - Queued Market Making:
     - Fee Collection
     - JIT Liquidity
