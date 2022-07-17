@@ -1,11 +1,10 @@
 site_name: OceanBook Docs
 # site_description: 'Develop, Release and Operate Container Apps on AWS.'
-# site_url: 'https://aws.github.io/copilot-cli/'
-site_url: https://poolsharks-protocol.github.io/DCEX-Docs/
+site_url: https://poolsharks-protocol.github.io/oceanbook-docs/
 repo_name: 'GitHub'
-repo_url: 'https://github.com/poolsharks-protocol/DCEX-Docs'
+repo_url: 'https://github.com/poolsharks-protocol/oceanbook-docs/'
 edit_uri: '/poolsharks-protocol/DCEX-Docs/tree/main/site/content'
-copyright: 'Copyright &copy; 2022 PoolSharks'
+copyright: 'Written by PoolSharks Labs'
 docs_dir: 'site/content'
 site_dir: 'docs'
 extra_css:
@@ -24,9 +23,8 @@ extra:
 
 nav:
   - Home: index.en.md
-  - Intro: 
+  - Introduction: 
       - Overview: docs/intro/index.en.md
-      - Improvements: docs/intro/improvements.en.md
   - Fungible Queues: 
       - Intro: docs/fungible-queues/index.en.md
       - For Market Makers: docs/fungible-queues/for-market-makers.en.md
@@ -47,9 +45,9 @@ nav:
   #     - Short Sell: docs/modules/predadex.en.md
   #     - Avoiding Liquidiations: docs/short-sell/avoid-liquidations.en.md
   - Queued Market Making:
-    - Fee Collection
-    - JIT Liquidity
-    - MEV Related Risks
+    - Intro: docs/queued-market-making/index.en.md
+    - JIT Liquidity: docs/queued-market-making/just-in-time-liquidity.en.md
+    - MEV Related Risks: docs/queued-market-making/index.en.md
   - References:
     - Limit Order Books
     - Automated Market Makers
@@ -94,6 +92,7 @@ markdown_extensions:
       generic: true
   - pymdownx.tabbed:
       alternate_style: true
+  - markdown.extensions.attr_list
 
 plugins:
     - search

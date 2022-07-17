@@ -67,7 +67,7 @@ span.type {
 
 
 .md-header {
-  background-color: #1e1c1c;
+  background-color: #1a1a1a;
   color: white;
 }
 .md-search__input {
@@ -78,3 +78,7 @@ span.type {
   color: white;
 }
 
+.center {
+  display: block;
+  margin: 0 auto;
+}
