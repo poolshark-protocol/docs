@@ -19,7 +19,7 @@ It is built for fully fungible ERC-20 token exchange on EVM-compatible blockchai
 3. Router
     * the means by which maker and taker orders will be sent to the appropriate `Book`   contract
 
-### **Mistakes of the Past: Where On-Chain Orderbooks Have Fallen Short**
+### **Mistakes of the Past: Where Decentralized Orderbooks Have Fallen Short**
 
 There is one guiding principle which sets OceanBook apart from other on-chain orderbook protocols:
 
@@ -92,6 +92,8 @@ This leads to the same business model as what currently exists for Robinhood.
 Matt Levine from Bloomberg as well as many others in the space have written extensively on this, and ultimately if the data is explicitly public or explicitly private, no centralized party has proprietary access to user data.
 
 Even if off-chain orderbooks are able to achieve a fair market structure, they lack on-chain composability, guaranteed settlement, and the general 'walled garden' nature of the blockchain.
+
+<em>CONCLUSION: The taker is not guaranteed to spend X gas for Y liquidity.</em>
 
 ### **How does the OceanBook protocol compare to a traditional centralized exchange orderbook?**
 

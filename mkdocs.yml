@@ -49,8 +49,8 @@ nav:
     - JIT Liquidity: docs/queued-market-making/just-in-time-liquidity.en.md
     - MEV Related Risks: docs/queued-market-making/index.en.md
   - References:
-    - Limit Order Books
-    - Automated Market Makers
+    - Limit Order Books: docs/references/limit-order-books.en.md
+    - Automated Market Makers: docs/references/automated-market-makers.en.md
 theme:
   name: material
   custom_dir: site/overrides
