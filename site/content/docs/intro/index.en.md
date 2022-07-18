@@ -24,7 +24,8 @@ It is built for fully fungible ERC-20 token exchange on EVM-compatible blockchai
 There is one guiding principle which sets OceanBook apart from other on-chain orderbook protocols:
 
 <em>For X amount of gas spent, a taker must receive Y liquidity.</em>
-
+<br/>
+<br/>
 #### **Maker OTC by the Dai Foundation**
 
 [Maker OTC](https://github.com/daifoundation/maker-otc) was an attempt at an on-chain orderbook with the following in its `README.md`:
@@ -60,7 +61,8 @@ This N value could be unbounded. Thus, markets could be disrupted by extreme liq
 All it would take is the placement of thousands of small offers.
 
 <em>CONCLUSION: The taker is not guaranteed to spend X gas for Y liquidity.</em>
-
+<br/>
+<br/>
 #### **1inch Limit Order Protocol by the 1inch Labs**
 
 The 1inch Limit Order Protocol is vastly different in design in that the limit order book is stored off-chain.
