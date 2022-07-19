@@ -46,8 +46,8 @@ nav:
   #     - Short Sell: docs/modules/predadex.en.md
   #     - Avoiding Liquidiations: docs/short-sell/avoid-liquidations.en.md
   - Queued Market Making:
-    - For Market Makers: docs/queued-market-making/market-makers.en.md
-   # - For Traders: docs/queued-market-making/traders.en.md
+    - QMM Core Concepts: docs/queued-market-making/index.en.md
+    - For Market Makers: docs/queued-market-making/set-liquidity.en.md
 
    # - JIT Liquidity: docs/queued-market-making/just-in-time-liquidity.en.md
    # - MEV Related Risks: docs/queued-market-making/mev-related-risks.en.md

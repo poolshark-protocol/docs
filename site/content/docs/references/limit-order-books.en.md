@@ -11,3 +11,7 @@
 5. [Is the Electronic Open Limit Order Book Inevitable?](https://www0.gsb.columbia.edu/mygsb/faculty/research/pubfiles/1537/is.pdf) - Lawrence R. Glosten, The Journal of Finance
 
 6. [Limit Order Book Transparency, Execution Risk, and Market Liquidity](https://www.fep.up.pt/conferencias/pfn2006/conference%20papers/422.pdf) - School of Business, University of Sydney
+
+7. [Limit orders and slippage resistance in x*y=k market makers](https://ethresear.ch/t/limit-orders-and-slippage-resistance-in-x-y-k-market-makers/2071) - Hayden Adams, Uniswap Labs
+
+8. [Token sales and shorting](https://ethresear.ch/t/token-sales-and-shorting/376) - Vitalik Buterin, Ethereum Foundation
