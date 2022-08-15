@@ -21,11 +21,11 @@ It is built for fully fungible ERC-20 token exchange on EVM-compatible blockchai
 
 # The Liquidity Fragmentation Problem
 
-The Liquidity Fragmentation Problem as it relates to on-chain orderbooks can be described as such:
+The Liquidity Fragmentation Problem for on-chain orderbooks can be described as such:
 
 <em>Y liquidity cannot be guaranteed for X gas spent.</em>
 
-We encounter this problem namely when we have zero restrictions on maker order size.
+Takers encounter this problem namely when there are zero restrictions on maker order size.
 
 Instead with Fungible Queues we can have one fully fungible sum of liquidity which can be tapped at some exchange rate.
 
