@@ -19,11 +19,11 @@ It is built for fully fungible ERC-20 token exchange on EVM-compatible blockchai
 3. Router
     * the means by which maker and taker orders will be sent to the appropriate `Book` contract
 
-# The Liquidity Fragmentation Problem
+# **The Liquidity Fragmentation Problem**
 
 The Liquidity Fragmentation Problem for on-chain orderbooks can be described as such:
 
-<em>Y liquidity cannot be guaranteed for X gas spent.</em>
+> **<em>Y liquidity cannot be guaranteed for X gas spent.</em>**
 
 Takers encounter this problem namely when there are zero restrictions on maker order size.
 
@@ -39,7 +39,7 @@ This ultimately destroys the gas cost UX for the taker on large trades.
 
 There is one guiding principle which sets OceanBook apart from other on-chain orderbook protocols:
 
-<em>For X amount of gas spent, a taker must receive Y liquidity.</em>
+> **<em>For X amount of gas spent, a taker must receive Y liquidity.</em>**
 <br/>
 <br/>
 
