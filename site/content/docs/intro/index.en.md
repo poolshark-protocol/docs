@@ -19,6 +19,22 @@ It is built for fully fungible ERC-20 token exchange on EVM-compatible blockchai
 3. Router
     * the means by which maker and taker orders will be sent to the appropriate `Book` contract
 
+# The Liquidity Fragmentation Problem
+
+The Liquidity Fragmentation Problem as it relates to on-chain orderbooks can be described as such:
+
+<em>Y liquidity cannot be guaranteed for X gas spent.</em>
+
+We encounter this problem namely when we have zero restrictions on maker order size.
+
+Instead with Fungible Queues we can have one fully fungible sum of liquidity which can be tapped at some exchange rate.
+
+The gas costs ultimately fall on the taker because all the token transfers will take place during their transaction.
+
+In the case of all the current on-chain and off-chain orderbook solutions we have this problem.
+
+This ultimately destroys the gas cost UX for the taker on large trades.
+
 ### **Mistakes of the Past: Where Decentralized Orderbooks Have Fallen Short**
 
 There is one guiding principle which sets OceanBook apart from other on-chain orderbook protocols:
@@ -26,6 +42,8 @@ There is one guiding principle which sets OceanBook apart from other on-chain or
 <em>For X amount of gas spent, a taker must receive Y liquidity.</em>
 <br/>
 <br/>
+
+OceanBook is designed specifically to solve this core UX problem.
 #### **Maker OTC by the Dai Foundation**
 
 [Maker OTC](https://github.com/daifoundation/maker-otc) was an attempt at an on-chain orderbook with the following in its `README.md`:

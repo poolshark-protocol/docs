@@ -51,7 +51,7 @@ nav:
     - For Market Makers: docs/queued-market-making/set-liquidity.en.md
 
    # - JIT Liquidity: docs/queued-market-making/just-in-time-liquidity.en.md
-   # - MEV Related Risks: docs/queued-market-making/mev-related-risks.en.md
+    - MEV Related Risks: docs/queued-market-making/mev-related-risks.en.md
   - References:
     - Limit Order Books: docs/references/limit-order-books.en.md
     - Automated Market Makers: docs/references/automated-market-makers.en.md

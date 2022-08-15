@@ -4,8 +4,9 @@ Queued Market Makers differ from other decentralized exchange models in that the
 
 Each `Book` contract is composed of the following:
 
-- Two lists of `Pages`
-    - one for each trading direction
+- `Pages` sorted from lowest to highest price
+    - one set for `token0` -> `token1`
+    - one set for `token1` -> `token0`
 - A set of `Orders`
     - each order is mapped to a `Page`
 
