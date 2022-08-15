@@ -17,7 +17,7 @@ It is built for fully fungible ERC-20 token exchange on EVM-compatible blockchai
 2. Matching engine
     * the smart contract code to first prioritze price and then time
 3. Router
-    * the means by which maker and taker orders will be sent to the appropriate `Book`   contract
+    * the means by which maker and taker orders will be sent to the appropriate `Book` contract
 
 ### **Mistakes of the Past: Where Decentralized Orderbooks Have Fallen Short**
 
@@ -33,8 +33,8 @@ There is one guiding principle which sets OceanBook apart from other on-chain or
 ```
 Design Consideration
 
-The protocol uses on-chain order book and matching engine. The primary advantage
-of such approach is that the liquidity is avaiable for other smart contracts 
+The protocol uses an on-chain order book and matching engine. The primary advantage
+of such approach is that the liquidity is available for other smart contracts 
 that can access it in one atomic ethereum transaction. The second advantage is
 that the protocol is fully decentralized without any need for an operator.
 
@@ -46,21 +46,53 @@ every order on the order book needs to be "backed up" by the liquidity that is
 escrowed in the contract. Although such approach locks down liquidity, it 
 guarantees zero-risk, instantenous settlement.
 ```
-
+<br/>
 The main downfalls of Maker OTC:
 
 - Offer iteration is expensive
 - Doubly linked list maintenance
+- No correlated market with continuous liquidity
+<br/>
+<br/>
 
+#### **The Liquidity Fragmentation Problem**
+<br/>
+Assume that accessing each order's liquidity involves 4 storage reads and 2 storage writes.
+
+4 * SLOAD cost + 2 * SSTORE cost = 18,400 gas units
+
+Accessing each order's liquidity will cost 18,400 gas units on storage alone.
+
+A Uniswap v3 swap will comparitively be ~127,000 gas units at a single price tick.
+
+<br/>
+
+![Screenshot](maker-otc-gas.png){: .center style=""}
+<br/>
+<br/>
+
+Once we have accessed more than 3 orders we have already exceeded this gas cost.
+
+Consider the base transaction fee is 21,000 gas units and 2 ERC-20 transfers is 60,000 gas units.
+
+21,000 + 60,000 + 18,400 * 3 = 136,200 gas units (107% of Uniswap v3 swap)
+<br/>
+<br/>
+#### **Non-Deterministic Behavior**
 Each offer has a fragmentation of the liquidity at a given price.
 
-Instead of aggregating all the orders at a given price, we have to do N loads.
+Instead of aggregating all the orders at a given price, we have to do `N` loads.
 
-This N value could be unbounded. Thus, markets could be disrupted by extreme liquidity fragmentation.
+This `N` value could be unbounded and thus we encounter non-deterministic behavior.
+
+*Note: markets could be disrupted by extreme liquidity fragmentation (i.e. many small orders).*
+
+If we have no minimum order size, this can easily explode taker gas costs.
 
 All it would take is the placement of thousands of small offers.
 
-<em>CONCLUSION: The taker is not guaranteed to spend X gas for Y liquidity.</em>
+###<em>Maker OTC Conclusion:
+The taker is not guaranteed to spend X gas for Y liquidity.</em>
 <br/>
 <br/>
 #### **1inch Limit Order Protocol by the 1inch Labs**
@@ -83,6 +115,12 @@ Every signed message (i.e. a single limit order) will cost ~4000 gas if the mess
 
 This means we again arrive at the issue of liquidity fragmentation where the amount of gas to get Y liquidity is unknown.
 
+<br/>
+
+![Screenshot](maker-otc-gas.png){: .center style=""}
+<br/>
+<br/>
+
 One of the downsides of off-chain orderbooks is the inability to bid a higher gas price to have one's transaction prioritized.
 
 In addition, the internals of the off-chain orderbook are often proprietary, lacking transparency for users of the protocol.
@@ -95,39 +133,25 @@ Matt Levine from Bloomberg as well as many others in the space have written exte
 
 Even if off-chain orderbooks are able to achieve a fair market structure, they lack on-chain composability, guaranteed settlement, and the general 'walled garden' nature of the blockchain.
 
-<em>CONCLUSION: The taker is not guaranteed to spend X gas for Y liquidity.</em>
+### <em>1inch Limit Order Protocol Conclusion: 
+The taker is not guaranteed to spend X gas for Y liquidity.</em>
 
 ### **How does the OceanBook protocol compare to a traditional centralized exchange orderbook?**
 
 In comparison to a centralized exchange orderbook, on-chain limit order books cannot be equally expressive without encountering scalability issues.
 
-This is due to the limitations around how much data can be loaded within a single smart contract transaction, which is maximum ~450 kb for a single transaction.
+This means that each `Book` contract will support limited precision with respect to the possible exchange rates between tokens.
 
-However, we want to strictly limit the amount of on-chain storage access in order to maximize volume for the benefit of everyone.
+The goal is to strictly limit the amount of on-chain storage access in order to maximize volume for the benefit of everyone.
 
-Thus, one of the core driving principles in the design of the protocol is to maximize deterministic behavior. Traditionally this is why AMMs have worked quite well, and the same rules apply here.
+In order to achieve this we must maximize deterministic behavior.
+
+Traditionally this is why AMMs have worked quite well, and the same rules apply here.
 
 This means accomodating for trades of different sizes separately as the amount of data each of these will load can be drastically different.
 
 More details on how we solved for this will be released alongside the launch of public testnet.
 
-### **What will be the launch strategy?**
-
-The protocol will be implemented as a set of non-upgradable smart contracts to enable full permissionless access and protect against censorship resistance.
-
-The smart contract code for the protocol will be open-sourced upon completion of multiple internal and external audits as well as a public testnet launch.
-
-The focus initially will be on protocols which have:
-
-    - Numerous derivative tokens 
-    - Liquidity fragmentation issues
-    - High volatility such as options tokens
-
-Areas of focus:
-
-    - Foreign exchange (USDC, EUROC, etc.)
-    - Options protocols
-    - Sub-DAO governance tokens
 <br/>
 <br/>
 

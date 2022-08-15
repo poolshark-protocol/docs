@@ -9,7 +9,23 @@ Each `Book` contract is composed of the following:
 - A set of `Orders`
     - each order is mapped to a `Page`
 
+Here is a visual representation of that:
+
+![Screenshot](pages.png){: .center style=""}
+
+From the `Taker` perspective, the `Book` will start filling from the lowest priced `Page`.
+
+Here that is the 3999 DAI `Page`, which is first checked for liquidity present.
+
+If there is not enough present in the first `Page`, the 4000 DAI `Page` will be accessed as well.
+
+The `Book` will continue filling the user until their price or quantity limit is reached.
+
+As each `Page` offset is updated, `Maker` orders will be claimable previous to this offset.
+
 A `Page` is a `Fungible Queue` which contains the following items:
+<br/>
+<br/>
 ```
     - Price
         - This is used to determine exchange rate between `Makers` and `Takers`
@@ -34,9 +50,8 @@ A `Page` is a `Fungible Queue` which contains the following items:
         - These are checked for on each `Taker` order
         - More details on how these are handled will be released upon
           public testnet launch
-        - Current estimated costs is 31,000 gas + ERC20 transfer cost
-
-
+        - Current estimated costs: ~60,000 gas (47% of Uniswap v3 swap)
 ```
+<br/>
 <br/>
 <br/>

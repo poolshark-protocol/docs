@@ -25,6 +25,7 @@ nav:
   - Home: index.en.md
   - Introduction: 
       - Overview: docs/intro/index.en.md
+      - Launch Strategy: docs/intro/launch.en.md
   - Fungible Queues: 
       - Intro: docs/fungible-queues/index.en.md
       - The Simple Explanation: docs/fungible-queues/the-simple-explanation.en.md
