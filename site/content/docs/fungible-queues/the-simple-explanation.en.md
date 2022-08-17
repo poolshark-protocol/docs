@@ -30,3 +30,6 @@ If that amount is 1 mL, there can be a maximum of 100 individual exchanges for A
 Each time the person taking Mineral Water will have to update how much was taken in total.
 
 A bottle will hereafter be referred to as a `Page`, which is a collection of orders at the same price point.
+
+<br/>
+<br/>
