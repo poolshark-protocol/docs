@@ -1,8 +1,6 @@
-# DCEX-Docs
+# OceanBook Docs
 
-Welcome to the DCEX Documentaion Repo, it is best read in the website! Check it out [here](https://docs.poolsharks.io)!
-
-Site depolyment comming soon!
+Welcome to the Oceanbook Documentaion Repo. Check out the full docs [here](https://docs.poolsharks.io)!
 
 Local build:
 **UNIX**
