@@ -6,18 +6,46 @@ some_url: https://github.com/daifoundation/maker-otc
 
 ### **What is OceanBook?**
 
-The OceanBook protocol is a peer-to-peer decentralized exchange which introduces efficient <em>price time priority</em> into the world of decentralized exchanges.
+The OceanBook protocol is a peer-to-peer decentralized exchange which introduces efficient <em>price-time priority</em> into the world of decentralized exchanges.
 
-It is built for fully fungible ERC-20 token exchange on EVM-compatible blockchains and meant to function as an <em>on-chain limit order book</em>.
+It is built for fungible token exchange on EVM-compatible blockchains and meant to function as an <em>on-chain limit order book</em>.
 
-<em>OceanBook has three main components:</em>
+<em>OceanBook has four main components:</em>
 
-1. OrderBook
-    * an on-chain representation of the liquidity in each Page (see core concepts)
-2. Matching engine
+1. `Book`
+    * an on-chain representation of the liquidity in each `Page` (see core concepts)
+2. `Matching engine`
     * the smart contract code to first prioritze price and then time
-3. Router
+3. `Router`
     * the means by which maker and taker orders will be sent to the appropriate `Book` contract
+4. `Factory`
+    * the contract which will launch new OrderBook contract
+
+# **Slippage On Constant Function Market Makers**
+
+For traders exchange tokens on CFMMs (e.g. Uniswap v3), they are often subject to increasing slippage on larger trades.
+
+This slippage is derived on the variance in the token reserves and is ultimately a passive pricing model.
+
+![Screenshot](slippage.jpeg){: .center style=""}
+
+When this slippage exceeds the price on another liquidity source (e.g. a centralized exchange), arbitrageurs
+will bring the price on the AMM pool up to par.
+
+What this demonstrates is that passive pricing can ultimately not beat active pricing, which will remove some portion
+of this potential arbitrage from the market, result in better market efficiency.
+
+> **<em>Y liquidity cannot be guaranteed for X gas spent.</em>**
+
+Takers encounter this problem namely when there are zero restrictions on maker order size.
+
+Instead with Fungible Queues we can have one fully fungible sum of liquidity which can be tapped at some exchange rate.
+
+The gas costs ultimately fall on the taker because all the token transfers will take place during their transaction.
+
+In the case of all the current on-chain and off-chain orderbook solutions we have this problem.
+
+This ultimately destroys the gas cost UX for the taker on large trades.   
 
 # **The Liquidity Fragmentation Problem**
 

@@ -25,11 +25,19 @@ nav:
   - Home: index.en.md
   - Introduction: 
       - Overview: docs/intro/index.en.md
+      - Fungible Queues: 
+        - Intro: docs/fungible-queues/index.en.md
+        - The Simple Explanation: docs/fungible-queues/the-simple-explanation.en.md
+        - A Technical History: docs/fungible-queues/a-technical-history.en.md
+      - Queued Market Making:
+        - QMM Core Concepts: docs/queued-market-making/index.en.md
+        - For Market Makers: docs/queued-market-making/set-liquidity.en.md
+        - MEV Related Risks: docs/queued-market-making/mev-related-risks.en.md
       - Launch Strategy: docs/intro/launch.en.md
-  - Fungible Queues: 
-      - Intro: docs/fungible-queues/index.en.md
-      - The Simple Explanation: docs/fungible-queues/the-simple-explanation.en.md
-      - A Technical History: docs/fungible-queues/a-technical-history.en.md
+      - References:
+        - Limit Order Books: docs/references/limit-order-books.en.md
+        - Automated Market Makers: docs/references/automated-market-makers.en.md
+  
   #   - For Takers: docs/fungible-queues/ingestion.en.md
   # - Design Tradeoffs: docs/design-tradeoffs/index.md
   #   - vs. AMMs: docs/design-tradeoffs/amms.en.md
@@ -46,15 +54,11 @@ nav:
   #     - Borrow To Sell: docs/modules/core.en.md
   #     - Short Sell: docs/modules/predadex.en.md
   #     - Avoiding Liquidiations: docs/short-sell/avoid-liquidations.en.md
-  - Queued Market Making:
-    - QMM Core Concepts: docs/queued-market-making/index.en.md
-    - For Market Makers: docs/queued-market-making/set-liquidity.en.md
+  
 
    # - JIT Liquidity: docs/queued-market-making/just-in-time-liquidity.en.md
-    - MEV Related Risks: docs/queued-market-making/mev-related-risks.en.md
-  - References:
-    - Limit Order Books: docs/references/limit-order-books.en.md
-    - Automated Market Makers: docs/references/automated-market-makers.en.md
+    
+
 theme:
   name: material
   custom_dir: site/overrides
