@@ -4,68 +4,57 @@ some_url: https://github.com/daifoundation/maker-otc
 ---
 # Introduction
 
-### **What is OceanBook?**
+># **What is OceanBook?**
 
 The OceanBook protocol is a peer-to-peer decentralized exchange which introduces efficient <em>price-time priority</em> into the world of decentralized exchanges.
 
-It is built for fungible token exchange on EVM-compatible blockchains and meant to function as an <em>on-chain limit order book</em>.
+It has elements of a traditional `Central Limit Order Book (CLOB)` as well as that of an `Concentrated Liquidity Market Maker (CFMM)` (e.g. Uniswap v3). Users will be able to have all the typical features they would usually expect along with ways to limit exposure to a single side.
 
-<em>OceanBook has four main components:</em>
+<em>Features unique to OceanBook:</em>
+```
+> Directional LPing for single-sided risk
+> Priority Queue to capture fees on large trades
+> Automated closing of liquidity positions
+```
 
-1. `Book`
-    * an on-chain representation of the liquidity in each `Page` (see core concepts)
-2. `Matching engine`
-    * the smart contract code to first prioritze price and then time
-3. `Router`
-    * the means by which maker and taker orders will be sent to the appropriate `Book` contract
-4. `Factory`
-    * the contract which will launch new OrderBook contract
+The core objective is to provide innovative mechanisms for on-chain market making.
+<br/><br/>
 
-# **Slippage On Constant Function Market Makers**
+
+># **Slippage On Constant Function Market Makers**
 
 For traders exchange tokens on CFMMs (e.g. Uniswap v3), they are often subject to increasing slippage on larger trades.
 
-This slippage is derived on the variance in the token reserves and is ultimately a passive pricing model.
+This `slippage` is derived on the variance in the token reserves and is ultimately a passive pricing model to predict what price the liquidity provider should exchange at.
 
 ![Screenshot](slippage.jpeg){: .center style=""}
 
 When this slippage exceeds the price on another liquidity source (e.g. a centralized exchange), arbitrageurs
 will bring the price on the AMM pool up to par.
 
-What this demonstrates is that passive pricing can ultimately not beat active pricing, which will remove some portion
-of this potential arbitrage from the market, result in better market efficiency.
+What this demonstrates is that passive pricing from Automated Market Makers cannot surpass the efficiency of active pricing from a Central Limit Order Book. The scalability issues of the blockchain are what prevent this limitation from being surpassed.
+
+The OceanBook Protocol enables market makers to undercut the current market price and receive fees accordingly. 
+
+Any liquidity that is added to the Priority Queue (skip to section) will result in 0% slippage for traders. The positive tradeoff for the Market Maker is they receive 100% of fees for liquidity provided.
+<br/><br/>
+># **The Liquidity Fragmentation Problem**
+
+The Liquidity Fragmentation Problem for on-chain orderbooks can be described as the following:
 
 > **<em>Y liquidity cannot be guaranteed for X gas spent.</em>**
 
-Takers encounter this problem namely when there are zero restrictions on maker order size.
-
-Instead with Fungible Queues we can have one fully fungible sum of liquidity which can be tapped at some exchange rate.
-
-The gas costs ultimately fall on the taker because all the token transfers will take place during their transaction.
-
-In the case of all the current on-chain and off-chain orderbook solutions we have this problem.
-
-This ultimately destroys the gas cost UX for the taker on large trades.   
-
-# **The Liquidity Fragmentation Problem**
-
-The Liquidity Fragmentation Problem for on-chain orderbooks can be described as such:
-
-> **<em>Y liquidity cannot be guaranteed for X gas spent.</em>**
+This is due to the fragmentation of liquidity between orders.
 
 Takers encounter this problem namely when there are zero restrictions on maker order size.
 
-Instead with Fungible Queues we can have one fully fungible sum of liquidity which can be tapped at some exchange rate.
-
-The gas costs ultimately fall on the taker because all the token transfers will take place during their transaction.
-
-In the case of all the current on-chain and off-chain orderbook solutions we have this problem.
-
-This ultimately destroys the gas cost UX for the taker on large trades.
+It doesn't make sense to have a small maker order in a traditional CLOB on-chain because the amount of fees you will make in return will not surpass the amount of gas you spent to make a single order.
 
 ### **Mistakes of the Past: Where Decentralized Orderbooks Have Fallen Short**
 
-There is one guiding principle which sets OceanBook apart from other on-chain orderbook protocols:
+There is one guiding principle which sets OceanBook apart from other on-chain orderbook protocols.
+
+This is the ability to have a `closed-form expression`, meaning there is a finite amount of computation that will take place at each price point.
 
 > **<em>For X amount of gas spent, a taker must receive Y liquidity.</em>**
 <br/>
@@ -141,46 +130,10 @@ All it would take is the placement of thousands of small offers.
 The taker is not guaranteed to spend X gas for Y liquidity.</em>
 <br/>
 <br/>
-#### **1inch Limit Order Protocol by the 1inch Labs**
-
-The 1inch Limit Order Protocol is vastly different in design in that the limit order book is stored off-chain.
-
-This section will also address the majority of Orderbook DEXes, which are currently off-chain due to the benefit of free order placement as well as the difficulty of maintaining contract state.
-
-```
-Contract allows users to place limit orders, that later could be filled on-chain. Limit order itself is a data structure created off-chain and signed according to EIP-712.
-``` 
-
-The main downfalls of 1inch Limit Order Protocol:
-
-- Liquidity fragmentation between signed messages
-- No escrow = no guaranteed liquidity
-- Proprietary off-chain orderbook
-
-Every signed message (i.e. a single limit order) will cost ~4000 gas if the message contains 64 bytes of data.
-
-This means we again arrive at the issue of liquidity fragmentation where the amount of gas to get Y liquidity is unknown.
-
-<br/>
 
 ![Screenshot](maker-otc-gas.png){: .center style=""}
 <br/>
 <br/>
-
-One of the downsides of off-chain orderbooks is the inability to bid a higher gas price to have one's transaction prioritized.
-
-In addition, the internals of the off-chain orderbook are often proprietary, lacking transparency for users of the protocol.
-
-This leads to the same business model as what currently exists for Robinhood.
-
-"Robinhood Markets Inc. gets about 80% of its revenue from payment for order flow, selling its customers' orders to market makers like Citadel Securities to execute them."
-
-Matt Levine from Bloomberg as well as many others in the space have written extensively on this, and ultimately if the data is explicitly public or explicitly private, no centralized party has proprietary access to user data.
-
-Even if off-chain orderbooks are able to achieve a fair market structure, they lack on-chain composability, guaranteed settlement, and the general 'walled garden' nature of the blockchain.
-
-### <em>1inch Limit Order Protocol Conclusion: 
-The taker is not guaranteed to spend X gas for Y liquidity.</em>
 
 ### **How does the OceanBook protocol compare to a traditional centralized exchange orderbook?**
 
