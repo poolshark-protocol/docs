@@ -60,17 +60,12 @@ nav:
           - Callback: docs/tutorials/flash-swaps/callback.en.md
   - Smart Contracts:
       - Overview: docs/smart-contracts/overview.en.md
-      - Core: 
+      - Solidity Core: 
           - OceanBookFactory20: docs/smart-contracts/core/oceanbookfactory20.en.md
           - OceanBook20: docs/smart-contracts/core/oceanbook20.en.md
           - OceanBookRouter20: docs/smart-contracts/core/oceanbookrouter20.en.md
           - Interfacing With: docs/smart-contracts/core/interfacing-with.en.md
           - Libraries: docs/smart-contracts/core/libraries.en.md
-  - Trading Tokens:
-      - Launch Strategy: docs/intro/launch.en.md
-      - FAQ: docs/intro/faq.en.md
-  - Smart Contracts:
-      - Trading: docs/smart-contracts/trading.en.md
 
  
   
