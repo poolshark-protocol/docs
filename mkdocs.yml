@@ -23,7 +23,10 @@ extra:
 
 nav:
   - Home: index.en.md
-  - Introduction: docs/intro/index.en.md
+  - Introduction: 
+    - What is OceanBook?: docs/intro/index.en.md
+    - Limitations of AMMs: docs/intro/limitations-of-amms.en.md
+    - Limitations of CLOBs: docs/intro/limitations-of-clobs.en.md
   - Protocol Guide:
     - Overview: docs/protocol-guide/index.en.md
     - Liquidity Types: 
