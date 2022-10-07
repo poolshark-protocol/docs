@@ -1,4 +1,4 @@
-site_name: OceanBook Docs
+site_name: Poolshark Docs
 # site_description: 'Develop, Release and Operate Container Apps on AWS.'
 site_url: https://poolsharks-protocol.github.io/oceanbook-docs/
 repo_name: 'GitHub'
@@ -24,7 +24,7 @@ extra:
 nav:
   - Home: index.en.md
   - Introduction: 
-    - What is OceanBook?: docs/intro/index.en.md
+    - What is Poolshark?: docs/intro/index.en.md
     - Limitations of AMMs: docs/intro/limitations-of-amms.en.md
     - Limitations of CLOBs: docs/intro/limitations-of-clobs.en.md
   - Protocol Guide:
@@ -64,10 +64,10 @@ nav:
   - Smart Contracts:
       - Overview: docs/smart-contracts/overview.en.md
       - Solidity Base: 
-          - OceanBookPoolFactory: docs/smart-contracts/base/OceanBookPoolFactory.en.md
-          - OceanbookPool: docs/smart-contracts/base/OceanBookPool.en.md
-          - OceanBookBookFactory: docs/smart-contracts/base/OceanBookBookFactory.en.md
-          - OceanBookBook: docs/smart-contracts/base/OceanBookBook.en.md
+          - PoolsharkPairFactory: docs/smart-contracts/base/PoolsharkPairFactory.en.md
+          - PoolsharkPair: docs/smart-contracts/base/PoolsharkPair.en.md
+          - PoolsharkBookFactory: docs/smart-contracts/base/PoolsharkBookFactory.en.md
+          - PoolsharkBook: docs/smart-contracts/base/PoolsharkBook.en.md
           - Interfacing With: docs/smart-contracts/base/interfacing-with.en.md
           - Libraries: docs/smart-contracts/base/libraries.en.md
 
@@ -84,7 +84,7 @@ nav:
   #   - Short Sell: docs/modules/predadex.en.md
   # - Short Sell:
   #   - What is a short sell?: docs/index.en.md
-  #   - Short Sell on OceanBook:
+  #   - Short Sell on Poolshark:
   #     - Deposit Collateral: docs/modules/index.en.md
   #     - Borrow To Sell: docs/modules/base.en.md
   #     - Short Sell: docs/modules/predadex.en.md
