@@ -63,12 +63,12 @@ nav:
           - Callback: docs/tutorials/flash-swaps/callback.en.md
   - Smart Contracts:
       - Overview: docs/smart-contracts/overview.en.md
-      - Solidity Core: 
-          - OceanBookFactory20: docs/smart-contracts/core/oceanbookfactory20.en.md
-          - OceanBook20: docs/smart-contracts/core/oceanbook20.en.md
-          - OceanBookRouter20: docs/smart-contracts/core/oceanbookrouter20.en.md
-          - Interfacing With: docs/smart-contracts/core/interfacing-with.en.md
-          - Libraries: docs/smart-contracts/core/libraries.en.md
+      - Solidity Base: 
+          - OceanBookPoolFactory: docs/smart-contracts/base/OceanBookPoolFactory.en.md
+          - OceanBook20: docs/smart-contracts/base/oceanbook20.en.md
+          - OceanBookRouter20: docs/smart-contracts/base/oceanbookrouter20.en.md
+          - Interfacing With: docs/smart-contracts/base/interfacing-with.en.md
+          - Libraries: docs/smart-contracts/base/libraries.en.md
 
  
   
@@ -79,13 +79,13 @@ nav:
   #   - vs. CEX Orderbooks: docs/design-tradeoffs/cex-orderbooks.en.md
   # - Take Profit: docs/take-profit/index.en.md
   #   - Deposit Collateral: docs/modules/index.en.md
-  #   - Borrow To Sell: docs/modules/core.en.md
+  #   - Borrow To Sell: docs/modules/base.en.md
   #   - Short Sell: docs/modules/predadex.en.md
   # - Short Sell:
   #   - What is a short sell?: docs/index.en.md
   #   - Short Sell on OceanBook:
   #     - Deposit Collateral: docs/modules/index.en.md
-  #     - Borrow To Sell: docs/modules/core.en.md
+  #     - Borrow To Sell: docs/modules/base.en.md
   #     - Short Sell: docs/modules/predadex.en.md
   #     - Avoiding Liquidiations: docs/short-sell/avoid-liquidations.en.md
   

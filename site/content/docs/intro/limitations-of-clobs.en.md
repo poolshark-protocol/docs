@@ -3,6 +3,7 @@
 ## On-Chain
 
 
+
 ># **The Liquidity Fragmentation Problem**
 
 The Liquidity Fragmentation Problem for on-chain orderbooks can be described as the following:
