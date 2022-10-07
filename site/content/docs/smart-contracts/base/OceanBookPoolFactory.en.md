@@ -48,7 +48,7 @@ The `owner` is set to `msg.sender` when the factory contract is first launched.
 
 Admin functions:
 `setOwner`
-`enableFeeAmount`
+`enableFeeTier`
 
 #### Parameters:
 
@@ -75,3 +75,6 @@ Fee amounts can never be removed by anyone once enabled.
 | :------------ | :----- | :--------------------------------------------------------------------------------------- |
 | `fee`         | uint24 | The fee amount to enable, denominated in hundredths of a basis points (i.e. 0.0001%)                 |
 | `tickSpacing` | int24  | The spacing between ticks to be enforced for all pools created with the given fee amount denoted in basis points (i.e. 0.01%) |
+
+<br/><br/>
+<br/><br/>

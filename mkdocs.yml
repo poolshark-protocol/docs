@@ -65,8 +65,9 @@ nav:
       - Overview: docs/smart-contracts/overview.en.md
       - Solidity Base: 
           - OceanBookPoolFactory: docs/smart-contracts/base/OceanBookPoolFactory.en.md
-          - OceanBook20: docs/smart-contracts/base/oceanbook20.en.md
-          - OceanBookRouter20: docs/smart-contracts/base/oceanbookrouter20.en.md
+          - OceanbookPool: docs/smart-contracts/base/OceanBookPool.en.md
+          - OceanBookBookFactory: docs/smart-contracts/base/OceanBookBookFactory.en.md
+          - OceanBookBook: docs/smart-contracts/base/OceanBookBook.en.md
           - Interfacing With: docs/smart-contracts/base/interfacing-with.en.md
           - Libraries: docs/smart-contracts/base/libraries.en.md
 
