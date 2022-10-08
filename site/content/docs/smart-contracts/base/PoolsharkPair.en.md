@@ -9,10 +9,10 @@
 
 Returns the block timestamp as a 32 bit unsigned integer.
 
-### snapshotCumulativesInside
+### snapshotLiquidityInside
 
 ```solidity
-  function snapshotCumulativesInside(
+  function snapshotLiquidityInside(
     int24 tickLower,
     int24 tickUpper
   ) external view override noDelegateCall returns (int56 tickCumulativeInside, uint160 secondsPerLiquidityInsideX128, uint32 secondsInside)
