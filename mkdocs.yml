@@ -148,6 +148,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - markdown.extensions.attr_list
+  - md_in_html
 
 plugins:
     - search
