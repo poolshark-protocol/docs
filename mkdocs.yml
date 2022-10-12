@@ -46,21 +46,21 @@ nav:
     - References:
         - Limit Order Books: docs/references/limit-order-books.en.md
         - Automated Market Makers: docs/references/automated-market-makers.en.md
-  - Tutorials:
-      - Basic Setup: docs/tutorials/basic-setup.en.md
-      - Swaps: 
-          - Single: docs/tutorials/swaps/single.en.md
-          - Multicall: docs/tutorials/swaps/multicall.en.md
-      - Liquidity: 
-          - Contract Setup: docs/tutorials/liquidity/contract-setup.en.md
-          - Mint Position: docs/tutorials/liquidity/mint-position.en.md
-          - Collect Fees: docs/tutorials/liquidity/collect-fees.en.md
-          - Modify Liquidity: docs/tutorials/liquidity/change-position.en.md
-      - Mining Incentives: docs/tutorials/liquidity/mining-incentives.en.md
-      - Flash Swaps: 
-          - Contract Setup: docs/tutorials/flash-swaps/contract-setup.en.md
-          - Execution: docs/tutorials/flash-swaps/execution.en.md
-          - Callback: docs/tutorials/flash-swaps/callback.en.md
+  # - Tutorials:
+  #     - Basic Setup: docs/tutorials/basic-setup.en.md
+  #     - Swaps: 
+  #         - Single: docs/tutorials/swaps/single.en.md
+  #         - Multicall: docs/tutorials/swaps/multicall.en.md
+  #     - Liquidity: 
+  #         - Contract Setup: docs/tutorials/liquidity/contract-setup.en.md
+  #         - Mint Position: docs/tutorials/liquidity/mint-position.en.md
+  #         - Collect Fees: docs/tutorials/liquidity/collect-fees.en.md
+  #         - Modify Liquidity: docs/tutorials/liquidity/change-position.en.md
+  #     - Mining Incentives: docs/tutorials/liquidity/mining-incentives.en.md
+  #     - Flash Swaps: 
+  #         - Contract Setup: docs/tutorials/flash-swaps/contract-setup.en.md
+  #         - Execution: docs/tutorials/flash-swaps/execution.en.md
+  #         - Callback: docs/tutorials/flash-swaps/callback.en.md
   - Smart Contracts:
       - Overview: docs/smart-contracts/overview.en.md
       - Base: 
