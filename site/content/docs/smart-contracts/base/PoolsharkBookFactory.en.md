@@ -25,7 +25,7 @@ This will correspond to `token0` and `token1` in the book created.
 
 `tickSpacing` is retrieved based on the fee tier selected. The contract call will revert if the book already exists, the fee or maker tier is not supported, or the token addresses are invalid.
 
-#### Parameters:
+** Parameters: **
 
 | Name     | Type    | Description                                     |
 | :------- | :------ | :---------------------------------------------- |
@@ -34,7 +34,7 @@ This will correspond to `token0` and `token1` in the book created.
 | `feeTier`      | uint24  | The selected fee tier for the book                    |
 | `makerTier`| uint256 | The select maker tier defining the minimum order size |
 
-#### Return Values:
+** Return Values: **
 
 | Name   | Type    | Description                           |
 | :----- | :------ | :------------------------------------ |
@@ -56,7 +56,7 @@ Admin functions:
 `setOwner`
 `enableFeeTier`
 
-#### Parameters:
+** Parameters: **
 
 | Name     | Type    | Description                  |
 | :------- | :------ | :--------------------------- |
@@ -75,7 +75,7 @@ Enables a fee tier with the selected tickSpacing and makerSize.
 
 Fee amounts can never be removed by anyone once enabled.
 
-#### Parameters:
+** Parameters: **
 
 | Name          | Type   | Description                                                                              |
 | :------------ | :----- | :--------------------------------------------------------------------------------------- |
@@ -97,7 +97,7 @@ Maker tiers exist to provide deterministic gas costs for liquidity takers. This 
 
 Maker tiers can never be removed by anyone once enabled.
 
-#### Parameters:
+** Parameters: **
 
 | Name          | Type   | Description                                                                              |
 | :------------ | :----- | :--------------------------------------------------------------------------------------- |

@@ -20,7 +20,7 @@ This will correspond to `token0` and `token1` in the pool created.
 
 `tickSpacing` is retrieved based on the fee tier selected. The contract call will revert if the pool already exists, the fee tier is not supported, or the token addresses are invalid.
 
-#### Parameters:
+** Parameters: **
 
 | Name     | Type    | Description                                     |
 | :------- | :------ | :---------------------------------------------- |
@@ -28,7 +28,7 @@ This will correspond to `token0` and `token1` in the pool created.
 | `token20B` | address | The second ERC-20 token to pair in the pool |
 | `fee`    | uint24  | The selected fee tier for the pool                    |
 
-#### Return Values:
+** Return Values: **
 
 | Name   | Type    | Description                           |
 | :----- | :------ | :------------------------------------ |
@@ -50,7 +50,7 @@ Admin functions:
 `setOwner`
 `enableFeeTier`
 
-#### Parameters:
+** Parameters: **
 
 | Name     | Type    | Description                  |
 | :------- | :------ | :--------------------------- |
@@ -69,7 +69,7 @@ Enables a fee tier with the selected tickSpacing.
 
 Fee amounts can never be removed by anyone once enabled.
 
-#### Parameters:
+** Parameters: **
 
 | Name          | Type   | Description                                                                              |
 | :------------ | :----- | :--------------------------------------------------------------------------------------- |

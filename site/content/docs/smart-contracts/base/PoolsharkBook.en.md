@@ -1,13 +1,5 @@
 ## Functions
 
-### \_blockTimestamp
-
-```solidity
-  function _blockTimestamp(
-  ) internal view virtual returns (uint32)
-```
-
-Returns the block timestamp as a 32 bit unsigned integer.
 
 ### snapshotLiquidityInside
 
@@ -29,14 +21,14 @@ This informs the caller of
 ```
 Snapshots should only be used if the position is held for the entire period in between.
 
-#### Parameters:
+** Parameters:**
 
 | Name        | Type  | Description                 |
 | :---------- | :---- | :-------------------------- |
 | `tickLower` | int24 | The lower tick of the range |
 | `tickUpper` | int24 | The upper tick of the range |
 
-#### Return Values:
+** Return Values: **
 
 | Name                            | Type    | Description                                         |
 | :------------------------------ | :------ | :-------------------------------------------------- |
@@ -65,13 +57,13 @@ you should call it with `secondsAgos` = [3600, 0].
 The time weighted average tick represents the geometric time weighted average price of the pool, in
 log base sqrt(1.0001) of token1 / token0. The TickMath library can be used to go from a tick value to a ratio of the two tokens in the pool.
 
-#### Parameters:
+** Parameters: **
 
 | Name          | Type     | Description                                                                   |
 | :------------ | :------- | :---------------------------------------------------------------------------- |
 | `secondsAgos` | uint32[] | From how long ago each cumulative tick and liquidity value should be returned |
 
-#### Return Values:
+** Return Values: **
 
 | Name                                 | Type      | Description                                                                                     |
 | :----------------------------------- | :-------- | :---------------------------------------------------------------------------------------------- |
@@ -93,7 +85,7 @@ Increase the maximum number of price and liquidity observations that can be stor
 This method will not modify state if the pool already has an observationLengthNext greater than or equal to
 the input observationLengthNext.
 
-#### Parameters:
+** Parameters: **
 
 | Name                         | Type   | Description                                                      |
 | :--------------------------- | :----- | :--------------------------------------------------------------- |
@@ -111,7 +103,7 @@ Sets the initial price for the pool.
 
 Initializes `unlocked`.
 
-#### Parameters:
+** Parameters: **
 
 | Name           | Type    | Description                                    |
 | :------------- | :------ | :--------------------------------------------- |
@@ -138,7 +130,7 @@ Adds liquidity for the given recipient.
 
 If the tick is outside of this range, this `Position` will not collect fees.
 
-#### Parameters:
+** Parameters: **
 
 | Name        | Type    | Description                                              |
 | :---------- | :------ | :------------------------------------------------------- |
@@ -149,7 +141,7 @@ If the tick is outside of this range, this `Position` will not collect fees.
 | `amount`    | uint128 | The amount of liquidity to mint                          |
 | `data`      | bytes   | Any data that should be passed through to the callback   |
 
-#### Return Values:
+** Return Values: **
 
 | Name      | Type    | Description                                                                                                 |
 | :-------- | :------ | :---------------------------------------------------------------------------------------------------------- |
@@ -176,7 +168,7 @@ Collect must be called by the `Position` NFT owner. To withdraw only token0 or o
 `amount1Requested` may be set to zero. To withdraw all tokens owed, caller may pass any value greater than the
 actual tokens owed, e.g. type(uint128).max. Tokens owed may be from accumulated swap fees or burned liquidity.
 
-#### Parameters:
+** Parameters: **
 
 | Name               | Type    | Description                                              |
 | :----------------- | :------ | :------------------------------------------------------- |
@@ -186,7 +178,7 @@ actual tokens owed, e.g. type(uint128).max. Tokens owed may be from accumulated 
 | `amount0Requested` | uint128 | How much token0 should be withdrawn from the fees owed   |
 | `amount1Requested` | uint128 | How much token1 should be withdrawn from the fees owed   |
 
-#### Return Values:
+** Return Values: **
 
 | Name      | Type    | Description                            |
 | :-------- | :------ | :------------------------------------- |
@@ -207,7 +199,7 @@ Burn liquidity from the sender. `collect` must be called after `burn` to receive
 
 noDelegateCall is applied indirectly via \_modifyPosition
 
-#### Parameters:
+** Parameters: **
 
 | Name        | Type    | Description                                                |
 | :---------- | :------ | :--------------------------------------------------------- |
@@ -215,7 +207,7 @@ noDelegateCall is applied indirectly via \_modifyPosition
 | `tickUpper` | int24   | The upper tick of the position for which to burn liquidity |
 | `amount`    | uint128 | How much liquidity to burn                                 |
 
-#### Return Values:
+** Return Values: **
 
 | Name      | Type    | Description                                |
 | :-------- | :------ | :----------------------------------------- |
@@ -238,7 +230,7 @@ Swap token0 for token1, or token1 for token0
 
 The caller of this method receives a callback in the form of IOceanbookV1SwapCallback. This will ensure that the user interacted with a genuine Oceanbook v1 pool.
 
-#### Parameters:
+** Parameters: **
 
 | Name                | Type    | Description                                                                                                                                                                        |
 | :------------------ | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -248,7 +240,7 @@ The caller of this method receives a callback in the form of IOceanbookV1SwapCal
 | `sqrtPriceLimitX96` | uint160 | The Q64.96 sqrt price limit. If zero for one, the price cannot be less than this value after the swap. If one for zero, the price cannot be greater than this value after the swap |
 | `data`              | bytes   | Any data to be passed through to the callback                                                                                                                                      |
 
-#### Return Values:
+** Return Values: **
 
 | Name      | Type   | Description                                                                                |
 | :-------- | :----- | :----------------------------------------------------------------------------------------- |
@@ -272,7 +264,7 @@ The caller of this method receives a callback in the form of IPoolsharkV1FlashCa
 
 [//]: # (Can be used to donate underlying tokens pro-rata to currently in-range liquidity providers by calling with 0 amount{0,1} and sending the donation amount(s) from the callback)
 
-#### Parameters:
+** Parameters: **
 
 | Name        | Type    | Description                                                  |
 | :---------- | :------ | :----------------------------------------------------------- |
@@ -292,7 +284,7 @@ The caller of this method receives a callback in the form of IPoolsharkV1FlashCa
 
 Set the denominator of the protocol's % share of the fees
 
-#### Parameters:
+** Parameters: **
 
 | Name           | Type  | Description                             |
 | :------------- | :---- | :-------------------------------------- |
@@ -311,7 +303,7 @@ Set the denominator of the protocol's % share of the fees
 
 Collect the protocol fee accrued to the pool
 
-#### Parameters:
+** Parameters: **
 
 | Name               | Type    | Description                                                                   |
 | :----------------- | :------ | :---------------------------------------------------------------------------- |
@@ -319,9 +311,12 @@ Collect the protocol fee accrued to the pool
 | `amount0Requested` | uint128 | The maximum amount of token0 to send, can be 0 to collect fees in only token1 |
 | `amount1Requested` | uint128 | The maximum amount of token1 to send, can be 0 to collect fees in only token0 |
 
-#### Return Values:
+** Return Values: **
 
 | Name      | Type    | Description                          |
 | :-------- | :------ | :----------------------------------- |
 | `amount0` | uint128 | The protocol fee collected in token0 |
 | `amount1` | uint128 | The protocol fee collected in token1 |
+
+<br/><br/>
+<br/><br/>

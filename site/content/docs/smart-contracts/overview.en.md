@@ -5,7 +5,7 @@ The smart contract's base job is to provide fundamental guarantees for all relev
 
 ## Base
 
-> [**OceanBook Source Code**](https://github.com/PoolShark/oceanbook-v1)
+> [**OceanBook Source Code**](https://github.com/Poolshark/oceanbook-v1)
 
 The base consists of a factory contract, a router, and the book contract which will be launched by the factory.
 
@@ -40,7 +40,7 @@ Books contain both automated and queued market makers for the paired assets. Add
 
 > [**OceanBook Router Interface**](https://docs.poolsharks.io/docs/smart-contracts/v1/interfaces/IOceanBookRouter.en.md)
 
-The router will serve as the gateway for the PoolShark UI to plug into the smart contracts on-chain. It natively supports single trades and multihop trades amongst pools and books.
+The router will serve as the gateway for the Poolshark UI to plug into the smart contracts on-chain. It natively supports single trades and multihop trades amongst pools and books.
 
 ### Liquidity Position Manager
 
@@ -55,3 +55,5 @@ The liquidity position manager will allow for the minting, burning, updating, an
 > [**Oracle Reference**](https://docs.uniswap.org/protocol/reference/base/libraries/Oracle)
 
 The oracle library allows for price and liquidity data to be aggregated for a wide variety of use cases both on-chain and off-chain. This oracle data is turned on by default in all books and pools.
+
+<br/><br/><br/><br/>

@@ -4,7 +4,7 @@ site_url: https://poolsharks-protocol.github.io/oceanbook-docs/
 repo_name: 'GitHub'
 repo_url: 'https://github.com/poolsharks-protocol/oceanbook-docs/'
 edit_uri: '/poolsharks-protocol/DCEX-Docs/tree/main/site/content'
-copyright: 'Written by PoolSharks Labs'
+copyright: 'Written by Poolsharks Labs'
 docs_dir: 'site/content'
 site_dir: 'docs'
 extra_css:
@@ -63,13 +63,25 @@ nav:
           - Callback: docs/tutorials/flash-swaps/callback.en.md
   - Smart Contracts:
       - Overview: docs/smart-contracts/overview.en.md
-      - Solidity Base: 
-          - PoolsharkPairFactory: docs/smart-contracts/base/PoolsharkPairFactory.en.md
-          - PoolsharkPair: docs/smart-contracts/base/PoolsharkPair.en.md
+      - Base: 
           - PoolsharkBookFactory: docs/smart-contracts/base/PoolsharkBookFactory.en.md
           - PoolsharkBook: docs/smart-contracts/base/PoolsharkBook.en.md
-          - Interfacing With: docs/smart-contracts/base/interfacing-with.en.md
-          - Libraries: docs/smart-contracts/base/libraries.en.md
+          - PoolsharkPairFactory: docs/smart-contracts/base/PoolsharkPairFactory.en.md
+          - PoolsharkPair: docs/smart-contracts/base/PoolsharkPair.en.md
+          - PoolsharkQueueFactory: docs/smart-contracts/base/PoolsharkQueueFactory.en.md
+          - PoolsharkQueue: docs/smart-contracts/base/PoolsharkQueue.en.md
+      - Libraries:
+          - BitMath: docs/smart-contracts/libraries/BitMath.en.md
+          - FullMath: docs/smart-contracts/libraries/FullMath.en.md
+          - LiquidityMath: docs/smart-contracts/libraries/LiquidityMath.en.md
+          - Oracle: docs/smart-contracts/libraries/Oracle.en.md
+          - Position: docs/smart-contracts/libraries/Position.en.md
+          - SqrtPriceMath: docs/smart-contracts/libraries/SqrtPriceMath.en.md
+          - SwapMath: docs/smart-contracts/libraries/SwapMath.en.md
+          - Tick: docs/smart-contracts/libraries/Tick.en.md
+          - TickBitmap: docs/smart-contracts/libraries/TickBitmap.en.md
+          - TickMath: docs/smart-contracts/libraries/TickMath.en.md
+          - UnsafeMath: docs/smart-contracts/libraries/UnsafeMath.en.md
 
  
   

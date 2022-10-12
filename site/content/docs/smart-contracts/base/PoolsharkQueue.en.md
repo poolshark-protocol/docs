@@ -18,7 +18,7 @@ Each `Page` is a price tick that contains a collection of orders.
 
 Returns the `pagePrice` given the token being swapped in as well as the `takerAmount` and `makerAmount`.
 
-#### Parameters:
+** Parameters: **
 
 | Name        | Type  | Description                 |
 | :---------- | :---- | :-------------------------- |
@@ -26,7 +26,7 @@ Returns the `pagePrice` given the token being swapped in as well as the `takerAm
 | `takerAmount` | uint256 | The amount of the token swapped in or received by the liquidity provider |
 | `makerAmount` | uint256 | The amount of the token swapped into or provided by the liquidity provider |
 
-#### Return Values:
+** Return Values: **
 
 | Name                            | Type    | Description                                         |
 | :------------------------------ | :------ | :-------------------------------------------------- |
@@ -44,7 +44,7 @@ Returns the `pagePrice` given the token being swapped in as well as the `takerAm
 
 Returns the `pageKey` given the token being swapped in (i.e. `takerToken`) as well as the `takerAmount` and `makerAmount`.
 
-#### Parameters:
+** Parameters: **
 
 | Name        | Type  | Description                 |
 | :---------- | :---- | :-------------------------- |
@@ -52,7 +52,7 @@ Returns the `pageKey` given the token being swapped in (i.e. `takerToken`) as we
 | `takerAmount` | uint256 | The amount of the token swapped in or received by the liquidity provider |
 | `makerAmount` | uint256 | The amount of the token swapped into or provided by the liquidity provider |
 
-#### Return Values:
+** Return Values: **
 
 | Name                            | Type    | Description                                         |
 | :------------------------------ | :------ | :-------------------------------------------------- |
@@ -70,7 +70,7 @@ Returns the `pageKey` given the token being swapped in (i.e. `takerToken`) as we
 
 Returns the `orderKey` given the `owner` address as well as the `pageKey` and `endOffset`.
 
-#### Parameters:
+** Parameters: **
 
 | Name        | Type    | Description                                     |
 | :---------- | :------ | :---------------------------------------------- |
@@ -78,7 +78,7 @@ Returns the `orderKey` given the `owner` address as well as the `pageKey` and `e
 | `pageKey`   | uint256 | The page key for which the `Order` is linked to |
 | `endOffset` | uint256 | The offset representing the end of the `Order`  |
 
-#### Return Values:
+** Return Values: **
 
 | Name                            | Type    | Description                                         |
 | :------------------------------ | :------ | :-------------------------------------------------- |
@@ -101,7 +101,7 @@ Executes or creates a limit order. If `makerOnly` is set to `true`, liquidity wi
 
 Note: a token `approve()` call required prior with the amount `fromAmount`. 
 
-#### Parameters:
+** Parameters: **
 
 | Name        | Type    | Description                                    |
 | :---------- | :------ | :--------------------------------------------- |
@@ -112,7 +112,7 @@ Note: a token `approve()` call required prior with the amount `fromAmount`.
 | `makerOnly` | bool    | Default false; set true to force liquidity add |
 | `takerOnly` | bool    | Default false; set true to force liquidity swap|
 
-#### Return Values:
+** Return Values: **
 
 | Name                            | Type    | Description                                         |
 | :------------------------------ | :------ | :-------------------------------------------------- |
@@ -132,7 +132,7 @@ Note: a token `approve()` call required prior with the amount `fromAmount`.
 
 Claims an executed limit order(s). If `amount` is greater than the actual amount in the order, the entire amount will be claimed.
 
-#### Parameters:
+** Parameters: **
 
 | Name         | Type      | Description                                     |
 | :----------- | :-------- | :---------------------------------------------- |
@@ -140,7 +140,7 @@ Claims an executed limit order(s). If `amount` is greater than the actual amount
 | `endOffsets` | uint256[] | The page key for which the `Order` is linked to |
 | `amounts`    | uint256[] | The offset representing the end of the `Order`  |
 
-#### Return Values:
+** Return Values: **
 
 | Name                            | Type    | Description                                         |
 | :------------------------------ | :------ | :-------------------------------------------------- |
@@ -160,7 +160,7 @@ Cancels an existing limit order(s). If `amount` is greater than the actual amoun
 
 Note: If the amount left in the order would be less than the `makerTier`, the minimum order size, the order will remain unmodified.
 
-#### Parameters:
+** Parameters: **
 
 | Name         | Type      | Description                                     |
 | :----------- | :-------- | :---------------------------------------------- |
@@ -168,7 +168,7 @@ Note: If the amount left in the order would be less than the `makerTier`, the mi
 | `endOffsets` | uint256[] | The end offset of each `Order` being cancelled  |
 | `amounts`    | uint256[] | The amounts being cancelled from each `Order`   |
 
-#### Return Values:
+** Return Values: **
 
 | Name                            | Type    | Description                                         |
 | :------------------------------ | :------ | :-------------------------------------------------- |
@@ -188,7 +188,7 @@ Gives a quote based on the `fromAmount` desired and the liquidity in the book.
 
 Liquidity will be checked up to and including the specified `limitPrice`.
 
-#### Parameters:
+** Parameters: **
 
 | Name         | Type    | Description                                            |
 | :----------- | :------ | :----------------------------------------------------- |
@@ -196,7 +196,7 @@ Liquidity will be checked up to and including the specified `limitPrice`.
 | `fromAmount` | uint256 | The amount of `fromToken` that would be transferred in |
 | `limitPrice` | uint256 | The `pagePrice` value to swap up to                    |
 
-#### Return Values:
+** Return Values: **
 
 | Name                            | Type    | Description                                         |
 | :------------------------------ | :------ | :-------------------------------------------------- |
@@ -217,7 +217,7 @@ Gives a quote based on the `destAmount` desired and the liquidity in the book.
 
 Liquidity will be checked up to and including the specified `limitPrice`.
 
-#### Parameters:
+** Parameters: **
 
 | Name         | Type    | Description                                            |
 | :----------- | :------ | :----------------------------------------------------- |
@@ -225,7 +225,7 @@ Liquidity will be checked up to and including the specified `limitPrice`.
 | `destAmount` | uint256 | The amount of `destToken` that would be transferred in |
 | `limitPrice` | uint256 | The `pagePrice` value to swap up to                    |
 
-#### Return Values:
+** Return Values: **
 
 | Name                            | Type    | Description                                         |
 | :------------------------------ | :------ | :-------------------------------------------------- |
