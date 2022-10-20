@@ -31,16 +31,15 @@ nav:
     - Overview: docs/protocol-guide/index.en.md
     - Liquidity Types: 
         - Intro: docs/protocol-guide/index.en.md
-        - Concentrated Liquidity: docs/liquidity-providers/concentrated-liq.en.md
-        - Directional Liquidity: docs/liquidity-providers/directional-liq.en.md
-        - Directional Range Orders: docs/liquidity-providers/directional-range-order.en.md
+        - Concentrated Liquidity: docs/liquidity-providers/double-sided.en.md
+        - Directional Liquidity: docs/liquidity-providers/single-sided.en.md
         - Priority Queues: docs/fungible-queues/index.en.md
         - QMM Core Concepts: docs/queued-market-making/index.en.md
         - For Market Makers: docs/queued-market-making/set-liquidity.en.md
         - MEV Related Risks: docs/queued-market-making/mev-related-risks.en.md
         - The Simple Explanation: docs/fungible-queues/the-simple-explanation.en.md
         - A Technical History: docs/fungible-queues/a-technical-history.en.md
-    #- Oracles: docs/protocol-guide/oracles.en.md
+    - Oracles: docs/protocol-guide/oracles.en.md
     - MultiPage Orders: docs/protocol-guide/multipage-orders.en.md
     - Swaps: docs/protocol-guide/swaps.en.md
     - Fees: docs/protocol-guide/fees.en.md
