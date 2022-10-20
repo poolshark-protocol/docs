@@ -4,7 +4,7 @@ site_url: https://poolsharks-protocol.github.io/oceanbook-docs/
 repo_name: 'GitHub'
 repo_url: 'https://github.com/poolsharks-protocol/oceanbook-docs/'
 edit_uri: '/poolsharks-protocol/DCEX-Docs/tree/main/site/content'
-copyright: 'Written by Poolsharks Labs'
+copyright: 'Written by Poolshark Labs'
 docs_dir: 'site/content'
 site_dir: 'docs'
 extra_css:
@@ -39,7 +39,7 @@ nav:
         - MEV Related Risks: docs/queued-market-making/mev-related-risks.en.md
         - The Simple Explanation: docs/fungible-queues/the-simple-explanation.en.md
         - A Technical History: docs/fungible-queues/a-technical-history.en.md
-    - Oracles: docs/protocol-guide/oracles.en.md
+    #- Oracles: docs/protocol-guide/oracles.en.md
     - MultiPage Orders: docs/protocol-guide/multipage-orders.en.md
     - Swaps: docs/protocol-guide/swaps.en.md
     - Fees: docs/protocol-guide/fees.en.md
