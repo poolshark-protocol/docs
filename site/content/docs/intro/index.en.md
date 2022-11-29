@@ -2,15 +2,15 @@
 title: Introduction
 some_url: https://github.com/daifoundation/maker-otc
 ---
-># **What is OceanBook?**
+># **What is Poolshark?**
 
-The OceanBook protocol is a peer-to-peer decentralized exchange which introduces efficient <em>price-time priority</em> into the world of decentralized exchanges.
+The Poolshark Protocol is a peer-to-peer decentralized exchange which introduces efficient <em>price-time priority</em> into the world of decentralized exchanges.
 
-It has elements of a traditional `Central Limit Order Book (CLOB)` as well as that of an `Concentrated Liquidity Market Maker` (CFMM) such as Uniswap v3. Users will be able to have all the typical features they would usually expect along with ways to limit exposure to a single side.
+It has elements of a traditional `Concentrated Liquidity Market Maker` (CFMM) such as Uniswap v3. Users will be able to have all the typical features they would usually expect along with ways to limit exposure to a single side.
 <br/><br/>
 ![Screenshot](book_screenshot.png){: .center style=""}
 <br/>
-<em>Features unique to OceanBook:</em>
+<em>Features unique to Poolshark:</em>
 ```
 > Directional LPing for single-sided risk
 > Fungible Queues to capture fees on large trades
