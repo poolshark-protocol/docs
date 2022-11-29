@@ -3,7 +3,7 @@ site_name: Poolshark Docs
 site_url: https://poolsharks-protocol.github.io/oceanbook-docs/
 repo_name: 'GitHub'
 repo_url: 'https://github.com/poolsharks-protocol/oceanbook-docs/'
-edit_uri: '/poolsharks-protocol/DCEX-Docs/tree/main/site/content'
+edit_uri: '/poolsharks-protocol/docs/tree/main/site/content'
 copyright: 'Written by Poolshark Labs'
 docs_dir: 'site/content'
 site_dir: 'docs'
@@ -31,7 +31,7 @@ nav:
     - Overview: docs/protocol-guide/index.en.md
     - Liquidity Types: 
         - Intro: docs/protocol-guide/index.en.md
-        - Concentrated Liquidity: docs/liquidity-providers/double-sided.en.md
+        - Concentrated Liquidity: docs/liquidity-providers/concentrated-liquidity.en.md
         - Directional Liquidity: docs/liquidity-providers/single-sided.en.md
         - Priority Queues: docs/fungible-queues/index.en.md
         - QMM Core Concepts: docs/queued-market-making/index.en.md
