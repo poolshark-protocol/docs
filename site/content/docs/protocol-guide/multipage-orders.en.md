@@ -1,6 +1,6 @@
 # MultiPage Orders
 
-A `MultiPage Order` represents an order that will be filled by aggregating liquidity from several ticks of the available liquidity on `OceanBook`. In other terms, a tick can be considered to be a specific current price point for a given asset, and by aggregating several ticks worth of liquidity slippage can be reduced significantly, being that the average rounded current price will fluctuate less than in single-page orders. This is possible due to the use of several `Concentrated Liquidity` ranges from different LPs and by taking into account previous ticks (or pricepoints) from all liquidity sources and not just the current one. 
+A `MultiPage Order` represents an order that will be filled by aggregating liquidity from several ticks of the available liquidity on `Poolshark`. In other terms, a tick can be considered to be a specific current price point for a given asset, and by aggregating several ticks worth of liquidity slippage can be reduced significantly, being that the average rounded current price will fluctuate less than in single-page orders. This is possible due to the use of several `Concentrated Liquidity` ranges from different LPs and by taking into account previous ticks (or pricepoints) from all liquidity sources and not just the current one. 
 
 ### MultiPage vs SinglePage
 

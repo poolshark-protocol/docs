@@ -17,7 +17,7 @@ A `Topic` here can be equated to a `Page` in each `Book` contract. When you writ
 
 While we only have synchronous processing in the context of a blockchain, this concept of an `Offset` does allow us to tell `Producers`, otherwise known as `Market Makers` in the context of orderbooks, when their `Order` has been filled.
 
-The `Offset` in the context of OceanBook simply plays the role of tracking how much volume has occurred on a given `Page` and relating that to the point where the `Market Maker` pushed their `Order` to the queue.
+The `Offset` in the context of Poolshark simply plays the role of tracking how much volume has occurred on a given `Page` and relating that to the point where the `Market Maker` pushed their `Order` to the queue.
 
 <br/>
 <br/>

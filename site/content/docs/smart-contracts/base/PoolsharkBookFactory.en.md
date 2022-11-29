@@ -1,4 +1,4 @@
-Launches OceanBook v1 books, manages ownership controls, fee accrual, and maker size. 
+Launches Poolshark v1 books, manages ownership controls, fee accrual, and maker size. 
 
 ## Functions
 

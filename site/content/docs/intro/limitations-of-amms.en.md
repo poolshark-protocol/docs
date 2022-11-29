@@ -36,9 +36,9 @@ will bring the price on the AMM pool up to par.
 
 What this demonstrates is that passive pricing from Automated Market Makers cannot surpass the efficiency of active pricing from a Central Limit Order Book. The scalability issues of the blockchain are what prevent this limitation from being surpassed.
 
->### **Slippage Solutions Within OceanBook**
+>### **Slippage Solutions Within Poolshark**
 
-The OceanBook Protocol enables market makers to undercut the current market price and receive fees accordingly.
+The Poolshark Protocol enables market makers to undercut the current market price and receive fees accordingly.
 
 This can happen in namely two ways:
 ```

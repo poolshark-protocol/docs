@@ -37,7 +37,7 @@ Sandwich attacks involve an MEV attacker seeing that Alice wants to buy a specif
 
 Then, Alice's transaction will execute, pushing the price of `TokenA` higher. The miner will then sell the `TokenB` bought earlier at a higher price and thus profit.
 
-In the case of OceanBook, this attack will still be possible as long as the miner is willing to sell alice `TokenB` at or below her limit price.
+In the case of Poolshark, this attack will still be possible as long as the miner is willing to sell alice `TokenB` at or below her limit price.
 
 <br/>
 <br/>

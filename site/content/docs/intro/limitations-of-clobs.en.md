@@ -18,7 +18,7 @@ It doesn't make sense to have a small maker order in a traditional CLOB on-chain
 
 ### **Mistakes of the Past: Where Decentralized Orderbooks Have Fallen Short**
 
-There is one guiding principle which sets OceanBook apart from other on-chain orderbook protocols.
+There is one guiding principle which sets Poolshark apart from other on-chain orderbook protocols.
 
 This is the ability to have a `closed-form expression`, meaning there is a finite amount of computation that will take place given some amount of liquidity required.
 
@@ -26,7 +26,7 @@ This is the ability to have a `closed-form expression`, meaning there is a finit
 <br/>
 <br/>
 
-OceanBook is designed specifically to solve this core UX problem.
+Poolshark is designed specifically to solve this core UX problem.
 #### **Maker OTC by the Dai Foundation**
 
 [Maker OTC](https://github.com/daifoundation/maker-otc) was an attempt at an on-chain orderbook with the following in its `README.md`:

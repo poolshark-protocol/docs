@@ -1,4 +1,4 @@
-Launches OceanBook v1 pools and managers ownership controls as well as fee accrual if enabled. 
+Launches Poolshark v1 pools and managers ownership controls as well as fee accrual if enabled. 
 
 ## Functions
 

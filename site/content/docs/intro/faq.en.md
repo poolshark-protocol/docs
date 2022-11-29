@@ -1,4 +1,4 @@
-### **How does the OceanBook protocol compare to a traditional centralized exchange orderbook?**
+### **How does the Poolshark protocol compare to a traditional centralized exchange orderbook?**
 
 In comparison to a centralized exchange orderbook, on-chain limit order books cannot be equally expressive without encountering scalability issues.
 

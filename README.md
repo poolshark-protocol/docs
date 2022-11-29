@@ -1,4 +1,4 @@
-# OceanBook Docs
+# Poolshark Docs
 
 Welcome to the Oceanbook Documentaion Repo. Check out the full docs [here](https://docs.poolsharks.io)!
 
