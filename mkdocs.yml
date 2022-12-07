@@ -24,7 +24,7 @@ extra:
 nav:
   - Home: index.en.md
   - Introduction: 
-    - What is Poolshark?: docs/curves/plot_0.py
+    - What is Poolshark?: docs/intro/index.en.md
     - Limitations of AMMs: docs/intro/limitations-of-amms.en.md
     - Limitations of CLOBs: docs/intro/limitations-of-clobs.en.md
     - Launch Strategy: docs/intro/launch.en.md
