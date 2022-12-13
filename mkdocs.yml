@@ -27,40 +27,16 @@ nav:
     - What is Poolshark?: docs/intro/index.en.md
     - Limitations of AMMs: docs/intro/limitations-of-amms.en.md
     - Limitations of CLOBs: docs/intro/limitations-of-clobs.en.md
+    - Launch Strategy: docs/intro/launch.en.md
   - Protocol Guide:
-    - Overview: docs/protocol-guide/index.en.md
     - Liquidity Types: 
-        - Intro: docs/protocol-guide/index.en.md
         - Concentrated Liquidity: docs/liquidity-providers/concentrated-liquidity.en.md
-        - Directional Liquidity: docs/liquidity-providers/single-sided.en.md
-        - Priority Queues: docs/fungible-queues/index.en.md
-        - QMM Core Concepts: docs/queued-market-making/index.en.md
-        - For Market Makers: docs/queued-market-making/set-liquidity.en.md
-        - MEV Related Risks: docs/queued-market-making/mev-related-risks.en.md
-        - The Simple Explanation: docs/fungible-queues/the-simple-explanation.en.md
-        - A Technical History: docs/fungible-queues/a-technical-history.en.md
-    - Oracles: docs/protocol-guide/oracles.en.md
-    - MultiPage Orders: docs/protocol-guide/multipage-orders.en.md
+        - Directional Liquidity: docs/liquidity-providers/directional-liquidity.en.md
+        - Single-Sided Liquidity: docs/liquidity-providers/single-sided.en.md
+        - Directional Range Orders: docs/liquidity-providers/directional-range-order.en.md
     - Swaps: docs/protocol-guide/swaps.en.md
     - Fees: docs/protocol-guide/fees.en.md
-    - References:
-        - Limit Order Books: docs/references/limit-order-books.en.md
-        - Automated Market Makers: docs/references/automated-market-makers.en.md
-  # - Tutorials:
-  #     - Basic Setup: docs/tutorials/basic-setup.en.md
-  #     - Swaps: 
-  #         - Single: docs/tutorials/swaps/single.en.md
-  #         - Multicall: docs/tutorials/swaps/multicall.en.md
-  #     - Liquidity: 
-  #         - Contract Setup: docs/tutorials/liquidity/contract-setup.en.md
-  #         - Mint Position: docs/tutorials/liquidity/mint-position.en.md
-  #         - Collect Fees: docs/tutorials/liquidity/collect-fees.en.md
-  #         - Modify Liquidity: docs/tutorials/liquidity/change-position.en.md
-  #     - Mining Incentives: docs/tutorials/liquidity/mining-incentives.en.md
-  #     - Flash Swaps: 
-  #         - Contract Setup: docs/tutorials/flash-swaps/contract-setup.en.md
-  #         - Execution: docs/tutorials/flash-swaps/execution.en.md
-  #         - Callback: docs/tutorials/flash-swaps/callback.en.md
+    - Oracles: docs/protocol-guide/oracles.en.md
   - Smart Contracts:
       - Overview: docs/smart-contracts/overview.en.md
       - Base: 
@@ -82,6 +58,32 @@ nav:
           - TickBitmap: docs/smart-contracts/libraries/TickBitmap.en.md
           - TickMath: docs/smart-contracts/libraries/TickMath.en.md
           - UnsafeMath: docs/smart-contracts/libraries/UnsafeMath.en.md
+  - Upcoming Features:
+    - Fungible Queues:
+        - Priority Queues: docs/fungible-queues/index.en.md
+        - The Simple Explanation: docs/fungible-queues/the-simple-explanation.en.md
+        - A Technical History: docs/fungible-queues/a-technical-history.en.md
+        - QMM Core Concepts: docs/queued-market-making/index.en.md
+        - Queuing Orders: docs/queued-market-making/set-liquidity.en.md
+        - MEV Related Risks: docs/queued-market-making/mev-related-risks.en.md
+  - References:
+    - Limit Order Books: docs/references/limit-order-books.en.md
+    - Automated Market Makers: docs/references/automated-market-makers.en.md
+# - Tutorials:
+#     - Basic Setup: docs/tutorials/basic-setup.en.md
+#     - Swaps: 
+#         - Single: docs/tutorials/swaps/single.en.md
+#         - Multicall: docs/tutorials/swaps/multicall.en.md
+#     - Liquidity: 
+#         - Contract Setup: docs/tutorials/liquidity/contract-setup.en.md
+#         - Mint Position: docs/tutorials/liquidity/mint-position.en.md
+#         - Collect Fees: docs/tutorials/liquidity/collect-fees.en.md
+#         - Modify Liquidity: docs/tutorials/liquidity/change-position.en.md
+#     - Mining Incentives: docs/tutorials/liquidity/mining-incentives.en.md
+#     - Flash Swaps: 
+#         - Contract Setup: docs/tutorials/flash-swaps/contract-setup.en.md
+#         - Execution: docs/tutorials/flash-swaps/execution.en.md
+#         - Callback: docs/tutorials/flash-swaps/callback.en.md
 
  
   
