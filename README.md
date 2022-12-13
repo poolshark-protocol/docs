@@ -1,6 +1,6 @@
 # Poolshark Docs
 
-Welcome to the Oceanbook Documentaion Repo. Check out the full docs [here](https://docs.poolsharks.io)!
+Welcome to the Poolshark Documentaion Repo. Check out the full docs [here](https://docs.poolsharks.io).
 
 Local build:
 **UNIX**

@@ -16,12 +16,6 @@ Takers encounter this problem namely when there are zero restrictions on maker o
 
 It doesn't make sense to have a small maker order in a traditional CLOB on-chain because the amount of fees you will make in return will not surpass the amount of gas you spent to make a single order.
 
-### **Mistakes of the Past: Where Decentralized Orderbooks Have Fallen Short**
-
-There is one guiding principle which sets Poolshark apart from other on-chain orderbook protocols.
-
-This is the ability to have a `closed-form expression`, meaning there is a finite amount of computation that will take place given some amount of liquidity required.
-
 > **<em>For X amount of gas spent, a taker must receive Y liquidity.</em>**
 <br/>
 <br/>

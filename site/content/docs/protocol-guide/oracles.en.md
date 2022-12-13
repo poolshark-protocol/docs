@@ -6,7 +6,7 @@ Oracles are crucial for the proper functioning of the protocol since accurate an
 
 ### What is TWAP?
 
-`TWAP` stands for `Time Weighted Average Price` which is the measure of an assets' average price over a given time interval. The goal of using `TWAP` is optimizing a trade's average price over the course of the selected time interval, being that it adds more liquidity depth into the orderbook.
+`TWAP` stands for `Time Weighted Average Price` which is the measure of an assets' average price over a given time interval. The goal of using `TWAP` is optimizing a trade's average price over the course of the selected time interval.
 
 ### How does it work?
 
