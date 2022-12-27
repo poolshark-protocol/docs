@@ -1,5 +1,9 @@
 ### **What will be the launch strategy?**
 
+Directional liquidity allows LPs to adopt a buy-and-hold strategy, which is statistically ideal for long-term investing.
+
+![Screenshot](hodl_returns.jpg){: .center style=""}
+
 #### Implementation Details
 
 The protocol will be implemented as a set of non-upgradable smart contracts to enable full permissionless access and protect against censorship resistance.
