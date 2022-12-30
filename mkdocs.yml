@@ -25,47 +25,52 @@ nav:
   - Home: index.en.md
   - Introduction: 
     - What is Poolshark?: docs/intro/index.en.md
-    - Limitations of AMMs: docs/intro/limitations-of-amms.en.md
-    - Limitations of CLOBs: docs/intro/limitations-of-clobs.en.md
-    - Launch Strategy: docs/intro/launch.en.md
+    - Cover Pools: docs/intro/cover-pools.en.md
+    - Price Pools: docs/intro/price-pools.en.md
+    - Range Pools: docs/intro/range-pools.en.md
+    - Tokenomics Overview: docs/intro/launch.en.md
   - Protocol Guide:
-    - Liquidity Types: 
-        - Concentrated Liquidity: docs/liquidity-providers/concentrated-liquidity.en.md
+    - Liquidity Types:
         - Directional Liquidity: docs/liquidity-providers/directional-liquidity.en.md
-        - Single-Sided Liquidity: docs/liquidity-providers/single-sided.en.md
-        - Directional Range Orders: docs/liquidity-providers/directional-range-order.en.md
+        - Cover Liquidity: docs/liquidity-providers/single-sided.en.md
+        - Price Liquidity: docs/liquidity-providers/directional-range-order.en.md
+        - Range Liquidity: docs/liquidity-providers/concentrated-liquidity.en.md
     - Swaps: docs/protocol-guide/swaps.en.md
+    - Mints: docs/protocol-guide/mints.en.md
+    - Burn: docs/protocol-guide/burn.en.md
     - Fees: docs/protocol-guide/fees.en.md
     - Oracles: docs/protocol-guide/oracles.en.md
   - Smart Contracts:
       - Overview: docs/smart-contracts/overview.en.md
       - Base: 
-          - PoolsharkBookFactory: docs/smart-contracts/base/PoolsharkBookFactory.en.md
-          - PoolsharkBook: docs/smart-contracts/base/PoolsharkBook.en.md
-          - PoolsharkPairFactory: docs/smart-contracts/base/PoolsharkPairFactory.en.md
-          - PoolsharkPair: docs/smart-contracts/base/PoolsharkPair.en.md
-          - PoolsharkQueueFactory: docs/smart-contracts/base/PoolsharkQueueFactory.en.md
-          - PoolsharkQueue: docs/smart-contracts/base/PoolsharkQueue.en.md
+          - PoolsharkCoverPairFactory: docs/smart-contracts/base/PoolsharkBookFactory.en.md
+          - PoolsharkCoverPair: docs/smart-contracts/base/PoolsharkBook.en.md
+          - PoolsharkPricePairFactory: docs/smart-contracts/base/PoolsharkPairFactory.en.md
+          - PoolsharkPricePair: docs/smart-contracts/base/PoolsharkPair.en.md
+          - PoolsharkRangePairFactory: docs/smart-contracts/base/PoolsharkQueueFactory.en.md
+          - PoolsharkRangePair: docs/smart-contracts/base/PoolsharkQueue.en.md
       - Libraries:
-          - BitMath: docs/smart-contracts/libraries/BitMath.en.md
-          - FullMath: docs/smart-contracts/libraries/FullMath.en.md
-          - LiquidityMath: docs/smart-contracts/libraries/LiquidityMath.en.md
-          - Oracle: docs/smart-contracts/libraries/Oracle.en.md
-          - Position: docs/smart-contracts/libraries/Position.en.md
-          - SqrtPriceMath: docs/smart-contracts/libraries/SqrtPriceMath.en.md
-          - SwapMath: docs/smart-contracts/libraries/SwapMath.en.md
-          - Tick: docs/smart-contracts/libraries/Tick.en.md
-          - TickBitmap: docs/smart-contracts/libraries/TickBitmap.en.md
+          - DyDxMath: docs/smart-contracts/libraries/LiquidityMath.en.md
+          - FullPrecisionMath: docs/smart-contracts/libraries/Oracle.en.md
           - TickMath: docs/smart-contracts/libraries/TickMath.en.md
+          - Ticks: docs/smart-contracts/libraries/Tick.en.md
+      - Utils:
+          - MathUtils: docs/smart-contracts/libraries/Position.en.md
+          - PoolsharkErrors: docs/smart-contracts/libraries/Position.en.md
+          - RebaseLibrary: docs/smart-contracts/libraries/Position.en.md
+          - SafeCast: docs/smart-contracts/libraries/SqrtPriceMath.en.md
+          - SafeTransfers: docs/smart-contracts/libraries/UnsafeMath.en.md
           - UnsafeMath: docs/smart-contracts/libraries/UnsafeMath.en.md
-  - Upcoming Features:
-    - Fungible Queues:
-        - Priority Queues: docs/fungible-queues/index.en.md
-        - The Simple Explanation: docs/fungible-queues/the-simple-explanation.en.md
-        - A Technical History: docs/fungible-queues/a-technical-history.en.md
-        - QMM Core Concepts: docs/queued-market-making/index.en.md
-        - Queuing Orders: docs/queued-market-making/set-liquidity.en.md
-        - MEV Related Risks: docs/queued-market-making/mev-related-risks.en.md
+      - Token Economy:
+          - Centuplicate Mining: docs/smart-contracts/libraries/UnsafeMath.en.md
+  # - Unique Features:
+  #   - Default Positions:
+  #       - Priority Queues: docs/fungible-queues/index.en.md
+  #       - The Simple Explanation: docs/fungible-queues/the-simple-explanation.en.md
+  #       - A Technical History: docs/fungible-queues/a-technical-history.en.md
+  #       - QMM Core Concepts: docs/queued-market-making/index.en.md
+  #       - Queuing Orders: docs/queued-market-making/set-liquidity.en.md
+  #       - MEV Related Risks: docs/queued-market-making/mev-related-risks.en.md
   - References:
     - Limit Order Books: docs/references/limit-order-books.en.md
     - Automated Market Makers: docs/references/automated-market-makers.en.md
@@ -114,8 +119,8 @@ theme:
   palette:
     primary: white
   font: false
-  logo: assets/images/Logo.svg
-  favicon: assets/images/Logo.svg
+  logo: assets/images/Logo-removebg.png
+  favicon: assets/images/Logo-removebg.png
   icon:
     repo: fontawesome/brands/github
   language: en

@@ -308,8 +308,8 @@
     <div class="md-grid md-typeset">
       <div class="md-main__inner">
         <div>
-          <h1>The OrderBook protocol for<br/>price time priority on Ethereum</h1>
-          <p>Poolshark is an open source web3 protocol that makes it easy for users, protocols, and DAOs to set limit orders all in one aggregated orderbook.
+          <h1>A decentralized protocol for<br/>directional liquidity</h1>
+          <p>Poolshark is an open-source web3 protocol that makes it easy for users, protocols, and DAOs to catch directional moves with their liquidity.
           </p>
           <a
             href="docs/intro/"
@@ -336,21 +336,20 @@
 
   <div class="md-container secondary-section">
     <div class="g">
-      <!-- Architecture as building blocks -->
       <div class="section">
         <div class="component-wrapper">
           <div class="first-column">
-            <h3>Get started with a single transaction</h3>
+            <h3>Get started with a single position</h3>
             <p>
-              Run a <span class="em">single transcation</span> to quickly get started placing orders with other
-              users on Ethereum and view the status of your orders via the Poolshark Subgraph (coming soon).
+              View your <span class="em">Uniswap v3 Position NFTs</span> to quickly get started hedging potential impermanent loss,
+              or average into positions when the price enters your range.
             </p>
             <p>
-              Poolshark provides an orderbook for users to make their desires to exchange
-              at a set price visible and public to the rest of the Ethereum ecosystem.
+              Poolshark provides Cover and Price pools for users to express their desire to enter or exit a directional position
+              over some range. Range pools support bidirectional liquidity and offer default positions for truly passive LPing.
             </p>
             <p>
-              Trade your favorite tokens via buy and sell orders to catch sharp 
+              Trade your favorite tokens with price priority to catch sharp 
               movements in price or set a long-term price target. All with the security of
               an immutable and permissionless on-chain exchange.
             </p>
@@ -358,7 +357,7 @@
           <div class="second-column">
             <div class="image-wrapper">
               <img
-                src="{{config.site_url}}assets/images/oceanbook-subgraph.png"
+                src="{{config.site_url}}assets/images/cover.png"
                 alt=""
                 draggable="false"
               >
@@ -380,14 +379,14 @@
                 <div class="card-content">
                   <h5>Introduction</h5>
                   <p>
-                    Learn more about Poolshark and explore the expansive ecosystem.
+                    Learn more about Poolshark and explore the complete protocol offering.
                   </p>
                 </div>
               </div>
             </a>
 
             <!-- Networking -->
-            <a class="card-wrapper" href="fungible-queues">
+            <a class="card-wrapper" href="liquidity-providers">
               <div class="card">
                 <div class="logo">
                   <span class="twemoji">
@@ -395,16 +394,16 @@
                   </span>
                 </div>
                 <div class="card-content">
-                  <h5>Fungible Queues</h5>
+                  <h5>Liquidity Providers</h5>
                   <p>
-                    Explore how Poolshark provides an aggregation layer for limit orders.
+                    Explore how Poolshark can be leveraged as a liquidity provider.
                   </p>
                 </div>
               </div>
             </a>
 
             <!-- Customize -->
-            <a class="card-wrapper" href="queued-market-making">
+            <a class="card-wrapper" href="tokenomics">
               <div class="card">
                 <div class="logo">
                   <span class="twemoji">
@@ -412,9 +411,9 @@
                   </span>
                 </div>
                 <div class="card-content">
-                  <h5>Build With Us</h5>
+                  <h5>Token Economy</h5>
                   <p>
-                    Utilize existing integrations or build your own on top of Poolshark.
+                    Inspect how Poolshark reinvests protocol revenues to sustain growth.
                   </p>
                 </div>
               </div>
@@ -427,7 +426,7 @@
 {% endblock %}
 
 <!-- Content -->
-{% block content %}{% endblock %}
+
 
 <!-- Application footer -->
 {% block footer %}
