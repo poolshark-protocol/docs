@@ -25,9 +25,9 @@ nav:
   - Home: index.en.md
   - Introduction: 
     - What is Poolshark?: docs/intro/index.en.md
-    - Cover Pools: docs/intro/limitations-of-amms.en.md
-    - Price Pools: docs/intro/limitations-of-clobs.en.md
-    - Range Pools: docs/intro/limitations-of-clobs.en.md
+    - Cover Pools: docs/intro/cover-pools.en.md
+    - Price Pools: docs/intro/price-pools.en.md
+    - Range Pools: docs/intro/range-pools.en.md
     - Tokenomics Overview: docs/intro/launch.en.md
   - Protocol Guide:
     - Liquidity Types:
