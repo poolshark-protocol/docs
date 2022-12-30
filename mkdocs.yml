@@ -28,7 +28,7 @@ nav:
     - Cover Pools: docs/intro/cover-pools.en.md
     - Price Pools: docs/intro/price-pools.en.md
     - Range Pools: docs/intro/range-pools.en.md
-    - Tokenomics Overview: docs/intro/launch.en.md
+    - Token Economy Overview: docs/intro/token-economy-intro.en.md
   - Protocol Guide:
     - Liquidity Types:
         - Directional Liquidity: docs/liquidity-providers/directional-liquidity.en.md
