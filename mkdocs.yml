@@ -61,8 +61,8 @@ nav:
           - SafeCast: docs/smart-contracts/libraries/SqrtPriceMath.en.md
           - SafeTransfers: docs/smart-contracts/libraries/UnsafeMath.en.md
           - UnsafeMath: docs/smart-contracts/libraries/UnsafeMath.en.md
-      - Token Economy:
-          - Centuplicate Mining: docs/smart-contracts/libraries/UnsafeMath.en.md
+  - Token Economy:
+      - Centripetal Mining: docs/intro/token-economy-intro.en.md
   # - Unique Features:
   #   - Default Positions:
   #       - Priority Queues: docs/fungible-queues/index.en.md
