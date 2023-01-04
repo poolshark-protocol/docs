@@ -6,6 +6,7 @@ repo_url: 'https://github.com/poolsharks-protocol/docs'
 edit_uri: '/poolsharks-protocol/docs/tree/main/site/content'
 copyright: 'Written by Poolshark Labs'
 docs_dir: 'site/content'
+site_dir: 'introduction'
 extra_css:
   - stylesheets/extra.css
 extra:
