@@ -3,7 +3,7 @@ site_name: Poolshark Docs
 site_url: https://poolsharks-protocol.github.io/docs/
 repo_name: 'GitHub'
 repo_url: 'https://github.com/poolsharks-protocol/docs/'
-edit_uri: '/poolsharks-protocol/docs/tree/main/site/content'
+edit_uri: 'tree/main/site/content'
 copyright: 'Written by Poolshark Labs'
 docs_dir: 'site/content'
 site_dir: 'docs'
