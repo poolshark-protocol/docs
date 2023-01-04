@@ -1,6 +1,8 @@
 # Range Pools
 <!-- Price Position with split buy/sell side -->
-Range Pools are similar to vanilla concentrated liquidity: liquidity providers can now choose the price range they want to provide liquidity into. This improves capital efficiency by allowing to put more liquidity into a narrow price range, which makes Uniswap more diverse: it can now have pools configured for pairs with different volatility.
+Range Pools are similar to vanilla concentrated liquidity: liquidity providers can choose the price range they want to provide liquidity into. This results in more liquidity being available close to market price, increasing fees returned from providing liquidity.
+
+This improves capital efficiency by allowing to put more liquidity into a narrow price range, which makes Uniswap more diverse: it can now have pools configured for pairs with different volatility.
 
 To put it simply, Range Pools contain many small constant function curves between each price point, commmonly referred to as a `Tick`. The main difference with Range AMMs is that there are many price ranges within one `PoolsharkRangePair` contract. Each of the smaller price ranges will have reserves based on liquidity active within that `Tick`. Within each `Tick`, the pool functions exactly the same as what users have come to know from Constant Function Market Makers.
 

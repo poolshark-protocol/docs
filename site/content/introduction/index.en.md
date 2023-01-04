@@ -34,43 +34,7 @@ Due to this capability, directional liquidity enables LPs to more safely rebalan
 
 At a high-level, directional liquidity has the `x*y=k` design elements of a `Range AMM` (e.g. Uniswap v3), where LPs are free to choose a range in which to allocate their capital for maximum efficiency.
 
-Directional Liquidity allows users to:
 
-* Choose the trading direction
-* Protect against adverse price movements
-* Offer better prices than other pools
-
-## **Choose the Trade Direction**
-
-In a traditional liquidity pool, LP positions trade both directions.
-
-Traders making swaps can trade from ETH to DAI or vice versa with users' LP positions.
-
-Here with directional liquidity, providers will specify the direction, meaning the user will either accept incoming ETH or DAI but not both.
-
-The outcome is that liquidity that the LP can better capture price movements without having to rush to close their LP position in the desired state (i.e. the current generation of `Range Orders`).
-
-## **Protect Against Adverse Price Movements**
-
-Due to the buy-and-hold nature of directional liquidity, LPs are not impacted by price movements in the opposing direction.
-
-If an LP is trading from ETH -> DAI with a range of 2000 to 2200, a price movement to 2100 with a return to 2000 will still result in the LP being filled to the price of 2100.
-
-Traditional AMMs which support bidirectional LPing would result in the position trading from ETH into DAI and back into ETH when the price returns to 2000.
-
-Thus, traditional AMMs require an off-chain actor to close the LP position before it stops becoming tradable. This can result in front-running and is not always desirable for a fast-moving market.
-
-## **Offer Better Prices Than Other Pools**
-
-Due to the design of traditional AMMs, there is no split `buy-side` and `sell-side`.
-
-To put it into simpler terms, we use one liquidity curve to represent ETH->DAI and DAI->ETH.
-
-With `directional liquidity`, we use separate liquidity curves to represent each trading direction.
-
-What this enables is for LPs to undercut the market price on either side.
-
-An LP could provide the highest price to buy ETH at and enter the market before a large move up in the ETH price. Likewise, an LP could provide the lower price to sell ETH at and exit the market before a large downturn.
 
 ## **The Two Flavors of Directional Liquidity**
 
@@ -84,11 +48,51 @@ Directional Liquidity comes in two flavors:
 [`Price Pools`](price-pools) give pro-rata price priority for each trading direction.
 
 Use cases for each can be observed on their respective pages.
+<br/><br/>
+>## Directional Liquidity allows users to
+```
+* Choose the trading direction
+* Protect against adverse price movements
+* Offer better prices than other pools
+```
+## Choose the Trade Direction
+
+In a traditional liquidity pool, LP positions trade both directions.
+
+Traders making swaps can trade from ETH to DAI or vice versa with users' LP positions.
+
+Here with directional liquidity, providers will specify the direction, meaning the user will either accept incoming ETH or DAI but not both.
+
+The outcome is that liquidity that the LP can better capture price movements without having to rush to close their LP position in the desired state (i.e. the current generation of `Range Orders`).
+
+## Protect Against Adverse Price Movements
+
+Due to the buy-and-hold nature of directional liquidity, LPs are not impacted by price movements in the opposing direction.
+
+If an LP is trading from ETH -> DAI with a range of 2000 to 2200, a price movement to 2100 with a return to 2000 will still result in the LP being filled to the price of 2100.
+
+Traditional AMMs which support bidirectional LPing would result in the position trading from ETH into DAI and back into ETH when the price returns to 2000.
+
+Thus, traditional AMMs require an off-chain actor to close the LP position before it stops becoming tradable. This can result in front-running and is not always desirable for a fast-moving market.
+
+## Offer Better Prices Than Other Pools
+
+Due to the design of traditional AMMs, there is no split `buy-side` and `sell-side`.
+
+To put it into simpler terms, we use one liquidity curve to represent ETH->DAI and DAI->ETH.
+
+With `directional liquidity`, we use separate liquidity curves to represent each trading direction.
+
+What this enables is for LPs to undercut the market price on either side.
+
+An LP could provide the highest price to buy ETH at and enter the market before a large move up in the ETH price. Likewise, an LP could provide the lower price to sell ETH at and exit the market before a large downturn.
 
 
 
 
-### **Wrapping Up The Introduction**
+<br/>
+
+## **Wrapping Up The Introduction**
 <br/>
 Simply said, we are excited to see how liquidity providers leverage directional liquidity to capture more profits on their LP positions and improve their liquidity operations.
 

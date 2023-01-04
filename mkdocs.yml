@@ -138,5 +138,6 @@ plugins:
           en: english
           # ja: japanese
         material_alternate: false
+    - glightbox
     # - macros:
     #     include_dir: site/content/docs/include
