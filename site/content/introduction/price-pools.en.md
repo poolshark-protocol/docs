@@ -5,12 +5,14 @@ Price Pools operate in a similar manner to a Bidirectional Automated Market Make
 * If the market wants ETH, the pool takes DAI and increases the ETH to DAI price.
 * If the market wants DAI, the pool takes ETH and decreases the ETH to DAI price.
 
-The main difference is that there is a split buy-side and sell-side to represent each trading direction.
+The main difference is that there is a split buy-side and sell-side. 
 
-This enables Price Pools to enforce `price priority`, where the best priced liquidity is accessed first.
+The best priced liquidity for each respective trading direction is accessed first.
+
+This enables Price Pools to enforce `price priority`.
 
 </br>
-![Range Order 1](range-order2.png){: .center style="width:60%"}
+![Price Pool Range Order](price-pools.png){: .center style="width:85%"}
 </br></br>
 
 Price Pools therefore allow users to undercut the current market price and receive priority for doing so.
