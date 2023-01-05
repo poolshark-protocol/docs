@@ -1,16 +1,17 @@
 ---
 title: Introduction
-some_url: https://github.com/daifoundation/maker-otc
 ---
 ># **What is Poolshark?**
 
 The `Poolshark Protocol` is a set of smart contracts which implements `directional liquidity`, an alternative to the often popular `bidirectional liquidity`, seen in popular AMMs such as Uniswap and Curve.
 
 The concept of `directional liquidity` along with `bidirectional liquidity` are intended to offset each others' weaknesses. Buy-and-hold strategies are enabled by `directional liquidity` while `bidirectional liquidity` focuses on fee capture from the point of the liquidity provider.
-
+<figure markdown>
+![Pool Architecture](pool-architecture.png){: .center style=""}
+<figcaption markdown>Poolshark Architecture Overview w/ Multipool Routing</figcaption></figure>
 <!-- MEDIUM: Image of Poolshark logo with Cover Pool, Price Pool, and Range Pool represented -->
 
-Bidirectional liquidity, what users have come to know of AMMs, allows trades in both directions. This is great for capturing fees due to the continuous liquidity. 
+Bidirectional liquidity, what users have come to know of AMMs, allows trades in both directions. This is great for capturing fees due to the continuous liquidity feature. 
 
 In the case there is significiant price divergence (i.e. impermanent loss), the collateral value of such an LP position may be less than that of a pure buy-and-hold strategy. This is where `directional liquidity` can positively impact an LP's profitability by reclaiming lost profits.  
 </br></br>

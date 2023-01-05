@@ -13,27 +13,33 @@ The contracts have been gas optimized in both the Sway and Solidity versions res
 
 ### Factory
 
-> [**Range Factory Reference**](base/PoolsharkRangePair.en.md)
+> [**Range Factory Reference**](base/PoolsharkRangeFactory.en.md)
 
 The factory defines the logic for generating `Range Pools`. A range pool is defined by two tokens, which make up the asset pair, and a fee tier. Multiple pools of the same pair can exist, distinguished by each fee tier in existence.
 
-> [**Cover Factory Reference**](base/PoolsharkCoverPair.en.md)
+> [**Cover Factory Reference**](base/PoolsharkCoverFactory.en.md)
 
 The factory defines the logic for generating `Cover Pools`. A pool is defined by two tokens, which make up the asset pair, and a fee tier. `Cover Pools` differ from `Range pools` in that LP positions only trade in one direction. Multiple pools of the same pair can exist, distinguished by fee tier, input pool, as well as the auction parameters (i.e. `scaleFactor`, `decayConstant`, and `tickSpread`).
 
-> [**Price Factory Reference**](base/PoolsharkPricePair.en.md)
+> [**Price Factory Reference**](base/PoolsharkPriceFactory.en.md)
 
 The factory defines the logic for generating `Price Pools`. A book is defined by two tokens, which make up the asset pair, and a fee tier. `Price Pools` differ from `Range pools` in that LP positions only trade in one direction. Multiple price pools of the same pair can exist, distinguished by each fee tier.
 
-### Pools
+### Range Pools
 
-> [**Pool Reference**](base/PoolsharkPair.en.md).
+> [**Range Pool Reference**](base/PoolsharkRangePair.en.md).
 
 Pools serve as both automated makers for the paired assets, expose price oracle data, and allow for flash swaps.
 
-### Books
+### Cover Pools
 
-> [**Book Reference**](base/PoolsharkBook.en.md).
+> [**Cover Pool Reference**](base/PoolsharkCoverPair.en.md).
+
+Books contain both automated and queued market makers for the paired assets. Additionally, expose price oracle data, and allow for flash swaps.
+
+### Price Pools
+
+> [**Price Pool Reference**](base/PoolsharkCoverPair.en.md).
 
 Books contain both automated and queued market makers for the paired assets. Additionally, expose price oracle data, and allow for flash swaps.
 
@@ -41,6 +47,6 @@ Books contain both automated and queued market makers for the paired assets. Add
 
 > [**Oracle Reference**](libraries/Oracle.en.md)
 
-The oracle library allows for price and liquidity data to be aggregated for a wide variety of use cases both on-chain and off-chain. This oracle data is turned on by default in all books and pools.
+The oracle library allows for price and liquidity data to be aggregated for a wide variety of use cases both on-chain and off-chain. This oracle data is turned on by default in all `Range Pools`.
 
 <br/><br/><br/><br/>

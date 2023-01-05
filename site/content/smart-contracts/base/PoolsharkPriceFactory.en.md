@@ -1,4 +1,4 @@
-Launches Poolshark v1 books, manages ownership controls, fee accrual, and maker size. 
+Launches Poolshark price pools, manages ownership controls, fee accrual, and user positions. 
 
 ## Functions
 
