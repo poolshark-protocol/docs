@@ -29,18 +29,18 @@ nav:
     - Price Pools:  introduction/price-pools.en.md
     - Range Pools:  introduction/range-pools.en.md
     - Token Economy Overview:  introduction/token-economy-intro.en.md
-  - Protocol Guide:
-    - Liquidity Types:
-        - Liquidity Provider Overview:  protocol-guide/liquidity-providers/overview.en.md
-        - Directional Liquidity:  protocol-guide/liquidity-providers/directional-liquidity.en.md
-        - Cover Liquidity:  protocol-guide/liquidity-providers/single-sided.en.md
-        - Price Liquidity:  protocol-guide/liquidity-providers/directional-range-order.en.md
-        - Range Liquidity:  protocol-guide/liquidity-providers/range-liquidity.en.md
-    - Swaps:  protocol-guide/swaps.en.md
-    - Mints:  protocol-guide/mints.en.md
-    - Burns:  protocol-guide/burns.en.md
-    - Fees:  protocol-guide/fees.en.md
-    - Oracles:  protocol-guide/oracles.en.md
+  # - Protocol Guide:
+  #   - Liquidity Types:
+  #       - Liquidity Provider Overview:  protocol-guide/liquidity-providers/overview.en.md
+  #       - Directional Liquidity:  protocol-guide/liquidity-providers/directional-liquidity.en.md
+  #       - Cover Liquidity:  protocol-guide/liquidity-providers/single-sided.en.md
+  #       - Price Liquidity:  protocol-guide/liquidity-providers/directional-range-order.en.md
+  #       - Range Liquidity:  protocol-guide/liquidity-providers/range-liquidity.en.md
+  #   - Swaps:  protocol-guide/swaps.en.md
+  #   - Mints:  protocol-guide/mints.en.md
+  #   - Burns:  protocol-guide/burns.en.md
+  #   - Fees:  protocol-guide/fees.en.md
+  #   - Oracles:  protocol-guide/oracles.en.md
   - Smart Contracts:
       - Overview:  smart-contracts/overview.en.md
       - Base: 

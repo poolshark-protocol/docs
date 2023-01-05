@@ -1,6 +1,6 @@
 # Directional Liquidity
 
-### <em>What is Directional Liquidity?</em>
+### <em>How do I create a Directional Liquidity ?</em>
 
 `Directional Liquidity` refers to the direction the LP is going to take when entering a pool (eg. from `ETH` to `DAI`). It's similar to `Concentrated Liquidity` in the way that makers provide liquidity for a given price range, but differs by taking `Single-Sided Liquidity`, i.e. the liquidity curve only moves one way for the asset provided.
 

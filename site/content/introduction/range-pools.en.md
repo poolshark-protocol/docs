@@ -1,6 +1,12 @@
 # Range Pools
 <!-- Price Position with split buy/sell side -->
-Range Pools are similar to what users can expect from bidirectional liquidity: LPs can range bound their liquidity. This results in more liquidity being available close to market price, increasing trading fees accrued from such a position.
+`Range Pools` are similar to what users have come to expect from bidirectional liquidity.
+
+LPs can `range-bound` their liquidity, resulting in more liquidity being available near market price.
+
+In the case of a stable pair, this increases the trading fees accrued from such a position.
+
+The opportunity cost of price divergence for `range-bound liquidity` is greater compared to `full-range liquidity`, and such impermanent loss is intended to be mitigated with the use of [`Cover Pools`](cover-pools)
 
 Range Pools here have one unique feature improving composability with other DeFi protocols: `Default Ranges`. 
 
@@ -8,9 +14,9 @@ Range Pools here have one unique feature improving composability with other DeFi
 
 To put it simply, Range Pools contain many small constant function curves between each price point, commmonly referred to as a `Tick`. 
 
-The main difference with Range AMMs is that there are many price ranges within one `PoolsharkRangePair` contract. Each of the smaller price ranges will have reserves based on liquidity active within that `Tick`. Within each `Tick`, the pool functions exactly the same as what users have come to know from Constant Function Market Makers.
+Each of the smaller price ranges will have reserves based on liquidity active within that `Tick`. 
 
-Now, let’s try to visualize it. What we’re saying is that we don’t want the curve to be infinite. We cut it at the points aa and bb and say that these are the boundaries of the curve. Moreover, we shift the curve so the boundaries lay on the axes. This is what we get:
+Within each `Tick`, the pool functions exactly the same as what users have come to know from Constant Function Market Makers.
 
 Mechanism to understand:
 ```
@@ -20,12 +26,7 @@ Mechanism to understand:
 ```
 ## Choosing a Range Bound
 
-### Taking Profit
-<!-- add subtext below image -->
-If you are seeking to take profit over some price range, Price Pools are ideal given all the liquidity traded into your position will be retained. The `lower` and `upper` bound will mark the starting and ending price across which your position will trade from the input token to the output token.
 
-### Seeking Entry
-For users looking to fish entry points within some range, Price Pools can be utilized to set a range in which to enter your position. Due to the buy-and-hold nature of directional liquidity, users can retain any filled liquidity within their set range bounds.
 
 
 ## Claiming Position Liquidity
