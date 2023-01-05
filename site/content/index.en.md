@@ -1,4 +1,4 @@
 ---
 template: layouts/home.html
-title: Poolshark
+title: Poolshark Docs
 ---
