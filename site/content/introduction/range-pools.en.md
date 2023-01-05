@@ -26,8 +26,34 @@ Mechanism to understand:
 ```
 ## Choosing a Range Bound
 
+The below table is a recommendation for `range-bound` liquidity based on our team's analysis:
 
+|                 |     Volatile     |        Pegged        |       Anchored      |
+| --------------- | ---------------- | -------------------- | ------------------- |
+| **High Volume** | Full/Broad Range |  Medium Range        | Narrow Range        |
+| **Mid  Volume** | Full/Broad Range |  Medium Range        | Narrow Range        |
+| **Low  Volume** | Full/Broad Range |  Medium/Narrow Range | Narrow/Medium Range |           |
 
+### Volatile Pairs
+
+Volatile Pairs
+The volatile category applies to most pairs where a project pairs ETH or a stablecoin against their native token.
+
+Provided the liquidity is `range-bound`, the magnitude of impermanent loss will be greater. For a `range-bound` position on a low volume pair, it’s very unlikely that the gains from trading fees will exceed the loss from impermanent loss.
+
+Further, `range-bounding` liquidity on a volatile pair runs the risk of your position falling out of range. If your position falls out of range, you’ll need to rebalance. Rebalancing costs you in swap fees, slippage and gas.
+
+To cover the costs of rebalancing one's liquidity position, we recommend a `Cover` position to cover impermanent loss with directional liquidity profits.
+
+### Pegged Pairs
+
+Pegged pairs, though not completely eliminating the risk of impermanent loss, often result in minimal IL. For lower volume pairs, LPs might want to increase the range slightly on each side.
+
+### Anchored Pairs
+
+Anchored in this context describes asset pairs that move predictably and steadily in price relative to one another.
+
+WETH and rETH from `Rocket Pool` is a great example here. If rETH returns 10% annually relative to WETH, we could deploy a liquidity mining program on a narrow, concentrated range of liquidity, adding 10% to the upside as a buffer. This position would likely remain in range for a full year maintaining a high degree of capital efficiency — without any rebalance required.
 
 ## Claiming Position Liquidity
 

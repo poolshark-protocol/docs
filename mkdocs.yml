@@ -28,7 +28,7 @@ nav:
     - Cover Pools:  introduction/cover-pools.en.md
     - Price Pools:  introduction/price-pools.en.md
     - Range Pools:  introduction/range-pools.en.md
-    - Token Economy Overview:  introduction/token-economy-intro.en.md
+    # - Token Economy Overview:  introduction/token-economy-intro.en.md
   # - Protocol Guide:
   #   - Liquidity Types:
   #       - Liquidity Provider Overview:  protocol-guide/liquidity-providers/overview.en.md

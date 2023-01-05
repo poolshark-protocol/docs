@@ -1,26 +1,29 @@
 
-Poolshark is a set of smart contracts comprised of support for concentrated liquidity, directional liquidity, and priority queues.
+Poolshark is a set of smart contracts comprised of support for range liquidity, cover liquidity, and price liquidity.
 
-The smart contract's base job is to provide fundamental guarantees for all relevant entities. They define the logic of permissionlessly creating new pools, adding liquidity, executing swaps, etc.
+The smart contract's base purpose is to provide fundamental guarantees for all interfacing parties. They define the logic of permissionlessly creating new pools, adding liquidity, executing swaps, accumulating across ticks, etc.
 
 ## Base
 
 > **Poolshark Source Code** (January 2023 release)
 
-The base consists of a factory contract, a router, and the book contract which will be launched by the factory.
+The base consists of a factory contract, a router, and the pool contract being launched by the factory.
 
 The contracts have been gas optimized in both the Sway and Solidity versions respectively with attention given to code clarity to maximize the developer integration experience.
 
 ### Factory
 
-> [**Pool Factory Reference**](base/PoolsharkPairFactory.en.md)
+> [**Range Factory Reference**](base/PoolsharkRangePair.en.md)
 
-The factory defines the logic for generating pools. A pool is defined by two tokens, which make up the asset pair, and a fee tier. Multiple pools of the same pair can exist, distinguished
-by each fee tier in existence.
+The factory defines the logic for generating `Range Pools`. A range pool is defined by two tokens, which make up the asset pair, and a fee tier. Multiple pools of the same pair can exist, distinguished by each fee tier in existence.
 
-> [**Book Factory Reference**](base/PoolsharkBookFactory.en.md)
+> [**Cover Factory Reference**](base/PoolsharkCoverPair.en.md)
 
-The factory defines the logic for generating books. A book is defined by two tokens, which make up the asset pair, and a fee tier. Books differ from pools in that LP positions only trade in one direction. Multiple book of the same pair can exist, distinguished by each fee tier and maker tier in existence.
+The factory defines the logic for generating `Cover Pools`. A pool is defined by two tokens, which make up the asset pair, and a fee tier. `Cover Pools` differ from `Range pools` in that LP positions only trade in one direction. Multiple pools of the same pair can exist, distinguished by fee tier, input pool, as well as the auction parameters (i.e. `scaleFactor`, `decayConstant`, and `tickSpread`).
+
+> [**Price Factory Reference**](base/PoolsharkPricePair.en.md)
+
+The factory defines the logic for generating `Price Pools`. A book is defined by two tokens, which make up the asset pair, and a fee tier. `Price Pools` differ from `Range pools` in that LP positions only trade in one direction. Multiple price pools of the same pair can exist, distinguished by each fee tier.
 
 ### Pools
 
