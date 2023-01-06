@@ -36,7 +36,6 @@ The below table is a recommendation for `range-bound` liquidity based on our tea
 
 ### Volatile Pairs
 
-Volatile Pairs
 The volatile category applies to most pairs where a project pairs ETH or a stablecoin against their native token.
 
 Provided the liquidity is `range-bound`, the magnitude of impermanent loss will be greater. For a `range-bound` position on a low volume pair, it’s very unlikely that the gains from trading fees will exceed the loss from impermanent loss.
@@ -67,11 +66,11 @@ Depending on the current price of the pool, the user will be able to withdraw th
 
 The way in which `Range Pools` track how much of the user's position has been filled is by using the value `feeGrowthGlobal`. Depending on where the current tick is will determine what liquidity is withdrawn from the pool.
 
-Fee accounting is tracked with the `feeGrowthGlobal0` and ``feeGrowthGlobal1` values present on the `upper` and `lower` tick representing the user's Position. Global fees generated represent 1 unit of liquidity, so to get the fees belonging to a single `Position`, we will multiply by that `Position`'s liquidity amount. 
+Fee accounting is tracked with the `feeGrowthGlobal0` and `feeGrowthGlobal1` values present on the `upper` and `lower` tick representing the user's Position. Global fees generated represent 1 unit of liquidity, so to get the fees belonging to a single `Position`, we will multiply by that `Position`'s liquidity amount. 
 
 Fees accumulated outside of a price range are tracked when a tick is crossed. This allows us to simply calculate fees accumulated below the lower tick and then fees calculated above the upper tick.
 
-`feeGrowthGlobal0` and ``feeGrowthGlobal1` are on a per liquidity unit basis, so this value is simply multiplied by the amount of liquidity contained in a Position to determine the fees owed to that specific Position.
+`feeGrowthGlobal0` and `feeGrowthGlobal1` are on a per liquidity unit basis, so this value is simply multiplied by the amount of liquidity contained in a Position to determine the fees owed to that specific Position.
 
 
 <br/><br/><br/>

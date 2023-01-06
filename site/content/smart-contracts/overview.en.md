@@ -39,7 +39,7 @@ Books contain both automated and queued market makers for the paired assets. Add
 
 ### Price Pools
 
-> [**Price Pool Reference**](base/PoolsharkCoverPair.en.md).
+> [**Price Pool Reference**](base/PoolsharkPricePair.en.md).
 
 Books contain both automated and queued market makers for the paired assets. Additionally, expose price oracle data, and allow for flash swaps.
 
@@ -47,6 +47,6 @@ Books contain both automated and queued market makers for the paired assets. Add
 
 > [**Oracle Reference**](libraries/Oracle.en.md)
 
-The oracle library allows for price and liquidity data to be aggregated for a wide variety of use cases both on-chain and off-chain. This oracle data is turned on by default in all `Range Pools`.
+The oracle library allows for price and liquidity data to be aggregated for a wide variety of use cases both on-chain and off-chain. This oracle data is turned off by default in all `Range Pools`.
 
 <br/><br/><br/><br/>
