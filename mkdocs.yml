@@ -44,12 +44,12 @@ nav:
   - Smart Contracts:
       - Overview:  smart-contracts/overview.en.md
       - Base: 
-          - PoolsharkCoverPairFactory:  smart-contracts/base/PoolsharkBookFactory.en.md
-          - PoolsharkCoverPair:  smart-contracts/base/PoolsharkBook.en.md
-          - PoolsharkPricePairFactory:  smart-contracts/base/PoolsharkPairFactory.en.md
-          - PoolsharkPricePair:  smart-contracts/base/PoolsharkPair.en.md
-          - PoolsharkRangePairFactory:  smart-contracts/base/PoolsharkQueueFactory.en.md
-          - PoolsharkRangePair:  smart-contracts/base/PoolsharkQueue.en.md
+          - PoolsharkCoverPairFactory:  smart-contracts/base/PoolsharkCoverFactory.en.md
+          - PoolsharkCoverPair:  smart-contracts/base/PoolsharkCoverPair.en.md
+          - PoolsharkPricePairFactory:  smart-contracts/base/PoolsharkPriceFactory.en.md
+          - PoolsharkPricePair:  smart-contracts/base/PoolsharkPricePair.en.md
+          - PoolsharkRangePairFactory:  smart-contracts/base/PoolsharkRangeFactory.en.md
+          - PoolsharkRangePair:  smart-contracts/base/PoolsharkRangePair.en.md
       - Libraries:
           - DyDxMath:  smart-contracts/libraries/LiquidityMath.en.md
           - FullPrecisionMath:  smart-contracts/libraries/Oracle.en.md
