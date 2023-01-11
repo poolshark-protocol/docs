@@ -1,0 +1,1 @@
+[Click here to view the whitepaper as a PDF.](poolshark.pdf)

@@ -7,3 +7,4 @@ mkdocs-material
 pymdown-extensions
 mkdocs-git-revision-date-plugin
 mkdocs-glightbox
+mkdocs-material-extensions

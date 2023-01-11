@@ -14,9 +14,10 @@ The concept of `directional liquidity` along with `bidirectional liquidity` are 
 Bidirectional liquidity, what users have come to know of AMMs, allows trades in both directions. This is great for capturing fees due to the continuous liquidity feature. 
 
 In the case there is significiant price divergence (i.e. impermanent loss), the collateral value of such an LP position may be less than that of a pure buy-and-hold strategy. This is where `directional liquidity` can positively impact an LP's profitability by reclaiming lost profits.  
-</br></br></br>
+
+</br></br></br></br></br>
 <em>Bottom line: Directional liquidity enables buy-and-hold strategies for liquidity providers to offset directional risks in their portfolio such as impermanent loss.</em>
-</br></br></br>
+</br>
 <em>Expected additional losses from Impermanent Loss:</em>
 ![Screenshot](divergent-loss.png){: .center style=""}
 <!-- LOW: replace this image with our own -->

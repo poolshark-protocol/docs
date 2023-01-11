@@ -41,6 +41,7 @@ nav:
   #   - Burns:  protocol-guide/burns.en.md
   #   - Fees:  protocol-guide/fees.en.md
   #   - Oracles:  protocol-guide/oracles.en.md
+  - Whitepaper: whitepaper/index.en.md
   - Smart Contracts:
       - Overview:  smart-contracts/overview.en.md
       - Base: 
@@ -103,6 +104,11 @@ theme:
     - navigation.indexes
 
 markdown_extensions:
+  - pymdownx.pathconverter:
+      base_path: '' # default: ''
+      relative_path: '' # default ''
+      absolute: true    # default: false
+      tags: 'a script img link object embed'
   - toc:
       permalink: True
   - abbr
