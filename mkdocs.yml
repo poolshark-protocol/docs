@@ -53,7 +53,8 @@ nav:
           - PoolsharkRangePair:  smart-contracts/base/PoolsharkRangePair.en.md
       - Libraries:
           - DyDxMath:  smart-contracts/libraries/LiquidityMath.en.md
-          - FullPrecisionMath:  smart-contracts/libraries/Oracle.en.md
+          - FullPrecisionMath:  smart-contracts/libraries/FullMath.en.md
+          - Oracle: smart-contracts/libraries/Oracle.en.md
           - TickMath:  smart-contracts/libraries/TickMath.en.md
           - Ticks:  smart-contracts/libraries/Tick.en.md
       - Utils:
