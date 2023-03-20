@@ -67,9 +67,9 @@ nav:
   # - Token Economy:
   #     - Overview: token-economy/overview.en.md
   #     - Centripetal Mining: token-economy/centripetal-mining.en.md
-  - References:
-    - Automated Market Makers: references/automated-market-makers.en.md
-    - Limit Order Books: references/limit-order-books.en.md
+  # - References:
+  #   - Automated Market Makers: references/automated-market-makers.en.md
+  #   - Limit Order Books: references/limit-order-books.en.md
 # - Tutorials:
 #     - Basic Setup: tutorials/basic-setup.en.md
 #     - Swaps: 
