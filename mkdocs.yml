@@ -64,9 +64,9 @@ nav:
           - SafeCast:  smart-contracts/libraries/SqrtPriceMath.en.md
           - SafeTransfers:  smart-contracts/libraries/UnsafeMath.en.md
           - UnsafeMath:  smart-contracts/libraries/UnsafeMath.en.md
-  - Token Economy:
-      - Overview: token-economy/overview.en.md
-      - Centripetal Mining: token-economy/centripetal-mining.en.md
+  # - Token Economy:
+  #     - Overview: token-economy/overview.en.md
+  #     - Centripetal Mining: token-economy/centripetal-mining.en.md
   - References:
     - Automated Market Makers: references/automated-market-makers.en.md
     - Limit Order Books: references/limit-order-books.en.md
