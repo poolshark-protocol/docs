@@ -1,18 +1,16 @@
 # Range Pools
 <!-- Price Position with split buy/sell side -->
-`Range Pools` are similar to what users have come to expect from bidirectional liquidity.
+`Range Pools` are similar to what users have come to expect from AMMs while bounding liquidity between a price range.
 
-LPs can `range-bound` their liquidity, resulting in more liquidity being available near market price.
+LPs can provide their liquidity to a specific price range, resulting in a higher concentration of liquidity and less slippage for swappers in comparison to AMM without price bounds. This is due to being able to have more liquidity within a specific range by not providing to the `Full Range` of a constant product curve.
 
-In the case of a stable pair, this increases the trading fees accrued from such a position.
-
-The opportunity cost of price divergence for `range-bound liquidity` is greater compared to `full-range liquidity`, and such impermanent loss is intended to be mitigated with the use of [`Cover Pools`](cover-pools)
+The opportunity cost of providing liquidity to a constant function curve is commonly known as impermanent loss. Impermanent loss is intended to be hedged with the use of [`Cover Pools`](cover-pools)
 
 Range Pools here have one unique feature improving composability with other DeFi protocols: `Default Ranges`. 
 
 ![Fungible Range Pool Positions](range-pool-erc20.png){: .center style="width:85%"}
 
-To put it simply, Range Pools contain many small constant function curves between each price point, commmonly referred to as a `Tick`. 
+Range Pools contain many small constant function curves between each price point, commmonly referred to as a `Tick`. 
 
 Each of the smaller price ranges will have reserves based on liquidity active within that `Tick`. 
 
@@ -26,13 +24,9 @@ Mechanism to understand:
 ```
 ## Choosing a Range Bound
 
-The below table is a recommendation for `range-bound` liquidity based on our team's analysis:
+A position can also be bound to a `Full Range` which means that the position is bound from price 0 to ∞ so the price will always be within range for collecting fees,
 
-|                 |     Volatile     |        Pegged        |       Anchored      |
-| --------------- | ---------------- | -------------------- | ------------------- |
-| **High Volume** | Full/Broad Range |  Medium Range        | Narrow Range        |
-| **Mid  Volume** | Full/Broad Range |  Medium Range        | Narrow Range        |
-| **Low  Volume** | Full/Broad Range |  Medium/Narrow Range | Narrow/Medium Range |           |
+The variables that change with the width of your liquidity range are the depth of your liquidity, effects of impermanent loss and 
 
 ### Volatile Pairs
 

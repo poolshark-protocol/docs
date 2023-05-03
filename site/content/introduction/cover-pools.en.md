@@ -1,26 +1,26 @@
 # Cover Pools
 <!-- Cover Position alongside Range Position -->
-Bidirectional Automated Market Makers always take the side the market desires.</br>
+Cover Pools allow you to create positions to increase exposure to a specific token conditional on it increasing in price on a given pair.</br>
+
+* If the ETH price increases, the pool sells DAI and increases the amount of ETH exposure
+* If the ETH price decreases, the pool sells ETH and increases the amount of DAI exposure
+
+If your position is in range on an AMM it increases the exposure to the token dropping in price or has all exposure in the token dropping in price.</br>
 
 * If the market wants ETH, the pool takes DAI and increases the ETH to DAI price
 * If the market wants DAI, the pool takes ETH and decreases the ETH to DAI price.
 
-Cover Pools in a Directional Automated Market Maker do the opposite.</br>
-
-* If the ETH price increases, the pool takes ETH and decreases the ETH to DAI price
-* If the ETH price decreases, the pool takes DAI and increases the ETH to DAI price
-
 ![Range Order 1](cover-vs-range.png){: style="width:90%"}
 
-This allows them to function as a hedging tool if the user wants to enter or exit an `ERC-20` token over some range. 
+This allows them to function as a hedging tool if the user wants to enter or exit an **ERC-20** token over some range. 
 
-In the case of Cover Pools, if the market price of ETH to DAI increases, liquidity will be unlocked to purchase ETH for the pool.
+If you were to move into/out of a position such as this with a fixed price (as done when providing liquidity) your position will either result in being unfilled or underpricing the liquidity.
 
-Directional liquidity adopts the buy-and-hold strategy, so as the price of ETH continues to rise the pool will continue to hold onto this position.
+Using a Gradual Dutch Auction means that you can start at the price indicated by the current price tick of your position and slowly discount the price until it is accepted by the market. This increases the incentive to become the counterparty until it is deemed acceptable 
 
-As a `Range Order`, Cover LP Positions will unlock periodically unlock as the `Time-Weighted Average Price` moves in a certain direction.
+As a `Range Order`, Cover Positions will unlock periodically unlock liquidity across a price range as the **Time-Weighted Average Price** (TWAP) increases or decreases (indicated by the user).
 
-This is because we don't want the pool to buy ETH at 3000 DAI/ETH until we have a high degree of certainty 3000 DAI/ETH is the market price over some period.
+This is because we don't want the pool to unlock liquidity due to high frequency market volatility which will be closed out on an extremely short time period due to arbitrage. A 
 
 ### Cover Pool Use Cases
 
@@ -52,7 +52,7 @@ The position would stop purchasing ETH after the prices crosses 2200 DAI per ETH
 > <em>Alice wants to cover potential IL from 3000 to 5000 DAI per ETH.</em>
 
 </br>
-Assuming the user wants to cover any potential impermanent loss, this range should match their original LP position.
+Assuming the user wants to cover any potential impermanent loss, this range should match their original LP position and the value of the position should also be equal to more accurately cover impermanent loss.
 
 Capital efficiency can be improved by selecting a smaller range over which to trade to the desired output token.
 
@@ -76,10 +76,11 @@ Users cannot place liquidity along the curve at a better LP execution price than
 </br></br></br>
 ![Range Order 1](cover_position.png){: style="width:100%"}
 </br></br>
+
 ### Averaging into a token
 For users seeking to average into an asset starting at some price (example in the image below), they can simply set the `lower` bound as the point where they want to start transitioning from the `input` token to the `output` token. 
 
-The Cover Pool will then use liquidity math to decide how much token to unlock at each price point based on the total amount of liquidity available in the pool for a given pair direction.
+The Cover Pool will unlock liquidity at each price point based on the total amount of liquidity available in the pool for a given pair direction.
 
 
 ## Auctioning Unlocked Liquidity
@@ -92,9 +93,5 @@ Here, the price for every auction decays exponentially according to some `decay 
 ```
 
 Combining these values gives us a exponentially increasing market price for each tick of liquidity we auction off. The price however should never deviate by more than one tick (e.g. 0.1% for the ETH-USDC 0.05% tier).
-
-## Claiming Position Rewards
-
-The way in which `directional liquidity` tracks how much of the user's position has been filled is by using the value `accumEpochLast`. That is to say that we know the highest tick at which the user got filled at based on this value. If the `accumEpochLast` of a given tick is higher than when the user minted their `Position`, we know that tick has been reached since the user's position got opened. This is the crux of how Directional Range AMMs (DAMMs) work.
 
 <br/><br/>

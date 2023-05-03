@@ -3,119 +3,58 @@ title: Introduction
 ---
 ># **What is Poolshark?**
 
-The `Poolshark Protocol` is a set of smart contracts which implements `directional liquidity`, an alternative to the often popular `bidirectional liquidity`, seen in popular AMMs such as Uniswap and Curve.
+The **Poolshark Protocol** is a noncustodial and trustless DEX built using smart contracts, which provides a variety of spot exchange **liquidity provider** (LP) position types. The multiple LP types allow LPs to properly express their views on a given pair while keeping them under the same roof. Each type of position is placed in a liquidity pool with other positions of that type and then liquidity pools are accessed and transacted with when a user swaps on the platform. Having multiple LP types allows Poolshark to function as a hybrid of an **automated market maker** (AMM) and a **limit order book** (LOB) at once.
 
-The concept of `directional liquidity` along with `bidirectional liquidity` are intended to offset each others' weaknesses. Buy-and-hold strategies are enabled by `directional liquidity` while `bidirectional liquidity` focuses on fee capture from the point of the liquidity provider.
-<figure markdown>
-![Pool Architecture](pool-architecture.png){: .center style=""}
-<figcaption markdown>Poolshark Architecture Overview w/ Multipool Routing</figcaption></figure>
-<!-- MEDIUM: Image of Poolshark logo with Cover Pool, Price Pool, and Range Pool represented -->
+The key difference between Poolshark and traditional limit order books is using Limit Pools instead of having a queue for transactions Poolshark consolidates all positions across a pool to invariant curves, this allows for greater scalability.
 
-Bidirectional liquidity, what users have come to know of AMMs, allows trades in both directions. This is great for capturing fees due to the continuous liquidity feature. 
+The key difference between Poolshark and your typical AMM is the difference above in addition to having a stop loss in cover pools. 
 
-In the case there is significiant price divergence (i.e. impermanent loss), the collateral value of such an LP position may be less than that of a pure buy-and-hold strategy. This is where `directional liquidity` can positively impact an LP's profitability by reclaiming lost profits.  
+>## **What Problem does Poolshark Address?**
 
-</br></br></br></br></br>
-<em>Bottom line: Directional liquidity enables buy-and-hold strategies for liquidity providers to offset directional risks in their portfolio such as impermanent loss.</em>
-</br>
-<em>Expected additional losses from Impermanent Loss:</em>
-![Screenshot](divergent-loss.png){: .center style=""}
-<!-- LOW: replace this image with our own -->
-As a one-way liquidity strategy, directional liquidity is intended to offset losses elsewhere in an LP's portfolio, which could include the following:
-</br></br>
-```
-* The potential for impermanent loss as token prices diverge
+### **Indeterminate Pricing**
 
-* Protection against liquidation
+For large institutions to use a position they must be able to accurately model the position and the position must  have predetermined pricing (aka.be priced entirely by the institution). These are requirements
 
-* Enter and exit the market quicker with less slippage
-```
-</br>
+### **Merged buy and sell sides**
 
-Due to this capability, directional liquidity enables LPs to more safely rebalance their position whilst covering the impermanent loss they experience when rebalancing.
+Currently most fully on-chain DEXs are AMMs (for now) and focus on allowing users to create positions that trade into both tokens on the pair moving along an invariant curve. This is something that (due to the mechanisms of constant function pools) inherently implies you believe the price of both tokens in the pair will stay relatively stable. 
 
-At a high-level, directional liquidity has the `x*y=k` design elements of a `Range AMM` (e.g. Uniswap v3), where LPs are free to choose a range in which to allocate their capital for maximum efficiency.
+One of the features of the inherent design of an AMM from the view point of a LP is when the price of an asset is changing relative to the other and the LP's position is transacted with it changes to be comprised of more of the token that is decreasing in value. The reasoning for accepting this is due to transacting with by swaps in either direction continuously the LP's position accrues transaction fees from the users swapping in either direction with the liquidity pool.
 
+The issue with AMM pools is, given the scenario above, the greater of a price change the less the user is receiving relative to what the value of the assets they initially deposited are worth. This is a type of oppertunity cost called **impermanent loss**. The reason it may be impermanent is if the price shifts back to where it was when the LP created their position the loss will be eliminated. 
 
+The price of the asset held in a position is determined by the demand for that asset relative to the other asset in a pair. Due to this if there is a lot of swapping into a certain asset in an AMM pool that asset will decrease in price.
 
-## **The Two Flavors of Directional Liquidity**
+Poolshark addresses this by allowing LP's to choose from multiple types of positions to better reflect their beliefs on the market and manage their risk as they see fit.
 
-Directional Liquidity comes in two flavors:
+## **The Three Types of Positions**
 
-- Cover pools
-- Price pools
+Poolshark employs three types of positions:
 
-[`Cover Pools`](cover-pools) are meant to "cover" or "hedge" a position in the user's portfolio.
+- Limit positions
+- Cover positions
+- Range positions
 
-[`Price Pools`](price-pools) give pro-rata price priority for each trading direction.
+Each of these positions are present in a different type of pool.
+
+[`Limit Pools`](limit-pools) can be viewed as a limit order.
+
+[`Cover Pools`](cover-pools) can be viewed as a stop loss/take profit which references the current price.
+
+[`Range Pools`](range-pools) can be viewed as an AMM pool with liquidity bounded to a range.
 
 Use cases for each can be observed on their respective pages.
-<br/><br/>
->## Directional Liquidity allows users to
-```
-* Choose the trading direction
-* Protect against adverse price movements
-* Offer better prices than other pools
-```
-## Choose the Trade Direction
-
-In a traditional liquidity pool, LP positions trade both directions.
-
-Traders making swaps can trade from ETH to DAI or vice versa with users' LP positions.
-
-Here with directional liquidity, providers will specify the direction, meaning the user will either accept incoming ETH or DAI but not both.
-
-The outcome is that liquidity that the LP can better capture price movements without having to rush to close their LP position in the desired state (i.e. the current generation of `Range Orders`).
-
-## Protect Against Adverse Price Movements
-
-Due to the buy-and-hold nature of directional liquidity, LPs are not impacted by price movements in the opposing direction.
-
-If an LP is trading from ETH -> DAI with a range of 2000 to 2200, a price movement to 2100 with a return to 2000 will still result in the LP being filled to the price of 2100.
-
-Traditional AMMs which support bidirectional LPing would result in the position trading from ETH into DAI and back into ETH when the price returns to 2000.
-
-Thus, traditional AMMs require an off-chain actor to close the LP position before it stops becoming tradable. This can result in front-running and is not always desirable for a fast-moving market.
-
-## Offer Better Prices Than Other Pools
-
-Due to the design of traditional AMMs, there is no split `buy-side` and `sell-side`.
-
-To put it into simpler terms, we use one liquidity curve to represent ETH->DAI and DAI->ETH.
-
-With `directional liquidity`, we use separate liquidity curves to represent each trading direction.
-
-What this enables is for LPs to undercut the market price on either side.
-
-An LP could provide the highest price to buy ETH at and enter the market before a large move up in the ETH price. Likewise, an LP could provide the lower price to sell ETH at and exit the market before a large downturn.
-
-
-
-
-<br/>
 
 ## **Wrapping Up The Introduction**
-<br/>
-Simply said, we are excited to see how liquidity providers leverage directional liquidity to capture more profits on their LP positions and improve their liquidity operations.
 
-<br/>
-![Screenshot](book_screenshot.png){: .center style=""}
-<br/>
+The team is excited to see new use cases found for each of the types of positions and listen to suggestions. 
 
-With these added features, liquidity providers can customize their risk profile to match the current price action in the market.
+With these added position types, liquidity providers can customize their risk profile to match the current price action in the market.
 
-<em>Directional LPing</em> allows for one-way fills similar to a traditional limit order, whereas current LP positions will trade both ways.
+Directional LPing</em> allows for one-way fills similar to a traditional limit order, whereas current LP positions will trade both ways.
 
 DeFi protocols are often the largest liquidity providers in the ecosystem, so we're excited to see how our community and ecosystem can build solutions around protocols that are seeking to greater improve their profitability and runway for the coming years.
 
-If you would like to contribute or have any questions, don't hesistate to [open an issue on Github](https://github.com/poolsharks-protocol/docs/issues)!
+If you would like to contribute or have any questions, don't hesistate to [open an issue on Github](https://github.com/poolsharks-protocol/docs/issues), or dm on [Twitter](https://twitter.com/poolsharks_labs)
 
 <br/><br/><br/>
-
-
-
-
-
-
-
-

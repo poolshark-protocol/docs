@@ -26,7 +26,7 @@ nav:
   - Introduction: 
     - What is Poolshark?:  introduction/index.en.md
     - Cover Pools:  introduction/cover-pools.en.md
-    - Price Pools:  introduction/price-pools.en.md
+    - Limit Pools:  introduction/limit-pools.en.md
     - Range Pools:  introduction/range-pools.en.md
     # - Token Economy Overview:  introduction/token-economy-intro.en.md
   # - Protocol Guide:
@@ -34,7 +34,7 @@ nav:
   #       - Liquidity Provider Overview:  protocol-guide/liquidity-providers/overview.en.md
   #       - Directional Liquidity:  protocol-guide/liquidity-providers/directional-liquidity.en.md
   #       - Cover Liquidity:  protocol-guide/liquidity-providers/single-sided.en.md
-  #       - Price Liquidity:  protocol-guide/liquidity-providers/directional-range-order.en.md
+  #       - Limi5 Liquidity:  protocol-guide/liquidity-providers/directional-range-order.en.md
   #       - Range Liquidity:  protocol-guide/liquidity-providers/range-liquidity.en.md
   #   - Swaps:  protocol-guide/swaps.en.md
   #   - Mints:  protocol-guide/mints.en.md
@@ -47,8 +47,8 @@ nav:
       - Base: 
           - PoolsharkCoverPairFactory:  smart-contracts/base/PoolsharkCoverFactory.en.md
           - PoolsharkCoverPair:  smart-contracts/base/PoolsharkCoverPair.en.md
-          - PoolsharkPricePairFactory:  smart-contracts/base/PoolsharkPriceFactory.en.md
-          - PoolsharkPricePair:  smart-contracts/base/PoolsharkPricePair.en.md
+          - PoolsharkLimitPairFactory:  smart-contracts/base/PoolsharkLimitFactory.en.md
+          - PoolsharkLimitPair:  smart-contracts/base/PoolsharkLimitPair.en.md
           - PoolsharkRangePairFactory:  smart-contracts/base/PoolsharkRangeFactory.en.md
           - PoolsharkRangePair:  smart-contracts/base/PoolsharkRangePair.en.md
       - Libraries:

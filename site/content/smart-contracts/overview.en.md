@@ -21,9 +21,9 @@ The factory defines the logic for generating `Range Pools`. A range pool is defi
 
 The factory defines the logic for generating `Cover Pools`. A pool is defined by two tokens, which make up the asset pair, and a fee tier. `Cover Pools` differ from `Range pools` in that LP positions only trade in one direction. Multiple pools of the same pair can exist, distinguished by fee tier, input pool, as well as the auction parameters (i.e. `scaleFactor`, `decayConstant`, and `tickSpread`).
 
-> [**Price Factory Reference**](../base/PoolsharkPriceFactory)
+> [**Limit Factory Reference**](../base/PoolsharkLimitFactory)
 
-The factory defines the logic for generating `Price Pools`. A book is defined by two tokens, which make up the asset pair, and a fee tier. `Price Pools` differ from `Range pools` in that LP positions only trade in one direction. Multiple price pools of the same pair can exist, distinguished by each fee tier.
+The factory defines the logic for generating `Limit Pools`. A book is defined by two tokens, which make up the asset pair, and a fee tier. `Limit Pools` differ from `Range pools` in that LP positions only trade in one direction. Multiple price pools of the same pair can exist, distinguished by each fee tier.
 
 ### Range Pools
 
@@ -37,9 +37,9 @@ Pools serve as both automated makers for the paired assets, expose price oracle 
 
 Books contain both automated and queued market makers for the paired assets. Additionally, expose price oracle data, and allow for flash swaps.
 
-### Price Pools
+### Limit Pools
 
-> [**Price Pool Reference**](../base/PoolsharkPricePair).
+> [**Limit Pool Reference**](../base/PoolsharkLimitPair).
 
 Books contain both automated and queued market makers for the paired assets. Additionally, expose price oracle data, and allow for flash swaps.
 
