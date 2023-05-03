@@ -5,7 +5,7 @@ The smart contract's base purpose is to provide fundamental guarantees for all i
 
 ## Base
 
-> **Poolshark Source Code** (January 2023 release)
+> **Poolshark Source Code** (May 2023 release)
 
 The base consists of a factory contract, a router, and the pool contract being launched by the factory.
 
