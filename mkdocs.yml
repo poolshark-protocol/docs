@@ -44,13 +44,15 @@ nav:
   - Whitepaper: whitepaper/index.en.md
   - Smart Contracts:
       - Overview:  smart-contracts/overview.en.md
-      - Base: 
-          - PoolsharkCoverPairFactory:  smart-contracts/base/PoolsharkCoverFactory.en.md
-          - PoolsharkCoverPair:  smart-contracts/base/PoolsharkCoverPair.en.md
-          - PoolsharkPricePairFactory:  smart-contracts/base/PoolsharkPriceFactory.en.md
-          - PoolsharkPricePair:  smart-contracts/base/PoolsharkPricePair.en.md
-          - PoolsharkRangePairFactory:  smart-contracts/base/PoolsharkRangeFactory.en.md
-          - PoolsharkRangePair:  smart-contracts/base/PoolsharkRangePair.en.md
+      - Cover:
+          - CoverPoolFactory:  smart-contracts/cover/CoverPoolFactory.en.md
+          - CoverPool:  smart-contracts/cover/CoverPool.en.md
+      - Price:
+          - PricePoolFactory:  smart-contracts/price/PricePoolFactory.en.md
+          - PricePool:  smart-contracts/price/PricePool.en.md
+      - Range: 
+          - RangePoolFactory:  smart-contracts/range/RangePoolFactory.en.md
+          - RangePool:  smart-contracts/range/RangePool.en.md
       - Libraries:
           - DyDxMath:  smart-contracts/libraries/LiquidityMath.en.md
           - FullPrecisionMath:  smart-contracts/libraries/FullMath.en.md
