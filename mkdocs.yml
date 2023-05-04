@@ -53,19 +53,6 @@ nav:
       - Range: 
           - RangePoolFactory:  smart-contracts/range/RangePoolFactory.en.md
           - RangePool:  smart-contracts/range/RangePool.en.md
-      - Libraries:
-          - DyDxMath:  smart-contracts/libraries/LiquidityMath.en.md
-          - FullPrecisionMath:  smart-contracts/libraries/FullMath.en.md
-          - Oracle: smart-contracts/libraries/Oracle.en.md
-          - TickMath:  smart-contracts/libraries/TickMath.en.md
-          - Ticks:  smart-contracts/libraries/Tick.en.md
-      - Utils:
-          - MathUtils:  smart-contracts/libraries/Position.en.md
-          - PoolsharkErrors:  smart-contracts/libraries/Position.en.md
-          - RebaseLibrary:  smart-contracts/libraries/Position.en.md
-          - SafeCast:  smart-contracts/libraries/SqrtPriceMath.en.md
-          - SafeTransfers:  smart-contracts/libraries/UnsafeMath.en.md
-          - UnsafeMath:  smart-contracts/libraries/UnsafeMath.en.md
   # - Token Economy:
   #     - Overview: token-economy/overview.en.md
   #     - Centripetal Mining: token-economy/centripetal-mining.en.md
