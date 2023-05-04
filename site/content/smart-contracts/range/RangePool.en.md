@@ -1,3 +1,5 @@
+Manages range liquidity positions.
+
 ## Functions
 
 ### mint

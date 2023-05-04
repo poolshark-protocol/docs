@@ -1,8 +1,8 @@
-Creates and gets range pools. 
+Creates and gets price pools. 
 
 ## Functions
 
-### createRangePool
+### createPricePool
 
 ```solidity
     function createPricePool(
@@ -29,7 +29,7 @@ The contract call will revert with `PoolAlreadyExists()` if the pool already exi
 | :----- | :------ | :------------------------------------ |
 | `pool` | address | The generated address for the pool    |
 
-### getRangePool
+### getPricePool
 
 ```solidity
     function getPricePool(

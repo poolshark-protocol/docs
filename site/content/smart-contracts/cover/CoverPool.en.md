@@ -1,3 +1,5 @@
+Manages cover liquidity positions.
+
 ## Functions
 
 ### mint

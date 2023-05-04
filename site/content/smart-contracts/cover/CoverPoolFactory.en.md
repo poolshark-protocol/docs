@@ -1,4 +1,4 @@
-Creates and gets range pools. 
+Creates and gets cover pools. 
 
 ## Functions
 
