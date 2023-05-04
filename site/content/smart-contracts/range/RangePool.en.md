@@ -1,6 +1,6 @@
 ## Functions
 
-### snapshotLiquidityInside
+### mint
 
 ```solidity
   function mint(
