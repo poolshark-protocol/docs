@@ -2,7 +2,7 @@ Creates and gets cover pools.
 
 ## Functions
 
-### createRangePool
+### createCoverPool
 
 ```solidity
     function createCoverPool(
