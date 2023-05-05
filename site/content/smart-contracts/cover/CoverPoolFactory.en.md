@@ -31,7 +31,7 @@ The contract call will revert with `PoolAlreadyExists()` if the pool already exi
 | `tokenOut` | address | The second ERC-20 token by ordering in the pool |
 | `feeTier`      | uint16  | The selected fee tier from which to derive TWAP data                    |
 | `tickSpread`| int16 | The spacing for the ticks which will create a spread around the TWAP |
-| `twapLength`| uint16 | The spacing for the ticks which will create a spread around the TWAP |
+| `twapLength`| uint16 | The length in seconds for the TWAP sample which matches a volatility tier |
 
 ** Return Values: **
 
@@ -39,7 +39,7 @@ The contract call will revert with `PoolAlreadyExists()` if the pool already exi
 | :----- | :------ | :------------------------------------ |
 | `pool` | address | The generated address for the pool    |
 
-### getRangePool
+### getCoverPool
 
 ```solidity
     function getCoverPool(
@@ -65,7 +65,7 @@ If such a pool does not exist, `address(0)` will be returned.
 | `tokenOut` | address | The second ERC-20 token by ordering in the pool |
 | `feeTier`      | uint16  | The selected fee tier from which to derive TWAP data                    |
 | `tickSpread`| int16 | The spacing for the ticks which will create a spread around the TWAP |
-| `twapLength`| uint16 | The spacing for the ticks which will create a spread around the TWAP |
+| `twapLength`| uint16 | The length in seconds for the TWAP sample which matches a volatility tier |
 
 ** Return Values: **
 
