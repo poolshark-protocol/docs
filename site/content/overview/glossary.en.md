@@ -18,6 +18,10 @@ Bidirectional Automated Market Makers provide liquidity to a pool that facilitat
 
 Decentralized Exchanges (DEX) are a peer-to-peer marketplace where users can trade assets in a non-custodial manner without the need for an intermediary overseeing the custody and transfer of assets.
 
+## Full-Range
+
+
+
 ## Limit Order Book
 
 ## Liquidity Pool

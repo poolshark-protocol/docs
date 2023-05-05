@@ -74,7 +74,7 @@ If you are seeking to cover impermanent loss dynamically as the price moves, it 
 
 If the user wants to increase capital efficiency, they can either increase the `lower` bound or decrease the `upper` bound so that less upfront capital is required.
 
-Users cannot place liquidity along the curve at a better LP execution price than what is current. Cover pools are not meant to be used for `Take Profit` positions, as this is what the Price Pools are intended before. Rather, Cover positions are meant to slowly transition out of one asset into another as the price becomes worse for the LP. This is a way for LPs to hedge a portion of their portfolio in the case the market price moves against a token.
+Rather, Cover positions are meant to decrease exposure of one asset and increase exposure to another as the price of the initial asset becomes worse. This is a way for LPs to hedge a portion of their portfolio in the case the market price moves against a given asset.
 </br></br></br>
 ![Range Order 1](cover_position.png){: style="width:100%"}
 </br></br>
