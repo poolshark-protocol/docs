@@ -23,8 +23,7 @@ extra:
 
 nav:
   - Home: index.en.md
-  - Overview: 
-    - What is Poolshark?:  overview/overview.en.md
+  - Overview: overview/overview.en.md
     - Cover Pools:  overview/cover-pools.en.md
     - Limit Pools:  overview/limit-pools.en.md
     - Range Pools:  overview/range-pools.en.md

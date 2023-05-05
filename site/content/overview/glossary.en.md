@@ -46,9 +46,11 @@ https://www.gemini.com/cryptopedia/what-are-cryptocurrency-pairs
 
 ## Time weighted average price (TWAP)
 
-A Time weighted average price is the average price a token is traded at over a period of time
+A Time weighted average price (TWAP) is the average price a token is traded at over a period of time. Here is a common TWAP formula.
 
+![TWAP](TWAP.jpg){: style="width:90%"}
 
+A TWAP price can be viewed on-chain 
 
 ## Fee Tier
 
