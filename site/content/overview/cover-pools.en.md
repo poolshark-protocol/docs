@@ -55,7 +55,9 @@ In order to be competitive with the current market rate, the pool must have a dy
 
 From Paradigm's Gradual Dutch Auction article:
 ```
-Here, the price for every auction decays exponentially according to some `decay constant`. The starting price of each auction increases by some fixed `scale factor`. And the starting price of the first auction is given by some `initial price`.
+Here, the price for every auction decays exponentially according to some `decay constant`.
+The starting price of each auction increases by some fixed `scale factor`.
+And the starting price of the first auction is given by some `initial price`.
 ```
 
 Combining these values gives us a exponentially changing market price for each tick of liquidity we auction off. The price will never deviate by more than one price tick (e.g. 0.1% for the ETH-USDC 0.05% tier).
