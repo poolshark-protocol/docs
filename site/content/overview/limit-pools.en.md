@@ -5,7 +5,7 @@ Limit Positions operate as a limit order consolidatidated to a invariant curve. 
 The main difference is that there is a split buy and sell side. 
 The best priced liquidity for each respective trading direction is aggregated to be accessed first.
 
-This enables Limit Pools to enforce **price priority**.
+This enables Limit Pools to enforce [**price priority**](/docs/overview/glossary/#price-priority).
 
 </br>
 ![Limit Pool Range Order](price-pools.png){: .center style="width:85%"}

@@ -29,7 +29,7 @@ nav:
     - Limit Pools:  overview/limit-pools.en.md
     - Range Pools:  overview/range-pools.en.md
     - Glossary: overview/glossary.md
-    - Index: overview/indexes.md
+    #- Index: overview/indexes.md (need to add more terminology)
     # - Token Economy Overview:  introduction/token-economy-intro.en.md
   # - Protocol Guide:
   #   - Liquidity Types:
