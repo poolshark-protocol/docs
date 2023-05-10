@@ -23,18 +23,20 @@ extra:
 
 nav:
   - Home: index.en.md
-  - Introduction: 
-    - What is Poolshark?:  introduction/index.en.md
-    - Cover Pools:  introduction/cover-pools.en.md
-    - Price Pools:  introduction/price-pools.en.md
-    - Range Pools:  introduction/range-pools.en.md
+  - Overview:
+    - Introduction: overview/index.en.md
+    - Cover Pools:  overview/cover-pools.en.md
+    - Limit Pools:  overview/limit-pools.en.md
+    - Range Pools:  overview/range-pools.en.md
+    - Glossary: overview/glossary.md
+    #- Index: overview/indexes.md (need to add more terminology)
     # - Token Economy Overview:  introduction/token-economy-intro.en.md
   # - Protocol Guide:
   #   - Liquidity Types:
   #       - Liquidity Provider Overview:  protocol-guide/liquidity-providers/overview.en.md
   #       - Directional Liquidity:  protocol-guide/liquidity-providers/directional-liquidity.en.md
   #       - Cover Liquidity:  protocol-guide/liquidity-providers/single-sided.en.md
-  #       - Price Liquidity:  protocol-guide/liquidity-providers/directional-range-order.en.md
+  #       - Limit Liquidity:  protocol-guide/liquidity-providers/directional-range-order.en.md
   #       - Range Liquidity:  protocol-guide/liquidity-providers/range-liquidity.en.md
   #   - Swaps:  protocol-guide/swaps.en.md
   #   - Mints:  protocol-guide/mints.en.md
@@ -44,26 +46,15 @@ nav:
   - Whitepaper: whitepaper/index.en.md
   - Smart Contracts:
       - Overview:  smart-contracts/overview.en.md
-      - Base: 
-          - PoolsharkCoverPairFactory:  smart-contracts/base/PoolsharkCoverFactory.en.md
-          - PoolsharkCoverPair:  smart-contracts/base/PoolsharkCoverPair.en.md
-          - PoolsharkPricePairFactory:  smart-contracts/base/PoolsharkPriceFactory.en.md
-          - PoolsharkPricePair:  smart-contracts/base/PoolsharkPricePair.en.md
-          - PoolsharkRangePairFactory:  smart-contracts/base/PoolsharkRangeFactory.en.md
-          - PoolsharkRangePair:  smart-contracts/base/PoolsharkRangePair.en.md
-      - Libraries:
-          - DyDxMath:  smart-contracts/libraries/LiquidityMath.en.md
-          - FullPrecisionMath:  smart-contracts/libraries/FullMath.en.md
-          - Oracle: smart-contracts/libraries/Oracle.en.md
-          - TickMath:  smart-contracts/libraries/TickMath.en.md
-          - Ticks:  smart-contracts/libraries/Tick.en.md
-      - Utils:
-          - MathUtils:  smart-contracts/libraries/Position.en.md
-          - PoolsharkErrors:  smart-contracts/libraries/Position.en.md
-          - RebaseLibrary:  smart-contracts/libraries/Position.en.md
-          - SafeCast:  smart-contracts/libraries/SqrtPriceMath.en.md
-          - SafeTransfers:  smart-contracts/libraries/UnsafeMath.en.md
-          - UnsafeMath:  smart-contracts/libraries/UnsafeMath.en.md
+      - Cover:
+          - CoverPoolFactory:  smart-contracts/cover/CoverPoolFactory.en.md
+          - CoverPool:  smart-contracts/cover/CoverPool.en.md
+      - Price:
+          - LimitPoolFactory:  smart-contracts/limit/LimitPoolFactory.en.md
+          - LimitPool:  smart-contracts/limit/LimitPool.en.md
+      - Range: 
+          - RangePoolFactory:  smart-contracts/range/RangePoolFactory.en.md
+          - RangePool:  smart-contracts/range/RangePool.en.md
   # - Token Economy:
   #     - Overview: token-economy/overview.en.md
   #     - Centripetal Mining: token-economy/centripetal-mining.en.md
