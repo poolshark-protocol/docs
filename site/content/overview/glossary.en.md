@@ -8,7 +8,7 @@ title: Glossary
 
 Automated Market Makers are a type of Decentralized Exchange that employs a fixed algorithm for providing liquidity.
 
-See more (https://www.gemini.com/cryptopedia/amm-what-are-automated-market-makers)
+See more [here](https://www.gemini.com/cryptopedia/amm-what-are-automated-market-makers).
 
 ## Bidirectional Automated Market Maker
 
@@ -42,6 +42,8 @@ A Full-Range is a descriptive term for when users provide liquidity to an AMM sp
 
 ## Limit Order Book
 
+A limit order book is a record of outstanding limit orders maintained by an exchange. A limit order is a type of order to buy or sell an asset at a specific price or better. When a limit order for an asset is entered, it is kept on record by the limit order book.
+
 ## Liquidity Pool
 
 A smart contract containing a collection of digital assets accumulated to enable trading and/or yield oppertunities.
@@ -66,7 +68,7 @@ eg. ETH-DAI means the price of ETH in DAI
 
 https://www.gemini.com/cryptopedia/what-are-cryptocurrency-pairs
 
-## Price tick
+## Price Tick
 
 A price tick is an individual discrete value that represents a part of a virtual constant product curve. To help visualize this think about changing a continous constant product curve into a discrete curve by separating it into individual price points. The individual price points are the ticks A price tick also determines the accuracy of liquidity provision as if a virtual constant product curve 
 
@@ -91,9 +93,9 @@ n ≈ 34542
 
 The above values subbed back in to the original formula show that you would be providing liquidity at the price point of 999.95 token x per token y. This is only an average of course as tick 34542 exists as its own constant product curve.
 
-## Time weighted average price (TWAP)
+## Time Weighted Average Price (TWAP)
 
-A Time weighted average price (TWAP) is the average price a token is traded at over a period of time. Below is an example of a common TWAP formula.
+A time weighted average price (TWAP) is the average price a token is traded at over a period of time. Below is an example of a common TWAP formula.
 
 ![TWAP](TWAP.jpg){: style="width:50%"}
 
