@@ -35,10 +35,11 @@ The benefit of dutch auctions is that they allow for partial sales throughout th
 Dutch auctions are also used by Opium Protocol and were featured by Paradigm in a series of writings focusing on dutch auctions with additional logic.
 
 
-
 ## Full-Range
 
-A Full-Range is a descriptive term for when users provide liquidity to an AMM spanning the entire range
+A Full-Range is a descriptive term for when users provide liquidity to an AMM spanning the entire possible range.
+
+> Example: Uniswap v2 LP positions
 
 ## Limit Order Book
 
