@@ -46,38 +46,15 @@ nav:
   - Whitepaper: whitepaper/index.en.md
   - Smart Contracts:
       - Overview:  smart-contracts/overview.en.md
-<<<<<<< HEAD
-      - Base: 
-          - PoolsharkCoverPairFactory:  smart-contracts/base/PoolsharkCoverFactory.en.md
-          - PoolsharkCoverPair:  smart-contracts/base/PoolsharkCoverPair.en.md
-          - PoolsharkLimitPairFactory:  smart-contracts/base/PoolsharkLimitFactory.en.md
-          - PoolsharkLimitPair:  smart-contracts/base/PoolsharkLimitPair.en.md
-          - PoolsharkRangePairFactory:  smart-contracts/base/PoolsharkRangeFactory.en.md
-          - PoolsharkRangePair:  smart-contracts/base/PoolsharkRangePair.en.md
-      - Libraries:
-          - DyDxMath:  smart-contracts/libraries/LiquidityMath.en.md
-          - FullPrecisionMath:  smart-contracts/libraries/FullMath.en.md
-          - Oracle: smart-contracts/libraries/Oracle.en.md
-          - TickMath:  smart-contracts/libraries/TickMath.en.md
-          - Ticks:  smart-contracts/libraries/Tick.en.md
-      - Utils:
-          - MathUtils:  smart-contracts/libraries/Position.en.md
-          - PoolsharkErrors:  smart-contracts/libraries/Position.en.md
-          - RebaseLibrary:  smart-contracts/libraries/Position.en.md
-          - SafeCast:  smart-contracts/libraries/SqrtPriceMath.en.md
-          - SafeTransfers:  smart-contracts/libraries/UnsafeMath.en.md
-          - UnsafeMath:  smart-contracts/libraries/UnsafeMath.en.md
-=======
       - Cover:
           - CoverPoolFactory:  smart-contracts/cover/CoverPoolFactory.en.md
           - CoverPool:  smart-contracts/cover/CoverPool.en.md
       - Price:
-          - LimitPoolFactory:  smart-contracts/price/LimitPoolFactory.en.md
-          - LimitPool:  smart-contracts/price/LimitPool.en.md
+          - LimitPoolFactory:  smart-contracts/limit/LimitPoolFactory.en.md
+          - LimitPool:  smart-contracts/limit/LimitPool.en.md
       - Range: 
           - RangePoolFactory:  smart-contracts/range/RangePoolFactory.en.md
           - RangePool:  smart-contracts/range/RangePool.en.md
->>>>>>> smart-contracts-05-03
   # - Token Economy:
   #     - Overview: token-economy/overview.en.md
   #     - Centripetal Mining: token-economy/centripetal-mining.en.md
