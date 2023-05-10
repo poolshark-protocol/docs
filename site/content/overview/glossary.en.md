@@ -12,7 +12,15 @@ See more (https://www.gemini.com/cryptopedia/amm-what-are-automated-market-maker
 
 ## Bidirectional Automated Market Maker
 
-Bidirectional Automated Market Makers provide liquidity to a pool that facilitates trades buying/selling either token on a single trading pair at the same time through one position.
+Liquidity pools which facilitate both buying and selling on a token pair.
+
+> Example: Uniswap, Curve Finance
+
+## Directional Automated Market Maker
+
+Liquidity pools which facilitate only buying or only selling on a token pair.
+
+> Example: Poolshark
 
 ## DEX
 

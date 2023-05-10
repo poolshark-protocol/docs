@@ -9,9 +9,9 @@ If a position is or has been in range on a [bidirectional automated market maker
 
 * If the market wants ETH, the pool takes DAI and increases the ETH to DAI price
 * If the market wants DAI, the pool takes ETH and decreases the ETH to DAI price.
-
-![Range Order 1](cover-vs-range.png){: style="width:90%"}
-
+<br/><br/>
+![Range Order 1](cover-vs-range.png){: .center style="width:75%"}
+<br/><br/>
 This allows them to function as a hedging tool if the user wants to enter or exit an **ERC-20** token over some range. 
 
 If this was attempted using a position with a fixed price such as a limit order (as done when providing liquidity) the position will either underprice the assets or it won't be filled.
@@ -33,7 +33,7 @@ If you are seeking to cover impermanent loss dynamically as the price moves, it 
 If the user wants to increase capital efficiency, they can either increase the lower bound or decrease the upper bound so that less upfront capital is required.
 
 Rather, Cover positions are meant to decrease exposure of one asset and increase exposure to another as the price of the initial asset becomes worse. This is a way for LPs to hedge a portion of their portfolio in the case the market price moves against a given asset.
-</br></br></br>
+</br></br></br><br/><br/>
 ![Range Order 1](cover_position.png){: style="width:100%"}
 </br></br>
 

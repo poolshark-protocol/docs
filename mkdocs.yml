@@ -46,6 +46,7 @@ nav:
   - Whitepaper: whitepaper/index.en.md
   - Smart Contracts:
       - Overview:  smart-contracts/overview.en.md
+<<<<<<< HEAD
       - Base: 
           - PoolsharkCoverPairFactory:  smart-contracts/base/PoolsharkCoverFactory.en.md
           - PoolsharkCoverPair:  smart-contracts/base/PoolsharkCoverPair.en.md
@@ -66,6 +67,17 @@ nav:
           - SafeCast:  smart-contracts/libraries/SqrtPriceMath.en.md
           - SafeTransfers:  smart-contracts/libraries/UnsafeMath.en.md
           - UnsafeMath:  smart-contracts/libraries/UnsafeMath.en.md
+=======
+      - Cover:
+          - CoverPoolFactory:  smart-contracts/cover/CoverPoolFactory.en.md
+          - CoverPool:  smart-contracts/cover/CoverPool.en.md
+      - Price:
+          - LimitPoolFactory:  smart-contracts/price/LimitPoolFactory.en.md
+          - LimitPool:  smart-contracts/price/LimitPool.en.md
+      - Range: 
+          - RangePoolFactory:  smart-contracts/range/RangePoolFactory.en.md
+          - RangePool:  smart-contracts/range/RangePool.en.md
+>>>>>>> smart-contracts-05-03
   # - Token Economy:
   #     - Overview: token-economy/overview.en.md
   #     - Centripetal Mining: token-economy/centripetal-mining.en.md

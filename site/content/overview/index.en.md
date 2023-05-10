@@ -3,12 +3,16 @@ title: Overview
 ---
 ># Overview?
 
-The **Poolshark Protocol** is a noncustodial and trustless [DEX](glossary/##DEX) built using smart contracts, which provides a variety of spot exchange [**liquidity provider**](glossary/##price-priority) (LP) position types. The multiple LP types allow LPs to properly express their views on a given pair while keeping them under the same roof. Each type of position is placed in a [liquidity pool](glossary/liquidity-pool) with other positions of that type and then liquidity pools are accessed and transacted with when a user swaps on the platform. Having multiple LP types allows Poolshark to function as a hybrid of an [**automated market maker**](glossary/##automated-market-maker) (AMM) and a [**limit order book**](glossary/##limit-order-book) (LOB) at once.
+The **Poolshark Protocol** is a collection of noncustodial smart contracts that acts as a [decentralized exchange](glossary/##DEX) offering both [directional](glossary/directional-automated-market-maker) and [bidirectional liquidity](glossary/bidirectional-automated-market-maker). By having directional support, LPs can properly express their views on a given pair and increase liquidity available to the market at the same time. 
 
-The key difference between Poolshark and traditional limit order books is using Limit Pools instead of having a queue for transactions Poolshark consolidates all positions across a pool to invariant curves, this allows for greater scalability.
+Each type of position is placed within a [liquidity pool](glossary/liquidity-pool) and transacted with via users swapping. Having multiple LP types allows Poolshark to function as a hybrid of an [**automated market maker**](glossary/##automated-market-maker) (AMM) and a [**limit order book**](glossary/##limit-order-book) (LOB) at once.
 
-The key difference between Poolshark and your typical AMM is the addition of limit orders, take profits, trailing take profit, stop loss and trailing stop all as a liquidity provider. 
+The key difference between Poolshark and limit order books is that LOBs have a order queue while Poolshark merges all liquidity into a single pool, allowing for greater transaction throughput.
 
+The key difference between Poolshark and AMM is the addition of limit orders, take profits, trailing take profit, stop loss and trailing stop all as a liquidity provider.
+
+<!-- [picture here difference between BDAMM and DAMM] -->
+<br/><br/>
 ># **What Problem does Poolshark Address?**
 
 ## **Indeterminate Pricing**
@@ -26,8 +30,8 @@ The issue with AMM pools is, given the scenario above, the greater of a price ch
 The price of the asset held in a position is determined by the demand for that asset relative to the other asset in a pair. Due to this if there is a lot of swapping into a certain asset in an AMM pool that asset will decrease in price.
 
 Poolshark addresses this by allowing LP's to choose from multiple types of positions to better reflect their beliefs on the market and manage their risk as they see fit.
-
-# **Three Types of Positions**
+<br/><br/>
+># **Three Types of Positions**
 
 Poolshark employs three types of positions:
 
@@ -44,8 +48,8 @@ Each of these positions are present in a different type of pool.
 [Range Pools](range-pools) can be viewed as an AMM pool with liquidity bounded to a range.
 
 Use cases for each can be observed on their respective pages.
-
-# **Wrapping Up The Overview**
+<br/><br/>
+># **Wrapping Up The Overview**
 
 The team is excited to see new use cases found for each of the types of positions and listen to suggestions. 
 
