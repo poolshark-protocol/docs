@@ -59,6 +59,6 @@ Directional LPing</em> allows for one-way fills similar to a traditional limit o
 
 DeFi protocols are often the largest liquidity providers in the ecosystem, so we're excited to see how our community and ecosystem can build solutions around protocols that are seeking to greater improve their profitability and runway for the coming years.
 
-If you would like to contribute or have any questions, don't hesistate to [open an issue on Github](https://github.com/poolsharks-protocol/docs/issues), or dm on [Twitter](https://twitter.com/poolsharks_labs)
+If you would like to contribute or have any questions, don't hesistate to [open an issue on Github](https://github.com/poolsharks-protocol/docs/issues), or dm on [Twitter](https://twitter.com/PoolsharkLabs)
 
 <br/><br/><br/>
