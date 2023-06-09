@@ -22,7 +22,7 @@ extra:
     property: !ENV GOOGLE_ANALYTICS_KEY
 
 nav:
-  - Home: index.en.md
+  - Home:  index.en.md
   - Overview:
     - Introduction: overview/index.en.md
     - Cover Pools:  overview/cover-pools.en.md
@@ -61,9 +61,9 @@ nav:
   # - References:
   #   - Automated Market Makers: references/automated-market-makers.en.md
   #   - Limit Order Books: references/limit-order-books.en.md
-# - Tutorials:
+  - Tutorials:
 #     - Basic Setup: tutorials/basic-setup.en.md
-#     - Swaps: 
+   - Swaps:  tutorials/how-to=swap.md
 #         - Single: tutorials/swaps/single.en.md
 #         - Multicall: tutorials/swaps/multicall.en.md
 #     - Liquidity: 
