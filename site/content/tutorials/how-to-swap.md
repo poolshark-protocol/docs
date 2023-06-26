@@ -2,11 +2,13 @@
 title: How to Swap
 ---
 
-* How to Swap
+# How to Swap
 
-Here’s the process of executing a swap on Poolshark.
-This is the basis for all trading. The equivalent of a market order. A swap consists of you choosing a token you want receive and a token that you currently have in your wallet and executing a trade. As said above this requires you to have tokens in your wallet. If you don’t have tokens you can always buy tokens from (provider xyz).
+## Here’s the process of executing a swap on Poolshark.
 
+    This is the basis for all trading. The equivalent of a market order. 
+
+A swap consists of you choosing a token you want receive and a token that you currently have in your wallet and executing a trade. As said above this requires you to have tokens in your wallet.
 
 1. Click ‘Connect Wallet’.
 
@@ -49,3 +51,5 @@ This is the basis for all trading. The equivalent of a market order. A swap cons
 14. Congratulations you have just finished your first swap on Poolshark! Click the pop-up to view on Arbiscan
 
 ![Done tx](Swap 6.png){: style="width:100%"}
+
+<br><br><br>

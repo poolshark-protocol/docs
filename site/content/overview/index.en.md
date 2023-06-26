@@ -1,7 +1,7 @@
 ---
 title: Overview
 ---
-># Overview?
+># Overview
 
 The **Poolshark Protocol** is a collection of noncustodial smart contracts that acts as a [decentralized exchange](glossary/##DEX) offering both [directional](glossary/directional-automated-market-maker) and [bidirectional liquidity](glossary/bidirectional-automated-market-maker). By having directional support, LPs can properly express their views on a given pair and increase liquidity available to the market at the same time. 
 

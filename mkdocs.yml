@@ -63,6 +63,8 @@ nav:
   - Tutorials:
 #     - Basic Setup: tutorials/basic-setup.en.md
     - Swaps:  tutorials/how-to-swap.md
+    - Cover:  tutorials/how-to-cover.md
+    - Range:  tutorials/how-to-range.md
 #         - Single: tutorials/swaps/single.en.md
 #         - Multicall: tutorials/swaps/multicall.en.md
 #     - Liquidity: 
