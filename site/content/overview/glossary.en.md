@@ -36,6 +36,9 @@ The benefit of dutch auctions is that they allow for partial sales throughout th
 
 Dutch auctions are also used by Opium Protocol and were featured by Paradigm in a series of writings focusing on dutch auctions with additional logic.
 
+## Fee Tier
+
+A fee tier is the percentage fee that a taker must pay when swapping with a pool. Fee tiers determine the tick spacing as the fee tier is half the size of the each price tick. Foor more information please check [Price Ticks](#price-tick).
 
 ## **Full-Range**
 
@@ -119,10 +122,5 @@ Due to all transaction on a DEX being queryable on-chain a TWAP price can be cal
 The length of the time period the exchange rates are recorded over and ease of price manipulation have a **negative relationship**. This means that the longer the time period is the harder manipulation is.
 
 The cost to finding a TWAP price over a longer time period is that the TWAP will be less reactive to price changes and thus less accurate over a shorter period of time. In summary for a given TWAP price relative to chosen the time period length the main dependant variables with a negative relationship are short term price accuracy and ease of manipulation.
-
-
-## Fee Tier
-
-A fee tier is the percentage fee that a taker must pay when swapping with a pool. Fee tiers determine the tick spacing as the fee tier is half the size of the each price tick. Foor more information please check [Price Ticks](#price-tick).
 
 <br/><br/><br/>
