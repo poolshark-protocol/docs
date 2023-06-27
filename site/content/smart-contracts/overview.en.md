@@ -14,7 +14,7 @@ The factory defines the logic for generating `Cover Pools`. A pool is defined by
 
 Cover Pools allow liquidity providers to increase exposure when token price is increasing and decrease exposure when token price is decreasing.
 
-> **Cover Solidity Contracts** (open-source soon)
+> [**Cover Solidity Contracts**](https://github.com/poolsharks-protocol/cover)
 
 ---
 

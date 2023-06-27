@@ -42,7 +42,11 @@ nav:
   #   - Burns:  protocol-guide/burns.en.md
   #   - Fees:  protocol-guide/fees.en.md
   #   - Oracles:  protocol-guide/oracles.en.md
-  - Whitepaper: whitepaper/index.en.md
+  - Tutorials:
+#     - Basic Setup: tutorials/basic-setup.en.md
+    - Swaps:  tutorials/how-to-swap.md
+    - Cover:  tutorials/how-to-cover.md
+    - Range:  tutorials/how-to-range.md
   - Smart Contracts:
       - Overview:  smart-contracts/overview.en.md
       - Cover:
@@ -54,17 +58,14 @@ nav:
       - Range: 
           - RangePoolFactory:  smart-contracts/range/RangePoolFactory.en.md
           - RangePool:  smart-contracts/range/RangePool.en.md
+  - Whitepaper: whitepaper/index.en.md
   # - Token Economy:
   #     - Overview: token-economy/overview.en.md
   #     - Centripetal Mining: token-economy/centripetal-mining.en.md
   # - References:
   #   - Automated Market Makers: references/automated-market-makers.en.md
   #   - Limit Order Books: references/limit-order-books.en.md
-  - Tutorials:
-#     - Basic Setup: tutorials/basic-setup.en.md
-    - Swaps:  tutorials/how-to-swap.md
-    - Cover:  tutorials/how-to-cover.md
-    - Range:  tutorials/how-to-range.md
+
 #         - Single: tutorials/swaps/single.en.md
 #         - Multicall: tutorials/swaps/multicall.en.md
 #     - Liquidity: 
