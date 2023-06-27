@@ -98,5 +98,4 @@ If you are looking to cover and existing range pool position please move to [Sel
 
 [x] **17.** Congratulations you have just created your Cover position on Poolshark! Click the pop-up to view on Arbiscan
 
-
 <br><br><br>
