@@ -97,3 +97,6 @@ If you are looking to cover and existing range pool position please move to [Sel
 16 . Wait for the transaction to be confirmed and executed in the next block
 
 17 . Congratulations you have just created your Cover position on Poolshark! Click the pop-up to view on Arbiscan
+
+
+<br><br><br>
