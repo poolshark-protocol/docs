@@ -2,9 +2,9 @@
 title: How to Range
 ---
 
-# How Provide Liquidity to a Range Pool
+# How to LP on Range
 
-## The process of providing liquidity to a Range Position
+## Minting a Position
 
     This is a typical bidirectional liquidity position ([See Documentation for more info](https://docs.poolshark.fi/overview/glossary/#bidirectional-automated-market-maker))
 

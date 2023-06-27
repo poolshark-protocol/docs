@@ -2,7 +2,7 @@
 title: How to Cover
 ---
 
-# How to Mint a Cover LP
+# How to LP on Cover
 
 ## The process of providing liquidity to a Cover Position
 
