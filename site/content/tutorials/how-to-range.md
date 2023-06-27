@@ -1,12 +1,12 @@
 ---
-title: How to Provide Liquidity to a Range Pool
+title: How to Range
 ---
 
 # How Provide Liquidity to a Range Pool
 
 ## The process of providing liquidity to a Range Position
 
-    This is a typical bidirectional liquidity position (reference here)
+    This is a typical bidirectional liquidity position ([See Documentation for more info](https://docs.poolshark.fi/overview/glossary/#bidirectional-automated-market-maker))
 
 1 . Click ‘Connect Wallet’.
 

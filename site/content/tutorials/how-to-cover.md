@@ -1,5 +1,5 @@
 ---
-title: How to Mint a Cover LP
+title: How to Cover
 ---
 
 # How to Mint a Cover LP
