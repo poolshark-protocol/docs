@@ -2,9 +2,9 @@
 title: How to Cover
 ---
 
-# How to Mint a Cover LP
+# How to LP on Cover
 
-## The process of providing liquidity to a Cover Position
+## Minting a Position
 
     This is the basis for hedging risk. The equivalent of a stop loss.
 
