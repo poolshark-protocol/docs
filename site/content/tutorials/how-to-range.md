@@ -30,7 +30,7 @@ title: How to Range
 
 ![Range Pool Page](Range 5.png){: style="width:100%"}
 
-- [x] **7.** Repeat the same process for ```token 1``` by clicking selecting the second token.
+- [x] **7.** Repeat the same process for ```token 1``` by selecting the second token.
 
 ![Range Pool Page](Range 6.png){: style="width:100%"}
 

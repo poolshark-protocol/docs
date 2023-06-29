@@ -82,7 +82,7 @@ If you are looking to cover and existing range pool position please move to [Sel
 
 ![Input fields](Cover 11.png){: style="width:100%"}
 
-- [x] **11.** Finally, click “Approve” to approve the spend of your tokens.
+- [x] **11.** Finally, click “Approve” to approve the spending of your tokens.
 
 ![Approve ](Cover 12.png){: style="width:100%"}
 
