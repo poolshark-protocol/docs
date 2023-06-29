@@ -5,7 +5,7 @@ title: Overview
 
 The **Poolshark Protocol** is a collection of noncustodial smart contracts that acts as a [decentralized exchange](glossary/##DEX) offering both [directional](glossary/##directional-automated-market-maker) and [bidirectional liquidity](glossary/##bidirectional-automated-market-maker). By having directional support, LPs can properly express their views on a given pair and increase the liquidity available to the market at the same time.  
 
-Each type of position is placed within a [liquidity pool](glossary/liquidity-pool) and transacted with via swapping. Having multiple LP types allows Poolshark to function as a hybrid of an [**automated market maker**](glossary/##automated-market-maker) (AMM) and a [**limit order book**](glossary/##limit-order-book) (LOB) at once.
+Each type of position is placed within a [liquidity pool](glossary/##liquidity-pool) and transacted with via swapping. Having multiple LP types allows Poolshark to function as a hybrid of an [**automated market maker**](glossary/##automated-market-maker) (AMM) and a [**limit order book**](glossary/##limit-order-book) (LOB) at once.
 
 The key difference between Poolshark and limit order books is that LOBs have a order queue while Poolshark merges all liquidity into a single pool, allowing for greater transaction throughput.
 
