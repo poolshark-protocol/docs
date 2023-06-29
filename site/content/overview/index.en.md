@@ -3,9 +3,9 @@ title: Overview
 ---
 ># Overview
 
-The **Poolshark Protocol** is a collection of noncustodial smart contracts that acts as a [decentralized exchange](glossary/##DEX) offering both [directional](glossary/##directional-automated-market-maker) and [bidirectional liquidity](glossary/##bidirectional-automated-market-maker). By having directional support, LPs can properly express their views on a given pair and increase liquidity available to the market at the same time.  
+The **Poolshark Protocol** is a collection of noncustodial smart contracts that acts as a [decentralized exchange](glossary/##DEX) offering both [directional](glossary/##directional-automated-market-maker) and [bidirectional liquidity](glossary/##bidirectional-automated-market-maker). By having directional support, LPs can properly express their views on a given pair and increase the liquidity available to the market at the same time.  
 
-Each type of position is placed within a [liquidity pool](glossary/liquidity-pool) and transacted with via users swapping. Having multiple LP types allows Poolshark to function as a hybrid of an [**automated market maker**](glossary/##automated-market-maker) (AMM) and a [**limit order book**](glossary/##limit-order-book) (LOB) at once.
+Each type of position is placed within a [liquidity pool](glossary/liquidity-pool) and transacted with via swapping. Having multiple LP types allows Poolshark to function as a hybrid of an [**automated market maker**](glossary/##automated-market-maker) (AMM) and a [**limit order book**](glossary/##limit-order-book) (LOB) at once.
 
 The key difference between Poolshark and limit order books is that LOBs have a order queue while Poolshark merges all liquidity into a single pool, allowing for greater transaction throughput.
 
@@ -17,7 +17,7 @@ With the Poolshark Protocol, AMMs have the addition of limit orders and stop-los
 
 ## **Indeterminate Pricing**
 
-For large institutions to use a spot exchange for everyday operations they must be able to provide a single asset to a position that allows them to set a immutable price and have irreversible execution. Given that current DEXes either deal with options, perpetuals, or AMMs which either don't allow for spot trading, create gas issues, or have execution that is reversible, the current DEXes on the market are unable to meet the needs of many institutions to move into providing assets on decentralized exchanges.
+For large institutions to use a spot exchange for everyday operations they must be able to provide a single asset to a position that allows them to set an immutable price and have irreversible execution. Given that current DEXes either deal with options, perpetuals, or AMMs which either don't allow for spot trading, create gas issues, or have execution that is reversible, the current DEXes on the market are unable to meet the needs of many institutions to move into providing assets on decentralized exchanges.
 
 ## **Merged buy and sell sides**
 
@@ -39,13 +39,13 @@ Poolshark employs three types of positions:
 - Cover positions
 - Range positions
 
-Each of these positions are present in a different type of pool.
+Each of these positions is present in a different type of liquidity pool.
 
-[Limit Pools](limit-pools) can be viewed as a limit order.
+[Limit Pools](limit-pools) can be viewed as a range-bound limit order.
 
-[Cover Pools](cover-pools) can be viewed as a stop loss which references the current TWAP.
+[Cover Pools](cover-pools) can be viewed as a range-bound stop loss which references the current TWAP.
 
-[Range Pools](range-pools) can be viewed as an AMM pool with liquidity bounded to a range.
+[Range Pools](range-pools) can be viewed as a standard range-bound AMM pool with ERC-1155 support and easy autocompounding.
 
 Use cases for each can be observed on their respective pages.
 <br/><br/>
@@ -53,12 +53,12 @@ Use cases for each can be observed on their respective pages.
 
 The team is excited to see new use cases found for each of the types of positions and listening to suggestions. 
 
-With these added position types, liquidity providers can customize their risk profile to match the current price action in the market.
+With these added position types, liquidity providers can customize their risk profiles to match the current price action in the market.
 
 Directional liquidity</em> allows for one-way fills similar to a traditional limit order, whereas current LP positions are reversible.
 
 DeFi protocols are often the largest liquidity providers in the ecosystem, so we're excited to see how our community and ecosystem can build solutions around protocols that are seeking to greater improve their profitability and runway for the coming years.
 
-If you would like to contribute or have any questions, don't hesistate to [open an issue on Github](https://github.com/poolsharks-protocol/docs/issues), or DM on [Twitter](https://twitter.com/PoolsharkLabs)
+If you would like to contribute or have any questions, don't hesitate to [open an issue on Github](https://github.com/poolsharks-protocol/docs/issues), or DM on [Twitter](https://twitter.com/PoolsharkLabs)
 
 <br/><br/><br/>
