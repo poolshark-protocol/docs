@@ -1,7 +1,7 @@
 
 Poolshark is a set of smart contracts comprising support for range liquidity, cover liquidity, and price liquidity.
 
-The smart contract's base purpose is to provide fundamental guarantees for all interfacing parties. They define the logic to permissionlessly creating new pools, adding liquidity, executing swaps, accumulating across ticks, etc.
+The smart contract's base purpose is to provide fundamental guarantees for all interfacing parties. They define the logic to permissionlessly create new pools, adding liquidity, executing swaps, accumulating across ticks, etc.
 
 ---
 
