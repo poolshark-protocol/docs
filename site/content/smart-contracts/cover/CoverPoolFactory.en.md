@@ -18,7 +18,7 @@ Creates a pool for the given two ERC-20 tokens to correspond with an existing vo
 
 The volatility tier selected is based on the `sourceName`, `feeTier`, `tickSpread`, and `twapLength` passed in.
 
-The addresses of `tokenIn` and `tokenOut` will have their addresses sorted lexographically (i.e. first by number then by letter) to represent `token0` and `token1`.
+The addresses of `tokenIn` and `tokenOut` will have their addresses sorted lexicographically (i.e. first by number then by letter) to represent `token0` and `token1`.
 
 The contract call will revert with `PoolAlreadyExists()` if the pool already exists, `TwapSourceNotFound` is the TWAP source does not exists, `VolatilityTierNotSupported()` if the volatility tier is not supported, or `InvalidTokenAddress` if one of the token addresses is invalid.
 
