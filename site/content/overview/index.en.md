@@ -5,9 +5,9 @@ title: Overview
 
 The **Poolshark Protocol** is a collection of noncustodial smart contracts that acts as a [decentralized exchange](glossary/##DEX) offering both [directional](glossary/##directional-automated-market-maker) and [bidirectional liquidity](glossary/##bidirectional-automated-market-maker). By having directional support, LPs can properly express their views on a given pair and increase the liquidity available to the market at the same time.  
 
-Each type of position is placed within a [liquidity pool](glossary/##liquidity-pool) and transacted with via swapping. Having multiple LP types allows Poolshark to function as a hybrid of an [**automated market maker**](glossary/##automated-market-maker) (AMM) and a [**limit order book**](glossary/##limit-order-book) (LOB) at once.
+Each type of position is placed within a [liquidity pool](glossary/##liquidity-pool) and can be transacted via swaps. Having multiple LP types allows Poolshark to function as a hybrid of an [**automated market maker**](glossary/##automated-market-maker) (AMM) and a [**limit order book**](glossary/##limit-order-book) (LOB) at once.
 
-The key difference between Poolshark and limit order books is that LOBs have a order queue while Poolshark merges all liquidity into a single pool, allowing for greater transaction throughput.
+The key difference between Poolshark and limit order books is that LOBs have an order queue while Poolshark merges all liquidity into a single pool, allowing for greater transaction throughput.
 
 With the Poolshark Protocol, AMMs have the addition of limit orders and stop-losses as a liquidity provider.
 
@@ -23,7 +23,7 @@ For large institutions to use a spot exchange for everyday operations they must 
 
 Currently, most fully on-chain AMMs solely allow users to create bidirectional positions on a given pair moving along an invariant curve. This is something that inherently expresses the market view that the tokens in the pair will be priced relatively stable against one another.
 
-One of the features of the inherent design of an AMM from the view point of a LP is when the price of an asset is changing relative to the other and the LP position is transacted with it changes to be comprised of more of the token that is decreasing in value. The reasoning for accepting this is due to transacting via swaps in either direction continuously the LP position accrues transaction fees from the users swapping in either direction with the liquidity pool.
+One of the features of the inherent design of an AMM from the viewpoint of a LP is when the price of an asset is changing relative to the other and the LP position is transacted with it changes to be comprised of more of the token that is decreasing in value. The reasoning for accepting this is due to transacting via swaps in either direction continuously the LP position accrues transaction fees from the users swapping in either direction with the liquidity pool.
 
 The issue with AMM pools is, given the scenario above, the greater of a price change the less the user is receiving relative to what the value of the assets they initially deposited are worth. This is a type of opportunity cost called **impermanent loss**. The reason it may be impermanent is if the price shifts or reverts back to the price at which the LP created their position, this loss will be eliminated. 
 
@@ -51,13 +51,13 @@ Use cases for each can be observed on their respective pages.
 <br/><br/>
 ># **Wrapping Up The Overview**
 
-The team is excited to see new use cases found for each of the types of positions and listening to suggestions. 
+The team is excited to see new use cases found for each of the types of positions and we welcome your suggestions. 
 
 With these added position types, liquidity providers can customize their risk profiles to match the current price action in the market.
 
 Directional liquidity</em> allows for one-way fills similar to a traditional limit order, whereas current LP positions are reversible.
 
-DeFi protocols are often the largest liquidity providers in the ecosystem, so we're excited to see how our community and ecosystem can build solutions around protocols that are seeking to greater improve their profitability and runway for the coming years.
+DeFi protocols are often the largest liquidity providers in the ecosystem, so we're excited to see how our community and ecosystem can build solutions around protocols that are seeking to greatly improve their profitability and runway for the coming years.
 
 If you would like to contribute or have any questions, don't hesitate to [open an issue on Github](https://github.com/poolsharks-protocol/docs/issues), or DM on [Twitter](https://twitter.com/PoolsharkLabs)
 
