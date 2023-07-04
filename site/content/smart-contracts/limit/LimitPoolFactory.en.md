@@ -12,7 +12,7 @@ Creates and gets price pools.
 ```
 Creates a Limit Pool for the given two ERC-20 tokens.
 
-The addresses of `tokenIn` and `tokenOut` will have their addresses sorted lexographically (i.e. first by number then by letter) to represent `token0` and `token1`.
+The addresses of `tokenIn` and `tokenOut` will have their addresses sorted lexicographically (i.e. first by number then by letter) to represent `token0` and `token1`.
 
 The contract call will revert with `PoolAlreadyExists()` if the pool already exists.
 
