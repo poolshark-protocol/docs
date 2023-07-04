@@ -34,7 +34,7 @@ title: How to Swap
 
 ![Approval for token](Swap 5.png){: style="width:100%"}
 
-- [x] **9.** You will receive a approval signature request in your wallet. Press ‘Confirm’ in your wallet to confirm the approval.
+- [x] **9.** You will receive an approval signature request in your wallet. Press ‘Confirm’ in your wallet to confirm the approval.
 
 - [x] **10.** Wait for the approval transaction to confirm.
 
