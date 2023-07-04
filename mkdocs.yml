@@ -1,8 +1,8 @@
 site_name: Poolshark Docs
 # site_description: 'Directional liquidity for Ethereum.'
-site_url: https://poolsharks-protocol.github.io/docs/
+site_url: https://poolshark-protocol.github.io/docs/
 repo_name: 'GitHub'
-repo_url: 'https://github.com/poolsharks-protocol/docs/'
+repo_url: 'https://github.com/poolshark-protocol/docs/'
 edit_uri: 'tree/main/site/content'
 copyright: 'Written by Poolshark Labs'
 docs_dir: 'site/content'
