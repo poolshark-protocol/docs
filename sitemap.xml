@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/overview/cover-pools/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/overview/cover-pools/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/overview/glossary/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/overview/glossary/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/overview/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/overview/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/overview/indexes/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/overview/indexes/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/overview/limit-pools/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/overview/limit-pools/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/overview/range-pools/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/overview/range-pools/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/protocol-guide/burns/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/protocol-guide/burns/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/protocol-guide/fees/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/protocol-guide/fees/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/protocol-guide/mints/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/protocol-guide/mints/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/protocol-guide/oracles/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/protocol-guide/oracles/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/protocol-guide/swaps/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/protocol-guide/swaps/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/protocol-guide/liquidity-providers/directional-liquidity/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/protocol-guide/liquidity-providers/directional-liquidity/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/protocol-guide/liquidity-providers/directional-range-order/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/protocol-guide/liquidity-providers/directional-range-order/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/protocol-guide/liquidity-providers/overview/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/protocol-guide/liquidity-providers/overview/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/protocol-guide/liquidity-providers/range-liquidity/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/protocol-guide/liquidity-providers/range-liquidity/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/protocol-guide/liquidity-providers/single-sided/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/protocol-guide/liquidity-providers/single-sided/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/references/automated-market-makers/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/references/automated-market-makers/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/references/limit-order-books/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/references/limit-order-books/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/overview/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/overview/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/base/PoolsharkLimitFactory/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/base/PoolsharkLimitFactory/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/base/PoolsharkLimitPair/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/base/PoolsharkLimitPair/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/cover/CoverPool/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/cover/CoverPool/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/cover/CoverPoolFactory/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/cover/CoverPoolFactory/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/libraries/BitMath/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/libraries/BitMath/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/libraries/FullMath/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/libraries/FullMath/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/libraries/LiquidityMath/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/libraries/LiquidityMath/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/libraries/Position/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/libraries/Position/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/libraries/Samples/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/libraries/Samples/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/libraries/SqrtPriceMath/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/libraries/SqrtPriceMath/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/libraries/SwapMath/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/libraries/SwapMath/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/libraries/Tick/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/libraries/Tick/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/libraries/TickBitmap/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/libraries/TickBitmap/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/libraries/TickMath/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/libraries/TickMath/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/libraries/UnsafeMath/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/libraries/UnsafeMath/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/limit/LimitPool/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/limit/LimitPool/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/limit/LimitPoolFactory/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/limit/LimitPoolFactory/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/range/RangePool/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/range/RangePool/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/smart-contracts/range/RangePoolFactory/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/smart-contracts/range/RangePoolFactory/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/tutorials/how-to-cover/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/tutorials/how-to-cover/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/tutorials/how-to-range/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/tutorials/how-to-range/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/tutorials/how-to-swap/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/tutorials/how-to-swap/"/>
+         
+    </url>
+    <url>
+         <loc>https://poolshark-protocol.github.io/docs/whitepaper/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://poolshark-protocol.github.io/docs/en/whitepaper/"/>
+         
+    </url>
+</urlset>
