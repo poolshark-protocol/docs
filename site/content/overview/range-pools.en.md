@@ -2,7 +2,7 @@
 <!-- Price Position with split buy/sell side -->
 `Range Pools` are similar to what users have come to expect from AMMs while bounding liquidity between a price range.
 
-LPs can provide their liquidity to a specific price range, resulting in a higher concentration of liquidity and less slippage for swappers in comparison to AMM without price bounds. This is due to being able to have more liquidity within a specific range by not providing to the [Full Range](glossary.en.md/##full-range) of a constant product curve.
+LPs can provide their liquidity to a specific price range, resulting in a higher concentration of liquidity and less slippage for swappers in comparison to AMM without price bounds. This is due to being able to have more liquidity within a specific range by not providing the [Full Range](glossary.en.md/##full-range) of a constant product curve.
 
 The opportunity cost of providing liquidity to a constant function curve is commonly known as impermanent loss. Impermanent loss is intended to be hedged with the use of [`Cover Pools`](cover-pools)
 
@@ -10,7 +10,7 @@ Range Pools here have one unique feature improving composability with other DeFi
 
 ![Fungible Range Pool Positions](range-pool-erc20.png){: .center style="width:85%"}
 
-Range Pools contain many small constant function curves between each price point, commmonly referred to as a `Tick`. 
+Range Pools contain many small constant function curves between each price point, commonly referred to as a `Tick`. 
 
 Each of the smaller price ranges will have reserves based on liquidity active within that `Tick`. 
 
