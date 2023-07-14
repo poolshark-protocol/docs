@@ -2,8 +2,13 @@
 <!-- Cover Position alongside Range Position -->
 Cover Pools allow you to create positions to increase exposure to a specific token conditional on it increasing in price on a given pair.</br>
 
-* If the ETH price increases, the pool sells DAI and increases the amount of ETH exposure
-* If the ETH price decreases, the pool sells ETH and increases the amount of DAI exposure
+A position on a cover pool can be considered a stop-loss (SL) order. In this case, you can view your range as the ranged version of the “trigger point” for the order.
+
+Like other AMM positions, the cover pool works with discrete price ticks that in this case define the liquidity to be auctioned, the trigger point for the liquidity, and the starting price for the auction of the liquidity within that price tick.
+
+When you provide liquidity to a cover pool position across a range it is split across the ticks within the trigger range you have selected.
+
+So when the reference price reaches or passes a price tick with liquidity it initiates the Dutch Auction for the liquidity within that price tick.
 
 If a position is or has been in range on a [bidirectional automated market maker](/docs/overview/glossary/#bidirectional-automated-market-maker) it increases the exposure to the token dropping in price or has all exposure to the token dropping in price.</br>
 
@@ -23,6 +28,7 @@ Cover Pools operate with a [Gradual Dutch Auction (GDA)](https://www.paradigm.xy
 As a **Range Order**, Cover Positions will unlock periodically unlock liquidity across a price range as the [**Time-Weighted Average Price**](/docs/overview/glossary/#time-weighted-average-price-twap) (TWAP) increases or decreases (indicated by the user).
 
 This is because we don't want the pool to unlock liquidity due to high-frequency market volatility which will be closed out in an extremely short time due to arbitrage.
+
 
 ## Applications (non-exhaustive)
 
@@ -47,6 +53,20 @@ The Cover Pool will unlock liquidity at each price point based on the total amou
 Capital efficiency can be improved by selecting a smaller range over which to trade to the desired output token.
 
 Cover LP Positions can also be used to deleverage long or short positions before getting liquidated.
+
+### Dynamic Rebalancing of Positions
+
+A position on a cover pool can also be used to dynamically rebalance your portfolio while prices change.
+
+For example, if you are looking to rebalance your portfolio as Token A is decreasing in value to reduce exposure to token A or expressed inversely increase exposure to token B due to token B increasing in value. The key point is that it rebalances from one token into another due to the price change. 
+
+### Deleveraging to Avoid Liquidation
+
+Deleveraging is the process of reducing leverage or borrowing to decrease the risk of liquidation. When users borrow against their collateral on DeFi protocols, they are susceptible to liquidation if the value of their collateral falls below a certain threshold. By deleveraging, users reduce their borrowing and decrease the likelihood of their positions being liquidated.
+
+By moving from a more risky asset into a more stable asset it increases the required price decrease to be liquidated. All this can be accomplished while the position changes its composition from a risky asset to a stable asset without needing to remove the collateral.
+
+With lending protocols that accept cover pool positions as collateral, you can use them to lend a risky asset while being able to keep the upside potential of the collateral without needing to remove liquidity and interrupt the loan.
 
 
 ## How Auctions Work
