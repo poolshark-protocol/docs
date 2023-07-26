@@ -82,7 +82,7 @@ If you are looking to cover and existing range pool position please move to [Sel
 
 ![Input fields](Cover 11.png){: style="width:100%"}
 
-- [x] **11.** Finally, click “Approve” to approve the spend of your tokens.
+- [x] **11.** Finally, click “Approve” to approve the spending of your tokens.
 
 ![Approve ](Cover 12.png){: style="width:100%"}
 
@@ -97,6 +97,5 @@ If you are looking to cover and existing range pool position please move to [Sel
 - [x] **16.** Wait for the transaction to be confirmed and executed in the next block.
 
 - [x] **17.** Congratulations you have just created your Cover position on Poolshark! Click the pop-up to view on Arbiscan.
-
 
 <br><br><br>

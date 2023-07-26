@@ -16,7 +16,7 @@ title: How to Swap
 
 - [x] **3.** Navigate to the “Swap” page (It should be selected by default).
 
-- [x] **4.** Select your desired input token by clicking on the drop down arrow.
+- [x] **4.** Select your desired input token by clicking on the drop-down arrow.
 
 ![Input token dropdown](Swap 3.png){: style="width:100%"}
 
@@ -30,7 +30,7 @@ title: How to Swap
 
 - [x] **7.** Enter the amount of the input token you wish to swap.
 
-- [x] **8.** Cick “Swap” to Approve the router to swap your tokens (only applies if this has been your first time swapping this input token on Poolshark).
+- [x] **8.** Cick “Swap” to Approve the router to swap your tokens (this applies if this has been your first time swapping this input token on Poolshark).
 
 ![Approval for token](Swap 5.png){: style="width:100%"}
 
