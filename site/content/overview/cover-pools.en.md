@@ -25,10 +25,13 @@ Cover pools allow you to create a position to provide liquidity at a set price a
 
 Cover Pools operate with a [Gradual Dutch Auction (GDA)](https://www.paradigm.xyz/2022/04/gda) meaning that you can start at the price indicated by the current price tick of your position and begin to offer a more discounted price until it is accepted by the market.
 
+<<<<<<< HEAD
 As a **Range Order**, Cover Positions will unlock periodically unlock liquidity across a price range as the [**Time-Weighted Average Price**](https://docs.poolshark.fi/overview/glossary/#time-weighted-average-price-twap) (TWAP) increases or decreases (indicated by the user).
+=======
+As a **Range Order**, Cover Positions will periodically unlock liquidity across a price range as the [**Time-Weighted Average Price**](/docs/overview/glossary/#time-weighted-average-price-twap) (TWAP) increases or decreases (indicated by the user).
+>>>>>>> 94205ba6628a18052b01e0bafb09cf08fe21fa8e
 
 This is because we don't want the pool to unlock liquidity due to high-frequency market volatility which will be closed out in an extremely short time due to arbitrage.
-
 
 ## Applications (non-exhaustive)
 
@@ -58,7 +61,7 @@ Cover LP Positions can also be used to deleverage long or short positions before
 
 A position on a cover pool can also be used to dynamically rebalance your portfolio while prices change.
 
-For example, if you are looking to rebalance your portfolio as Token A is decreasing in value to reduce exposure to token A or expressed inversely increase exposure to token B due to token B increasing in value. The key point is that it rebalances from one token into another due to the price change. 
+For example, if you are looking to rebalance your portfolio as Token A is decreasing in value to reduce exposure to Token A or expressed inversely increase exposure to Token B due to Token B increasing in value. The key point is that it rebalances from one token into another due to the price change. 
 
 ### Deleveraging to Avoid Liquidation
 
