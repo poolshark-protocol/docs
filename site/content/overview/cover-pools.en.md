@@ -25,10 +25,9 @@ Cover pools allow you to create a position to provide liquidity at a set price a
 
 Cover Pools operate with a [Gradual Dutch Auction (GDA)](https://www.paradigm.xyz/2022/04/gda) meaning that you can start at the price indicated by the current price tick of your position and begin to offer a more discounted price until it is accepted by the market.
 
-As a **Range Order**, Cover Positions will unlock periodically unlock liquidity across a price range as the [**Time-Weighted Average Price**](/docs/overview/glossary/#time-weighted-average-price-twap) (TWAP) increases or decreases (indicated by the user).
+As a **Range Order**, Cover Positions will periodically unlock liquidity across a price range as the [**Time-Weighted Average Price**](/docs/overview/glossary/#time-weighted-average-price-twap) (TWAP) increases or decreases (indicated by the user).
 
 This is because we don't want the pool to unlock liquidity due to high-frequency market volatility which will be closed out in an extremely short time due to arbitrage.
-
 
 ## Applications (non-exhaustive)
 
