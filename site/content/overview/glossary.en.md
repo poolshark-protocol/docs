@@ -20,7 +20,7 @@ Liquidity pools which facilitate both buying and selling on a token pair.
 
 ## **Directional Automated Market Maker**
 
-Liquidity pools which facilitate only buying or only selling on a token pair.
+Liquidity pools which facilitate only buying or only selling on a token pair. They iterate through liquidity
 
 > Example: Poolshark
 

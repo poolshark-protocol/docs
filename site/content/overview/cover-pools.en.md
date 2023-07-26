@@ -10,7 +10,7 @@ When you provide liquidity to a cover pool position across a range it is split a
 
 So when the reference price reaches or passes a price tick with liquidity it initiates the Dutch Auction for the liquidity within that price tick.
 
-If a position is or has been in range on a [bidirectional automated market maker](/docs/overview/glossary/#bidirectional-automated-market-maker) it increases the exposure to the token dropping in price or has all exposure to the token dropping in price.</br>
+If a position is or has been in range on a [bidirectional automated market maker](https://docs.poolshark.fi/overview/glossary/#bidirectional-automated-market-maker) it increases the exposure to the token dropping in price or has all exposure to the token dropping in price.</br>
 
 * If the market wants ETH, the pool takes DAI and increases the ETH to DAI price
 * If the market wants DAI, the pool takes ETH and decreases the ETH to DAI price.
@@ -21,11 +21,11 @@ This allows them to function as a hedging tool if the user wants to enter or exi
 
 If this was attempted using a position with a fixed price such as a limit order (as done when providing liquidity) the position will either underprice the assets or it won't be filled.
 
-Cover pools allow you to create a position to provide liquidity at a set price and when the TWAP price nears the liquidity becomes available to trade. The liquidity is then a part of a [Dutch auction](/docs/overview/glossary/#dutch-auction).
+Cover pools allow you to create a position to provide liquidity at a set price and when the TWAP price nears the liquidity becomes available to trade. The liquidity is then a part of a [Dutch Auction](https://docs.poolshark.fi/overview/glossary/#dutch-auction).
 
 Cover Pools operate with a [Gradual Dutch Auction (GDA)](https://www.paradigm.xyz/2022/04/gda) meaning that you can start at the price indicated by the current price tick of your position and begin to offer a more discounted price until it is accepted by the market.
 
-As a **Range Order**, Cover Positions will unlock periodically unlock liquidity across a price range as the [**Time-Weighted Average Price**](/docs/overview/glossary/#time-weighted-average-price-twap) (TWAP) increases or decreases (indicated by the user).
+As a **Range Order**, Cover Positions will unlock periodically unlock liquidity across a price range as the [**Time-Weighted Average Price**](https://docs.poolshark.fi/overview/glossary/#time-weighted-average-price-twap) (TWAP) increases or decreases (indicated by the user).
 
 This is because we don't want the pool to unlock liquidity due to high-frequency market volatility which will be closed out in an extremely short time due to arbitrage.
 
